@@ -3,8 +3,7 @@ package es.masanz.da.dao;
 import es.masanz.da.model.Rol;
 import es.masanz.da.model.Usuario;
 
-import static es.masanz.da.config.Config.ROL_ADMIN;
-import static es.masanz.da.config.Config.ROL_ADMIN_ID;
+import static es.masanz.da.config.Config.*;
 
 public class DataUsersMock {
 
