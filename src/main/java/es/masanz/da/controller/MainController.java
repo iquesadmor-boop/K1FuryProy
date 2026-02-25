@@ -15,7 +15,11 @@ public class MainController {
         context.req().getSession().invalidate();
         Map<String, Object> model = new HashMap<>();
         model.put("username", "");
+        model.put("contraseña", "");
         model.put("error", false);
         context.render("/templates/adm/index.ftl", model);
     }
+
+
+
 }
