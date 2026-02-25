@@ -20,12 +20,4 @@ public class MainController {
         model.put("error", false);
         context.render("public/templates/adm/index.ftl", model);
     }
-
-
-    public static void autenticar(@NotNull Context context) {
-        String nombre = context.formParam("nombre");
-        String pwd = context.formParam("pwd");
-        System.out.println(nombre);
-        System.out.println(pwd);
-    }
 }
