@@ -16,6 +16,6 @@ public class MainController {
         Map<String, Object> model = new HashMap<>();
         model.put("username", "");
         model.put("error", false);
-        context.render("/templates/index.ftl", model);
+        context.render("/templates/adm/index.ftl", model);
     }
 }
