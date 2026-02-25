@@ -1,4 +1,4 @@
-package es.masanz.da.controller;
+package es.masanz.da.model;
 
 public class Usuario {
 

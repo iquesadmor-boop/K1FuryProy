@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eliminar Usuario</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="/CSS/k1Fury.css">
+</head>
+<body>
+        <div class="contenedor">
+                <header>
+            <div class="headerTop">
+                <img src="ImgsLogo/LogoFuryK1.png">
+            </div>
+
+            <div class="headerTitle">
+                <h4>ELIMINAR USUARIO</h4>
+            </div>
+        </header>
+                <main>
+                        <div class="mainList">
+                                <label class="selectorEliminar">Alejandro Morales<input class="checkboxSelectorEliminar"
+                                                type="checkbox" name="liga" value="alejandro_morales"></label>
+                                <label class="selectorEliminar">Ricardo Herrera<input class="checkboxSelectorEliminar"
+                                                type="checkbox" name="liga" value="ricardo_herrera"></label>
+                                <label class="selectorEliminar">Fernando Ortega<input class="checkboxSelectorEliminar"
+                                                type="checkbox" name="liga" value="fernando_ortega"></label>
+                                <label class="selectorEliminar">Hugo Mendoza<input class="checkboxSelectorEliminar"
+                                                type="checkbox" name="liga" value="hugo_mendoza"></label>
+                                <label class="selectorEliminar">Mateo Salazar<input class="checkboxSelectorEliminar"
+                                                type="checkbox" name="liga" value="mateo_salazar"></label>
+                                <label class="selectorEliminar">Rodrigo Esquivel<input class="checkboxSelectorEliminar"
+                                                type="checkbox" name="liga" value="rodrigo_esquivel"></label>
+                                <label class="selectorEliminar">Adrián Pardo<input class="checkboxSelectorEliminar"
+                                                type="checkbox" name="liga" value="adrian_pardo"></label>
+                                <label class="selectorEliminar">Gonzalo Méndez<input class="checkboxSelectorEliminar"
+                                                type="checkbox" name="liga" value="gonzalo_mendez"></label>
+                                <label class="selectorEliminar">Samuel Vargas<input class="checkboxSelectorEliminar"
+                                                type="checkbox" name="liga" value="samuel_vargas"></label>
+                                <label class="selectorEliminar">Joaquín Ibáñez<input class="checkboxSelectorEliminar"
+                                                type="checkbox" name="liga" value="joaquin_ibanez"></label>
+                                <label class="selectorEliminar">Marcos Benítez<input class="checkboxSelectorEliminar"
+                                                type="checkbox" name="liga" value="marcos_benitez"></label>
+                                <label class="selectorEliminar">Emiliano Vega<input class="checkboxSelectorEliminar"
+                                                type="checkbox" name="liga" value="emiliano_vega"></label>
+                                <label class="selectorEliminar">Santiago Peralta<input class="checkboxSelectorEliminar"
+                                                type="checkbox" name="liga" value="santiago_peralta"></label>
+                                <label class="selectorEliminar">Ismael Cabrera<input class="checkboxSelectorEliminar"
+                                                type="checkbox" name="liga" value="ismael_cabrera"></label>
+                                <label class="selectorEliminar">Óscar Márquez<input class="checkboxSelectorEliminar"
+                                                type="checkbox" name="liga" value="oscar_marquez"></label>
+                                <label class="selectorEliminar">Raúl Beltrán<input class="checkboxSelectorEliminar"
+                                                type="checkbox" name="liga" value="raul_beltran"></label>
+                                <label class="selectorEliminar">Felipe Durán<input class="checkboxSelectorEliminar"
+                                                type="checkbox" name="liga" value="felipe_duran"></label>
+                                <label class="selectorEliminar">Ignacio Soto<input class="checkboxSelectorEliminar"
+                                                type="checkbox" name="liga" value="ignacio_soto"></label>
+                                <label class="selectorEliminar">Valentín Olmos<input class="checkboxSelectorEliminar"
+                                                type="checkbox" name="liga" value="valentin_olmos"></label>
+                                <label class="selectorEliminar">Rafael Gallardo<input class="checkboxSelectorEliminar"
+                                                type="checkbox" name="liga" value="rafael_gallardo"></label>
+                                <input type="submit" value="Eliminar" class="btn">
+                        </div>
+                </main>
+                <footer>
+                        <div class="footer">
+                                <a href="index.html"><i class="fa-solid fa-house"></i></a>
+                                <a href="gestion-usuarios.html"><i class="fa-solid fa-arrow-left"></i></a>
+                        </div>
+                </footer>
+        </div>
+</body>
+</html>

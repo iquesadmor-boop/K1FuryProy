@@ -1,0 +1,245 @@
+
+/*AJUESTES GENERALES*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #0f0f14;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor{
+    width: 320px;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/*HEADER*/
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0 30px;
+}
+
+.headerTop{
+    width: 100%;
+    height: 120px; 
+    display: flex;
+    justify-content: center;
+    background-color: #0f0f14;
+    padding: 18px 0 12px 0;
+    border-radius: 20px 20px 0 0;
+    border-bottom: 2px solid #ff2a2a;
+}
+
+.headerTop img{
+    max-width: 180px;  
+    height: auto;
+}
+
+.headerTitle{
+    width: 100%;
+    background-color: #0f0f14;
+    text-align: center;
+    padding: 8px 0;
+    border-bottom: 2px solid #ff2a2a; 
+}
+
+.headerTitle h4{
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+/*FOOTER*/
+footer{
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    border-top: 2px solid #ff2a2a;
+}
+
+.footer a{
+    color: #ff2a2a;
+    font-size: 26px;
+    text-decoration: none;
+}
+
+/*LOGIN*/
+.main{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja-form{
+    width: 100%;
+    padding-top: 30px;
+    border-radius: 25px; 
+    border: #ff2a2a 2px solid;
+    border-radius: 20px;
+    padding: 30px 25px;
+}
+
+
+#nombre{
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    padding: 0 10px;
+}
+
+#pwd{
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    padding: 0 10px;
+}
+
+/*BOTONES*/
+.btn{
+    margin-top: 15px;
+    height: 40px;
+    background-color: #291818;
+    color: #ff2a2a;
+    border: 2px solid #ff2a2a;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+
+.btn:hover{
+    background-color: #ff2a2a;
+    color: white;
+}
+
+/*MENÚ*/
+.mainMenu{
+    flex: 1;                     
+    display: flex;
+    justify-content: center;     
+    align-items: center;         
+}
+
+.mainMenu div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+}
+
+.button{
+    width: 260px;
+    height: 65px;
+    background-color: #c40000;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/*LISTA*/
+.mainList{
+    flex: 1;                    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;     
+    align-items: center;
+    gap: 22px;
+}
+
+.mainList div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*LABELS*/
+.selectorEliminar{
+    width: 220px;
+    height: 60px;
+    border-radius: 10px;
+    border: 2px solid #ff2a2a;
+    background-color: #291818;
+    color: white;
+    padding: 5px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+/*SELECTORES*/
+.selector{
+    width: 260px;
+    height: 60px;
+    border-radius: 10px;
+    border: 2px solid #ff2a2a;
+    background-color: #291818;
+    color: white;
+    padding: 5px;
+    font-size: 24px;
+}
+
+.selector option{
+    background-color: #303030;
+    color: white;
+}
+
+/*FORMULARIOS*/
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form h1{
+    color: #ff2a2a;
+    margin-bottom: 15px;
+}
+
+form label{
+    margin: 10px 0 5px;
+    font-size: 14px;
+}
+
+/*CHECKBOX*/
+.checkboxSelectorEliminar{
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+/*ENLACES*/
+a{
+    text-decoration: none;
+    color: inherit;
+}

@@ -1,5 +1,6 @@
 package es.masanz.da;
 
+import es.masanz.da.controller.MainController;
 import io.javalin.Javalin;
 import io.javalin.rendering.template.JavalinFreemarker;
 import org.apache.logging.log4j.LogManager;
@@ -41,11 +42,11 @@ public class Main {
 
         app.post("/autenticar", MainController::autenticar);
 
-        app.get("/adm/menu", AdmController::mostrarMenuAdm);
-        app.post("/adm/menu", AdmController::gestionarMenuAdm);
-
-        app.get("/adm/crear-torneo", AdmController::mostrarCrearTorneo);
-        app.post("/adm/crear-torneo", AdmController::gestionarCrearTorneo);
+//        app.get("/adm/menu", AdmController::mostrarMenuAdm);
+//        app.post("/adm/menu", AdmController::gestionarMenuAdm);
+//
+//        app.get("/adm/crear-torneo", AdmController::mostrarCrearTorneo);
+//        app.post("/adm/crear-torneo", AdmController::gestionarCrearTorneo);
 
     }
 
