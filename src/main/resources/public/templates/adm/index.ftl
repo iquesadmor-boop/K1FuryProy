@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="/CSS/k1Fury.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../k1Fury.css">
 </head>
 <body>
     <div class="contenedor">
@@ -16,7 +16,7 @@
         </header>
         <main class="main">
             <div class="caja-form">
-                <form class="form" action="../inc/menu.ftl" method="post">
+                <form class="form" action="autenticar" method="post">
                     <h1>LOGIN</h1>
                     <label for="nombre" >Usuario</label>
                     <input type="text" id="nombre" name="nombre">

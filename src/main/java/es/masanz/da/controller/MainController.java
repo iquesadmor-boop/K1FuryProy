@@ -3,6 +3,7 @@ package es.masanz.da.controller;
 import io.javalin.http.Context;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -17,9 +18,14 @@ public class MainController {
         model.put("username", "");
         model.put("contraseña", "");
         model.put("error", false);
-        context.render("/templates/adm/index.ftl", model);
+        context.render("public/templates/adm/index.ftl", model);
     }
 
 
-
+    public static void autenticar(@NotNull Context context) {
+        String nombre = context.formParam("nombre");
+        String pwd = context.formParam("pwd");
+        System.out.println(nombre);
+        System.out.println(pwd);
+    }
 }
