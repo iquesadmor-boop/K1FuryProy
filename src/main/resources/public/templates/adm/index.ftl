@@ -16,7 +16,7 @@
         </header>
         <main class="main">
             <div class="caja-form">
-                <form class="form" action="menu.html">
+                <form class="form" action="../inc/menu.html">
                     <h1>LOGIN</h1>
                     <label for="nombre" >Usuario</label>
                     <input type="text" id="nombre" name="nombre">
