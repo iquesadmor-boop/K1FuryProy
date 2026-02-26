@@ -21,7 +21,7 @@
 
         <main class="mainMenu">
             <div>
-            <button class="button"><a href="./gestion-liga.ftl">Gestión Liga</a></button>
+            <button class="button"><a href="/tLiga/gestion-liga" class="button">Gestión Liga</a></button>
             <button class="button"><a href="../inc/gestion-usuarios.html">Gestión Usuarios</a></button>
             <button class="button"><a href="../inc/combates.html">Combates</a></button>
             <button class="button"><a href="../inc/clasificacion.html">Clasificación</a></button>

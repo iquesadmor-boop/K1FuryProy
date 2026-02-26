@@ -25,4 +25,6 @@ public class MainController {
         String nombre = context.formParam("nombre");
         String pwd = context.formParam("pwd");
     }
+
+    public String gestionarMenu()
 }

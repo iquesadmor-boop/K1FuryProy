@@ -31,10 +31,11 @@ public class Config {
     public static final String MENU_REGRESAR = "Regresar";
     public static final String MENU_SALIR = "Salir";
 
-    public static final String MENU_ACCION_VER_RESULTADOS = "Ver resultados";
-    public static final String MENU_ACCION_AVANZAR_FASE = "Avanzar fase";
-    public static final String MENU_ACCION_CREAR_TORNEO = "Crear torneo";
-    public static final String MENU_ACCION_GESTIONAR_EQUIPOS = "Gestionar equipos";
+    public static final String MENU_ACCION_GESTION_LIGA = "Gestionar Liga";
+    public static final String MENU_ACCION_GESTION_USUARIOS = "Gestionar Usuarios";
+    public static final String MENU_ACCION_COMBATES = "Combates";
+    public static final String MENU_ACCION_CLASIFICACION = "Clasificacion";
+
     public static final String MENU_ACCION_GESTIONAR_USUARIOS = "Gestionar usuarios";
     public static final String MENU_ACCION_BORRAR_TORNEO = "Borrar torneo";
     public static final String MENU_ACCION_SALIR = "Salir";

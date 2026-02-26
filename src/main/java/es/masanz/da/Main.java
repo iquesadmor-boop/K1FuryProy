@@ -45,6 +45,8 @@ public class Main {
 
         app.post("/autenticar", UserController::autenticar);
 
+        app.get("/menu", AdmController::MostrarMenuAdm);
+
 
 //        app.get("/adm/menu", AdmController::mostrarMenuAdm);
 //        app.post("/adm/menu", AdmController::gestionarMenuAdm);
