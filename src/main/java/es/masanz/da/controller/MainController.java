@@ -1,11 +1,13 @@
 package es.masanz.da.controller;
 
+import es.masanz.da.service.UserService;
 import io.javalin.http.Context;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class MainController {
@@ -26,5 +28,11 @@ public class MainController {
         String pwd = context.formParam("pwd");
     }
 
-    public String gestionarMenu()
+
+    public static void mostrarMenu(@NotNull Context context) {
+        List<String> acciones = UserService.getAccionesMenu();
+        Map<String, Object> model = new HashMap<>();
+        model.put("acciones",acciones);
+        context.render("/templates/menu.ftl", model);
+    }
 }

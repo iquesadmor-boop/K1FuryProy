@@ -30,7 +30,7 @@
         
         <footer>
             <div class="footer">
-                <a href="menu.html"><i class="fa-solid fa-house"></i></a>
+                <a href="menu.ftl"><i class="fa-solid fa-house"></i></a>
                 <a href="menu.ftl"><i class="fa-solid fa-arrow-left"></i></a>
             </div>
         </footer>

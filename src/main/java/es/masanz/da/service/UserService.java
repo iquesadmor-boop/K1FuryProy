@@ -17,7 +17,7 @@ public class UserService {
         return UserDao.autenticar(nombre, pwd);
     }
 
-    public List<String> getAccionesMenu(){
+    public static List<String> getAccionesMenu(){
         return new ArrayList<>(List.of(
                     MENU_ACCION_GESTION_LIGA,
                     MENU_ACCION_GESTIONAR_USUARIOS,
