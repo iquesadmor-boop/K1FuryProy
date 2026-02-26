@@ -22,11 +22,7 @@ public class MainController {
     }
 
     public static void autenticar(@NotNull Context context) {
-
         String nombre = context.formParam("nombre");
         String pwd = context.formParam("pwd");
-
-
-
     }
 }

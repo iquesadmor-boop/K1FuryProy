@@ -21,7 +21,7 @@
 
         <main class="mainMenu">
             <div>
-            <button class="button"><a href="../inc/gestion-liga.html">Gestión Liga</a></button>
+            <button class="button"><a href="./gestion-liga.ftl">Gestión Liga</a></button>
             <button class="button"><a href="../inc/gestion-usuarios.html">Gestión Usuarios</a></button>
             <button class="button"><a href="../inc/combates.html">Combates</a></button>
             <button class="button"><a href="../inc/clasificacion.html">Clasificación</a></button>
@@ -31,7 +31,7 @@
         <footer>
             <div class="footer">
                 <a href="menu.html"><i class="fa-solid fa-house"></i></a>
-                <a href="index.ftl"><i class="fa-solid fa-arrow-left"></i></a>
+                <a href="menu.ftl"><i class="fa-solid fa-arrow-left"></i></a>
             </div>
         </footer>
         
