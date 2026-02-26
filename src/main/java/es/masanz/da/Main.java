@@ -37,6 +37,11 @@ public class Main {
 
     private static void setJavalinAppRoutes(Javalin app) {
 
+        app.get("/:page", ctx -> {
+            String page = ctx.pathParam("page");
+            ctx.render(page + "ftl");
+        });
+
         app.get("/", MainController::iniciar);
         app.get("/login", MainController::iniciar);
         app.get("/exit", MainController::iniciar);
