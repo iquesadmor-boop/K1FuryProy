@@ -1,6 +1,7 @@
 package es.masanz.da;
 
 import es.masanz.da.controller.MainController;
+import es.masanz.da.controller.UserController;
 import es.masanz.da.service.UserService;
 import io.javalin.Javalin;
 import io.javalin.rendering.template.JavalinFreemarker;
@@ -41,7 +42,7 @@ public class Main {
         app.get("/exit", MainController::iniciar);
         app.get("/error", MainController::iniciar);
 
-        app.post("/autenticar", UserService::autenticar);
+        app.post("/autenticar", UserController::autenticar);
 
 //        app.get("/adm/menu", AdmController::mostrarMenuAdm);
 //        app.post("/adm/menu", AdmController::gestionarMenuAdm);
