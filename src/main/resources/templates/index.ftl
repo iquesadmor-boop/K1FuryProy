@@ -11,7 +11,7 @@
     <div class="contenedor">
         <header>
             <div class="headerTop">
-                <img src="../public/img/LogoFuryK1.png">
+                <img src="/img/LogoFuryK1.png">
             </div>
         </header>
         <main class="main">
