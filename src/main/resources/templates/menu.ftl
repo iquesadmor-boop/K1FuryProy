@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plantilla</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="/CSS/k1Fury.css">
+    <title>Menu</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../k1Fury.css">
 </head>
 <body>
     <div class="contenedor">
@@ -18,17 +18,25 @@
                 <h4>MENÚ</h4>
             </div>
         </header>
-        <main>
-            <div class="main">
-                
+
+        <main class="mainMenu">
+            <div>
+            <button class="button"><a href="../inc/gestion-liga.html">Gestión Liga</a></button>
+            <button class="button"><a href="../inc/gestion-usuarios.html">Gestión Usuarios</a></button>
+            <button class="button"><a href="../inc/combates.html">Combates</a></button>
+            <button class="button"><a href="../inc/clasificacion.html">Clasificación</a></button>
             </div>
         </main>
+        
         <footer>
             <div class="footer">
                 <a href="menu.html"><i class="fa-solid fa-house"></i></a>
-                <a href="../adm/index.ftl"><i class="fa-solid fa-arrow-left"></i></a>
+                <a href="index.ftl"><i class="fa-solid fa-arrow-left"></i></a>
             </div>
         </footer>
+        
     </div>
+    
+
 </body>
 </html>

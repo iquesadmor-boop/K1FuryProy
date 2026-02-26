@@ -1,6 +1,5 @@
 package es.masanz.da.controller;
 
-import es.masanz.da.service.UserService;
 import io.javalin.http.Context;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -19,7 +18,7 @@ public class MainController {
         model.put("username", "");
         model.put("contraseña", "");
         model.put("error", false);
-        context.render("public/templates/adm/index.ftl", model);
+        context.render("templates/index.ftl", model);
     }
 
     public static void autenticar(@NotNull Context context) {
