@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS k1furydb.usuario (
     nombre varchar(30) DEFAULT NULL,
     apellido varchar(30) DEFAULT NULL,
     contraseña varchar(30) DEFAULT NULL,
-    rol int,
+    rol int not null,
     peso int,
 
     primary key(id),
