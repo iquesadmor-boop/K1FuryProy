@@ -1,5 +1,3 @@
-CREATE USER 'proy'@'localhost' IDENTIFIED BY 'password';
-
 CREATE DATABASE k1furydb;
 
 GRANT ALL PRIVILEGES ON carrito_db.* TO 'proy'@'localhost';
