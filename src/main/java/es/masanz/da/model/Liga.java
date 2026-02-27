@@ -5,23 +5,20 @@ import java.util.List;
 
 public class Liga {
     private int id;
-    private String nombre;
+    private String peso;
     private String fechaInicio;
     private String fechaFin;
     private Usuario campeon;
     private boolean estaActiva;
 
-    private List<Usuario> listaPeleadores = new ArrayList<>();
+    public Liga() {this(0, "", "", "", null, false);}
 
-    public Liga() {this(0, "", "", "", null, false, null);}
-
-    public Liga(int id, String nombre, String fechaInicio, String fechaFin, Usuario campeon, boolean estaActiva, List<Usuario> listaPeleadores) {
+    public Liga(int id, String peso, String fechaInicio, String fechaFin, Usuario campeon, boolean estaActiva) {
         this.id = id;
-        this.nombre = nombre;
+        this.peso = peso;
         this.fechaInicio = fechaInicio;
         this.fechaFin = fechaFin;
         this.campeon = campeon;
         this.estaActiva = estaActiva;
-        this.listaPeleadores = listaPeleadores;
     }
 }
