@@ -45,7 +45,7 @@ public class Main {
 
         app.post("/autenticar", UserController::autenticar);
 
-        app.get("/tLiga/gestion-liga", MainController::mostrarMenu);
+        app.get("/tLiga/gestion-liga", MainController::mostrarGestionLiga);
 
 
 //        app.get("/adm/menu", AdmController::mostrarMenuAdm);

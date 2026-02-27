@@ -20,17 +20,17 @@
         </header>
         <main class="mainMenu">
             <div>
-            <button class="button"><a href="listado-ligas.html">Listado</a></button>
-            <button class="button"><a href="nueva-liga.html">Nueva Liga</a></button>
-            <button class="button"><a href="editar-liga.html">Editar Liga</a></button>
-            <button class="button"><a href="eliminar-liga.html">Eliminar Liga</a></button>
+            <button class="button"><a href="/listado-ligas">Listado</a></button>
+            <button class="button"><a href="/nueva-liga">Nueva Liga</a></button>
+            <button class="button"><a href="/editar-liga">Editar Liga</a></button>
+            <button class="button"><a href="/eliminar-liga">Eliminar Liga</a></button>
             </div>
         </main>
         
         <footer>
             <div class="footer">
-                <a href="menu.html"><i class="fa-solid fa-house"></i></a>
-                <a href="menu.html"><i class="fa-solid fa-arrow-left"></i></a>
+                <a href="/menu"><i class="fa-solid fa-house"></i></a>
+                <a href="/menu"><i class="fa-solid fa-arrow-left"></i></a>
             </div>
         </footer>
         

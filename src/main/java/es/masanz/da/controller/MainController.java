@@ -33,6 +33,11 @@ public class MainController {
         List<String> acciones = UserService.getAccionesMenu();
         Map<String, Object> model = new HashMap<>();
         model.put("acciones",acciones);
-        context.render("/templates/menu.ftl", model);
+        context.render("menu.ftl", model);
+    }
+
+    public static void mostrarGestionLiga(@NotNull Context context){
+        Map<String, Object> model = new HashMap<>();
+        context.render("templates/tLiga/gestion-liga.ftl", model);
     }
 }

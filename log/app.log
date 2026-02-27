@@ -112,3 +112,27 @@
 [2026-02-27 16:01:05] [INFO ] [MainController: 17] iniciar
 [2026-02-27 16:01:26] [INFO ] [UserController: 25] Logeando con las credenciales User: admin Password admin
 [2026-02-27 16:01:26] [INFO ] [UserController: 27] Ha ido mal
+[2026-02-27 16:07:02] [INFO ] [Main: 26] ARRANCANDO APLICACION MODO WEB
+[2026-02-27 16:07:19] [INFO ] [MainController: 17] iniciar
+[2026-02-27 16:07:30] [INFO ] [UserController: 25] Logeando con las credenciales User: admin Password admin
+[2026-02-27 16:07:31] [INFO ] [UserDao: 32] Atenticación realizada con exito
+[2026-02-27 16:07:31] [INFO ] [UserController: 27] Ha ido mal
+[2026-02-27 16:07:43] [INFO ] [UserController: 25] Logeando con las credenciales User: admin Password adminygfzx
+[2026-02-27 16:07:43] [INFO ] [UserDao: 39] Creedenciales no validas o no reconocidas
+[2026-02-27 16:07:43] [INFO ] [UserController: 30] Ha ido bien
+[2026-02-27 16:19:07] [INFO ] [Main: 26] ARRANCANDO APLICACION MODO WEB
+[2026-02-27 16:19:10] [INFO ] [MainController: 17] iniciar
+[2026-02-27 16:19:15] [INFO ] [UserController: 25] Logeando con las credenciales User: admin Password admin
+[2026-02-27 16:19:16] [INFO ] [UserDao: 32] Atenticación realizada con exito
+[2026-02-27 16:19:16] [INFO ] [UserController: 27] Ha ido mal
+[2026-02-27 16:23:52] [INFO ] [Main: 26] ARRANCANDO APLICACION MODO WEB
+[2026-02-27 16:24:19] [INFO ] [Main: 26] ARRANCANDO APLICACION MODO WEB
+[2026-02-27 16:24:22] [INFO ] [MainController: 17] iniciar
+[2026-02-27 16:24:27] [INFO ] [UserController: 25] Logeando con las credenciales User: admin Password admin
+[2026-02-27 16:24:27] [INFO ] [UserDao: 32] Atenticación realizada con exito
+[2026-02-27 16:24:27] [INFO ] [UserController: 27] Ha ido mal
+[2026-02-27 16:25:22] [INFO ] [Main: 26] ARRANCANDO APLICACION MODO WEB
+[2026-02-27 16:25:25] [INFO ] [MainController: 17] iniciar
+[2026-02-27 16:25:33] [INFO ] [UserController: 25] Logeando con las credenciales User: admin Password admin
+[2026-02-27 16:25:33] [INFO ] [UserDao: 32] Atenticación realizada con exito
+[2026-02-27 16:25:33] [INFO ] [UserController: 27] Ha ido mal
