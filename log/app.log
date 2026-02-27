@@ -77,3 +77,38 @@
 [2026-02-26 14:02:58] [INFO ] [UserDao: 22] Logeando con las credenciales User: otro Password admin
 [2026-02-26 14:02:58] [INFO ] [UserDao: 26] Ha ido bien
 [2026-02-26 14:02:58] [INFO ] [UserController: 27] Ha ido mal
+[2026-02-27 15:43:29] [INFO ] [Main: 26] ARRANCANDO APLICACION MODO WEB
+[2026-02-27 15:43:31] [INFO ] [MainController: 17] iniciar
+[2026-02-27 15:43:36] [INFO ] [UserController: 25] Logeando con las credenciales User: admin Password admin
+[2026-02-27 15:43:36] [INFO ] [UserController: 30] Ha ido bien
+[2026-02-27 15:43:42] [INFO ] [UserController: 25] Logeando con las credenciales User: admin Password admin
+[2026-02-27 15:43:42] [INFO ] [UserController: 30] Ha ido bien
+[2026-02-27 15:43:55] [INFO ] [UserController: 25] Logeando con las credenciales User: admin1 Password admin1
+[2026-02-27 15:43:55] [INFO ] [UserController: 30] Ha ido bien
+[2026-02-27 15:44:21] [INFO ] [Main: 26] ARRANCANDO APLICACION MODO WEB
+[2026-02-27 15:44:30] [INFO ] [Main: 26] ARRANCANDO APLICACION MODO WEB
+[2026-02-27 15:44:43] [INFO ] [Main: 26] ARRANCANDO APLICACION MODO WEB
+[2026-02-27 15:44:45] [INFO ] [MainController: 17] iniciar
+[2026-02-27 15:44:55] [INFO ] [Main: 26] ARRANCANDO APLICACION MODO WEB
+[2026-02-27 15:53:24] [INFO ] [Main: 26] ARRANCANDO APLICACION MODO WEB
+[2026-02-27 15:53:26] [INFO ] [MainController: 17] iniciar
+[2026-02-27 15:53:32] [INFO ] [UserController: 25] Logeando con las credenciales User: admin Password admin
+[2026-02-27 15:53:32] [INFO ] [UserController: 30] Ha ido bien
+[2026-02-27 15:56:22] [INFO ] [Main: 26] ARRANCANDO APLICACION MODO WEB
+[2026-02-27 15:56:24] [INFO ] [MainController: 17] iniciar
+[2026-02-27 15:56:33] [INFO ] [UserController: 25] Logeando con las credenciales User: admin Password admin
+[2026-02-27 15:56:33] [INFO ] [UserController: 30] Ha ido bien
+[2026-02-27 15:56:43] [INFO ] [UserController: 25] Logeando con las credenciales User: admin Password admin
+[2026-02-27 15:56:43] [INFO ] [UserController: 30] Ha ido bien
+[2026-02-27 15:59:38] [INFO ] [Main: 26] ARRANCANDO APLICACION MODO WEB
+[2026-02-27 15:59:44] [INFO ] [MainController: 17] iniciar
+[2026-02-27 15:59:50] [INFO ] [UserController: 25] Logeando con las credenciales User: admin Password admin
+[2026-02-27 15:59:50] [ERROR] [UserDao: 27] ¡ERROR CRÍTICO! 'resultado' es NULL. La conexión a la DB falló o está cerrada.
+[2026-02-27 15:59:50] [INFO ] [UserController: 30] Ha ido bien
+[2026-02-27 16:00:32] [INFO ] [Main: 26] ARRANCANDO APLICACION MODO WEB
+[2026-02-27 16:00:34] [INFO ] [MainController: 17] iniciar
+[2026-02-27 16:00:40] [INFO ] [UserController: 25] Logeando con las credenciales User: admin Password admin
+[2026-02-27 16:00:40] [INFO ] [UserController: 27] Ha ido mal
+[2026-02-27 16:01:05] [INFO ] [MainController: 17] iniciar
+[2026-02-27 16:01:26] [INFO ] [UserController: 25] Logeando con las credenciales User: admin Password admin
+[2026-02-27 16:01:26] [INFO ] [UserController: 27] Ha ido mal
