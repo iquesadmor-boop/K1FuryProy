@@ -9,6 +9,7 @@ CREATE TABLE IF NOT EXISTS k1furydb.usuario (
 	id int AUTO_INCREMENT,
     nombre varchar(30) DEFAULT NULL,
     apellido varchar(30) DEFAULT NULL,
+    contraseña varchar(30) DEFAULT NULL,
     rol int,
     peso int,
 
