@@ -47,6 +47,9 @@ public class Main {
 
         app.get("/tLiga/gestion-liga", MainController::mostrarGestionLiga);
         app.get("/tLiga/listado-ligas", MainController::mostrarListadoLiga);
+        app.get("/tLiga/nueva-liga", MainController::mostrarNuevaLiga);
+        app.get("/tLiga/editar-liga", MainController::mostrarEditarLiga);
+        app.get("/tLiga/eliminar-liga", MainController::mostrarEliminarLiga);
 
         app.get("/tCombates/combates", MainController::mostrarCombates);
 

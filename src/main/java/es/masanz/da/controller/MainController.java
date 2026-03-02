@@ -46,10 +46,26 @@ public class MainController {
         context.render("templates/tLiga/listado-ligas.ftl", model);
     }
 
+    public static void mostrarNuevaLiga(@NotNull Context context) {
+        Map<String, Object> model = new HashMap<>();
+        context.render("templates/tLiga/nueva-liga.ftl", model);
+    }
+
+    public static void mostrarEditarLiga(@NotNull Context context) {
+        Map<String, Object> model = new HashMap<>();
+        context.render("templates/tLiga/editar-liga.ftl", model);
+    }
+
+    public static void mostrarEliminarLiga(@NotNull Context context) {
+        Map<String, Object> model = new HashMap<>();
+        context.render("templates/tLiga/eliminar-liga.ftl", model);
+    }
+
     public static void mostrarCombates(@NotNull Context context){
         Map<String, Object> model = new HashMap<>();
         context.render("templates/tCombates/combates.ftl", model);
     }
+
 
 
 }
