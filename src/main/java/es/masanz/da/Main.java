@@ -46,6 +46,7 @@ public class Main {
         app.post("/autenticar", UserController::autenticar);
 
         app.get("/tLiga/gestion-liga", MainController::mostrarGestionLiga);
+        app.get("/tLiga/listado-ligas", MainController::mostrarListadoLiga);
 
         app.get("/tCombates/combates", MainController::mostrarCombates);
 
