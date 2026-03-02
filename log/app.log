@@ -136,3 +136,23 @@
 [2026-02-27 16:25:33] [INFO ] [UserController: 25] Logeando con las credenciales User: admin Password admin
 [2026-02-27 16:25:33] [INFO ] [UserDao: 32] Atenticación realizada con exito
 [2026-02-27 16:25:33] [INFO ] [UserController: 27] Ha ido mal
+[2026-03-02 10:03:45] [INFO ] [Main: 26] ARRANCANDO APLICACION MODO WEB
+[2026-03-02 10:04:02] [INFO ] [MainController: 17] iniciar
+[2026-03-02 10:04:07] [INFO ] [UserController: 25] Logeando con las credenciales User: admin Password admin
+[2026-03-02 10:04:08] [INFO ] [UserDao: 32] Atenticación realizada con exito
+[2026-03-02 10:04:08] [INFO ] [UserController: 27] Ha ido mal
+[2026-03-02 10:27:40] [INFO ] [Main: 26] ARRANCANDO APLICACION MODO WEB
+[2026-03-02 10:27:44] [INFO ] [MainController: 17] iniciar
+[2026-03-02 10:27:51] [INFO ] [UserController: 25] Logeando con las credenciales User: admin Password admin
+[2026-03-02 10:27:52] [INFO ] [UserDao: 32] Atenticación realizada con exito
+[2026-03-02 10:27:52] [INFO ] [UserController: 27] Ha ido mal
+[2026-03-02 10:49:38] [INFO ] [Main: 26] ARRANCANDO APLICACION MODO WEB
+[2026-03-02 10:49:40] [INFO ] [MainController: 17] iniciar
+[2026-03-02 10:49:46] [INFO ] [UserController: 25] Logeando con las credenciales User: admin Password admin
+[2026-03-02 10:49:46] [INFO ] [UserDao: 32] Atenticación realizada con exito
+[2026-03-02 10:49:46] [INFO ] [UserController: 27] Ha ido mal
+[2026-03-02 10:52:18] [INFO ] [Main: 26] ARRANCANDO APLICACION MODO WEB
+[2026-03-02 10:52:21] [INFO ] [MainController: 17] iniciar
+[2026-03-02 10:52:26] [INFO ] [UserController: 25] Logeando con las credenciales User: admin Password admin
+[2026-03-02 10:52:27] [INFO ] [UserDao: 32] Atenticación realizada con exito
+[2026-03-02 10:52:27] [INFO ] [UserController: 27] Ha ido mal
