@@ -1,6 +1,7 @@
 package es.masanz.da;
 
 import es.masanz.da.controller.MainController;
+import es.masanz.da.controller.NavigationController;
 import es.masanz.da.controller.UserController;
 import es.masanz.da.service.UserService;
 import io.javalin.Javalin;
@@ -45,13 +46,13 @@ public class Main {
 
         app.post("/autenticar", UserController::autenticar);
 
-        app.get("/tLiga/gestion-liga", MainController::mostrarGestionLiga);
-        app.get("/tLiga/listado-ligas", MainController::mostrarListadoLiga);
-        app.get("/tLiga/nueva-liga", MainController::mostrarNuevaLiga);
-        app.get("/tLiga/editar-liga", MainController::mostrarEditarLiga);
-        app.get("/tLiga/eliminar-liga", MainController::mostrarEliminarLiga);
+        app.get("/tLiga/gestion-liga", NavigationController::mostrarGestionLiga);
+        app.get("/tLiga/listado-ligas", NavigationController::mostrarListadoLiga);
+        app.get("/tLiga/nueva-liga", NavigationController::mostrarNuevaLiga);
+        app.get("/tLiga/editar-liga", NavigationController::mostrarEditarLiga);
+        app.get("/tLiga/eliminar-liga", NavigationController::mostrarEliminarLiga);
 
-        app.get("/tCombates/combates", MainController::mostrarCombates);
+        app.get("/tCombates/combates", NavigationController::mostrarCombates);
 
 
 //        app.get("/adm/menu", AdmController::mostrarMenuAdm);
