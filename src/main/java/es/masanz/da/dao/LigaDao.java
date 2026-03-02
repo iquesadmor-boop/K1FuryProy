@@ -1,0 +1,28 @@
+package es.masanz.da.dao;
+
+import es.masanz.da.db.dbK1Fury;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+public class LigaDao {
+
+    static {
+        dbK1Fury.conectar("k1furydb", "proyfuryk1", "password");
+    }
+
+    private static Logger logger = LogManager.getLogger();
+
+    public static boolean crearLiga(String peso, String fechaInicio) {
+        String sql = "insert " +
+                "values ();";
+
+        Object[] params = {peso, fechaInicio};
+
+        long resultado = dbK1Fury.ejecutarInsertSQL(sql, params);
+        // Nos da el id de la liga creada;
+
+        if (resultado > 0){
+            return true;
+        } else {return false;}
+    }
+}

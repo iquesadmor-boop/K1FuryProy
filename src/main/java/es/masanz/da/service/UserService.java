@@ -16,13 +16,4 @@ public class UserService {
     public static boolean autenticar(String nombre, String pwd) {
         return UserDao.autenticar(nombre, pwd);
     }
-
-    public static List<String> getAccionesMenu(){
-        return new ArrayList<>(List.of(
-                    MENU_ACCION_GESTION_LIGA,
-                    MENU_ACCION_GESTIONAR_USUARIOS,
-                    MENU_ACCION_COMBATES,
-                    MENU_ACCION_CLASIFICACION
-        ));
-    }
 }

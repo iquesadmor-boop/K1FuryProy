@@ -52,6 +52,30 @@ public class dbK1Fury {
         return registrosAfectados;
     }
 
+    public static long ejecutarInsertSQL(String sql, Object[] params) {
+        int registrosAfectados = -1;
+        try {
+            if(conexion!=null && !conexion.isClosed()) {
+                PreparedStatement pst = conexion.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+
+                establecerParametros(pst, params);
+                registrosAfectados = pst.executeUpdate();
+                if (registrosAfectados > 0) {
+                    ResultSet rs = pst.getGeneratedKeys();
+                    rs.next();
+                    Long id = rs.getLong(1);
+                    rs.close();
+                    pst.close();
+                    return id;
+                }
+                pst.close();
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return 0L;
+    }
+
     private static Object[][] convertirResultSets(ResultSet rs) throws SQLException {
         if (rs == null) {
             return null;
