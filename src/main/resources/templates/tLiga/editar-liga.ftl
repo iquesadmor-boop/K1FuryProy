@@ -5,13 +5,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar Liga</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="/CSS/k1Fury.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../k1Fury.css">
 </head>
 <body>
     <div class="contenedor">
         <header>
             <div class="headerTop">
-                <img src="ImgsLogo/LogoFuryK1.png">
+                <img src="/img/LogoFuryK1.png">
             </div>
 
             <div class="headerTitle">
