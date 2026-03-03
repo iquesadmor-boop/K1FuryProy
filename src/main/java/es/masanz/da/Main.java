@@ -1,5 +1,6 @@
 package es.masanz.da;
 
+import es.masanz.da.controller.LigaController;
 import es.masanz.da.controller.MainController;
 import es.masanz.da.controller.NavigationController;
 import es.masanz.da.controller.UserController;
@@ -48,7 +49,8 @@ public class Main {
 
         app.get("/tLiga/gestion-liga", NavigationController::mostrarGestionLiga);
         app.get("/tLiga/listado-ligas", NavigationController::mostrarListadoLiga);
-        app.get("/tLiga/nueva-liga", NavigationController::mostrarNuevaLiga);
+        app.get("/tLiga/nueva-liga", LigaController::mostrarNuevaLiga);
+        app.post("/tLiga/nueva-liga", LigaController::procesarNuevaLiga);
         app.get("/tLiga/editar-liga", NavigationController::mostrarEditarLiga);
         app.get("/tLiga/eliminar-liga", NavigationController::mostrarEliminarLiga);
 
