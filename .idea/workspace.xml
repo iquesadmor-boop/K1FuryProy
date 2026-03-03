@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d15c5fa8-9bf2-482f-930a-a6c660ce7bb7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/masanz/da/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/masanz/da/dao/UserDao.java" afterDir="false" />
+    <list default="true" id="47d82a8c-7d5e-4a29-bbc6-9860c514f164" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/log/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/app.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/masanz/da/controller/NavigationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/masanz/da/controller/NavigationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tCombates/combates.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/tCombates/combates.ftl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,30 +19,29 @@
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 1
+  &quot;associatedIndex&quot;: 8
 }</component>
-  <component name="ProjectId" id="3AQWtMUGrCy1ZnYpMtNHzepFpUy" />
+  <component name="ProjectId" id="3AFcoTNFtVvAPbqCcMEZYHOnsw5" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;
   }
 }</component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d15c5fa8-9bf2-482f-930a-a6c660ce7bb7" name="Changes" comment="" />
-      <created>1772525488186</created>
+      <changelist id="47d82a8c-7d5e-4a29-bbc6-9860c514f164" name="Changes" comment="" />
+      <created>1772191934536</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1772525488186</updated>
+      <updated>1772191934536</updated>
     </task>
     <servers />
   </component>

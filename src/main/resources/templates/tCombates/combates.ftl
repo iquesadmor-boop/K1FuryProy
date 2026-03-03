@@ -20,9 +20,9 @@
         </header>
         <main class="mainMenu">
             <div>
-            <button class="button"><a href="/tCombates/proximos-combates">Proximos Combates</a></button>
-            <button class="button"><a href="/tCombates/combates-anteriores">Combates Anteriores</a></button>
-            <button class="button"><a href="/tCombates/anotar-resultado">Anotar Resultados</a></button>
+            <button class="button"><a href="./proximos-combates">Proximos Combates</a></button>
+            <button class="button"><a href="./combates-anteriores">Combates Anteriores</a></button>
+            <button class="button"><a href="./anotar-resultado">Anotar Resultados</a></button>
             </div>
         </main>
         <footer>
