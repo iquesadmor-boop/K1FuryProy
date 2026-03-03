@@ -47,4 +47,24 @@ public class NavigationController {
         Map<String, Object> model = new HashMap<>();
         context.render("templates/tCombates/anotar-resultados.ftl", model);
     }
+
+    public static void mostrarClasificaciones(@NotNull Context context) {
+        Map<String, Object> model = new HashMap<>();
+        context.render("templates/tClasificacion/clasificacion.ftl", model);
+    }
+
+    public static void mostrarClasif72KG(@NotNull Context context) {
+        Map<String, Object> model = new HashMap<>();
+        context.render("templates/tClasificacion/clasif72kg.ftl", model);
+    }
+
+    public static void mostrarClasif76KG(@NotNull Context context) {
+        Map<String, Object> model = new HashMap<>();
+        context.render("templates/tClasificacion/clasif76kg.ftl", model);
+    }
+
+    public static void mostrarClasif80KG(@NotNull Context context) {
+        Map<String, Object> model = new HashMap<>();
+        context.render("templates/tClasificacion/clasif80kg.ftl", model);
+    }
 }
