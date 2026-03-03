@@ -57,6 +57,11 @@ public class Main {
         app.get("/tCombates/proximos-combates", NavigationController::mostrarProximosCombates);
         app.get("/tCombates/anotar-resultado", NavigationController::mostrarAnotarResultados);
 
+        app.get("/tClasificacion/clasificacion", NavigationController::mostrarClasificaciones);
+        app.get("/tClasificacion/mostrarClasif72kg", NavigationController::mostrarClasif72KG);
+        app.get("/tClasificacion/mostrarClasif76kg", NavigationController::mostrarClasif76KG);
+        app.get("/tClasificacion/mostrarClasif80kg", NavigationController::mostrarClasif80KG);
+
 //        app.get("/adm/menu", AdmController::mostrarMenuAdm);
 //        app.post("/adm/menu", AdmController::gestionarMenuAdm);
 //
