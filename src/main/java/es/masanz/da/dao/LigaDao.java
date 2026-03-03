@@ -13,13 +13,12 @@ public class LigaDao {
     private static Logger logger = LogManager.getLogger();
 
     public static boolean crearLiga(String peso, String fechaInicio) {
-        String sql = "insert " +
-                "values ();";
+        String sql = "insert into k1furydb.liga (peso,fecha_inicio)" +
+                "values (?,?);";
 
         Object[] params = {peso, fechaInicio};
 
         long resultado = dbK1Fury.ejecutarInsertSQL(sql, params);
-        // Nos da el id de la liga creada;
 
         if (resultado > 0){
             return true;
