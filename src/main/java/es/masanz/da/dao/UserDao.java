@@ -40,4 +40,14 @@ public class UserDao {
         return false;
     }
 
+    public static long insertarUsuario(String nombre, String pwd, String apellido, int rol) {
+        String sql = "INSERT INTO k1furydb.usuario (nombre,contraseña, apellido, rol) " +
+                "VALUES (?, ?, ?, ?);";
+
+        Object[] params = {nombre, pwd, apellido, rol};
+
+        return dbK1Fury.ejecutarInsertSQL(sql, params);
+
+    }
+
 }
