@@ -36,4 +36,19 @@ public class NavigationController {
         Map<String, Object> model = new HashMap<>();
         context.render("templates/tCombates/combates.ftl", model);
     }
+
+    public static void mostrarCombatesAnteriores(@NotNull Context context){
+        Map<String, Object> model = new HashMap<>();
+        context.render("templates/tCombates/combates.ftl", model);
+    }
+
+    public static void mostrarProximosCombates(@NotNull Context context){
+        Map<String, Object> model = new HashMap<>();
+        context.render("templates/tCombates/combates.ftl", model);
+    }
+
+    public static void mostrarAnotarResultados(@NotNull Context context){
+        Map<String, Object> model = new HashMap<>();
+        context.render("templates/tCombates/combates.ftl", model);
+    }
 }
