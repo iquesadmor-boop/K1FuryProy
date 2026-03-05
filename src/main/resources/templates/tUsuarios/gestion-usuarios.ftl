@@ -18,16 +18,13 @@
                 <h4>GESTION USUARIOS</h4>
             </div>
         </header>
-<<<<<<< HEAD
 
-=======
->>>>>>> 0e851a138bba5fcd8e73827a642e873b059f8309
         <main class="mainMenu">
             <div>
-            <button class="button"><a href="listado-usuarios.html">Listado</a></button>
-            <button class="button"><a href="nuevo-usuario.html">Nueva Usuarios</a></button>
-            <button class="button"><a href="editar-usuario.ftl">Editar Usuarios</a></button>
-            <button class="button"><a href="eliminar-usuario.ftl">Eliminar Usuarios</a></button>
+            <button class="button"><a href="./listado-usuarios">Listado</a></button>
+            <button class="button"><a href="./nuevo-usuario">Nueva Usuarios</a></button>
+            <button class="button"><a href="./editar-usuario">Editar Usuarios</a></button>
+            <button class="button"><a href="./eliminar-usuario">Eliminar Usuarios</a></button>
             </div>
         </main>
         
