@@ -17,11 +17,11 @@ public class LigaDao {
 
     private static Logger logger = LogManager.getLogger();
 
-    public static boolean crearLiga(int peso, LocalDate fechaInicio) {
-        String sql = "insert into k1furydb.liga (peso,fecha_inicio)" +
-                "values (?,?);";
+    public static boolean crearLiga(String nombre, int peso, String fechaInicio) {
+        String sql = "INSERT into k1furydb.liga (nombre,peso,fecha_inicio)" +
+                "VALUES (?,?,?);";
 
-        Object[] params = {peso, fechaInicio};
+        Object[] params = {nombre, peso, fechaInicio};
 
         long resultado = DbK1Fury.ejecutarInsertSQL(sql, params);
 
