@@ -17,13 +17,13 @@ public class LigaController {
         context.render("templates/tLiga/nueva-liga.ftl", model);
     }
 
-    public static void procesarNuevaLiga (Context context){
-        logger.info("Creando Nueva Liga");
-
-        String nombre = context.formParam("nombre");
-        int peso = context;
-        Map<Integer,> =
-
-
-    }
+//    public static void procesarNuevaLiga (Context context){
+//        logger.info("Creando Nueva Liga");
+//
+//        String nombre = context.formParam("nombre");
+//        int peso = context;
+//        Map<Integer,> =
+//
+//
+//    }
 }
