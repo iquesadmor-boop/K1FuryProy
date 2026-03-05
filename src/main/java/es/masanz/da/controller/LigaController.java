@@ -30,7 +30,7 @@ public class LigaController {
 
 
         LigaDao.crearLiga(nombre,peso,fecha_inicio);
-        context.redirect("templates/menu.ftl");
+        context.redirect("/menu");
 //        Map<String,Object> model= new HashMap<>();
 //        model.put("nombre", nombre);
 //        model.put("peso", peso);
