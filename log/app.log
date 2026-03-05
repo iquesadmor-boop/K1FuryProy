@@ -356,3 +356,8 @@
 [2026-03-05 13:12:08] [INFO ] [UserDao: 32] Atenticación realizada con exito
 [2026-03-05 13:12:08] [INFO ] [UserController: 18] Ha ido mal
 [2026-03-05 13:35:00] [INFO ] [Main: 28] ARRANCANDO APLICACION MODO WEB
+[2026-03-05 13:35:22] [INFO ] [Main: 28] ARRANCANDO APLICACION MODO WEB
+[2026-03-05 13:35:26] [INFO ] [MainController: 17] iniciar
+[2026-03-05 13:35:35] [INFO ] [UserController: 16] Logeando con las credenciales User: admin Password admin
+[2026-03-05 13:35:36] [INFO ] [UserDao: 32] Atenticación realizada con exito
+[2026-03-05 13:35:36] [INFO ] [UserController: 18] Ha ido mal
