@@ -22,4 +22,5 @@ public class MainController {
         model.put("error", false);
         context.render("templates/index.ftl", model);
     }
+
 }

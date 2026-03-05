@@ -1,13 +1,13 @@
 package es.masanz.da.dao;
 
-import es.masanz.da.db.dbK1Fury;
+import es.masanz.da.db.DbK1Fury;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class UserDao {
 
     static {
-        dbK1Fury.conectar("k1furydb", "proyfuryk1", "password");
+        DbK1Fury.conectar("k1furydb", "proyfuryk1", "password");
     }
 
     private static Logger logger = LogManager.getLogger();
@@ -21,7 +21,7 @@ public class UserDao {
 
         Object[] params = {nombre, pwd};
 
-        Object[][] resultado = dbK1Fury.ejecutarSelectSQL(sql, params);
+        Object[][] resultado = DbK1Fury.ejecutarSelectSQL(sql, params);
 
             if (resultado != null && resultado.length == 1) {
             for (int i = 0; i < resultado.length; i++) {
@@ -46,7 +46,7 @@ public class UserDao {
 
         Object[] params = {nombre, pwd, apellido, rol, peso};
 
-        long res = dbK1Fury.ejecutarInsertSQL(sql, params);
+        long res = DbK1Fury.ejecutarInsertSQL(sql, params);
 
         if (res > 0){
             return true;
