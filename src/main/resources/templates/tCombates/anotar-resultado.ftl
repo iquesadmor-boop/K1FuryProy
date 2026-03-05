@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anotar Resultados</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="../k1Fury.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/k1Fury.css">
 </head>
 <body>
     <div class="contenedor">

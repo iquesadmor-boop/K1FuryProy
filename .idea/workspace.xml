@@ -55,7 +55,7 @@
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="es.masanz.da.Main" />
-      <module name="K1FuryProy" />
+      <module name="torneo" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="es.masanz.da.*" />
