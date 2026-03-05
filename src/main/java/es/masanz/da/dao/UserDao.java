@@ -53,11 +53,80 @@ public class UserDao {
         } else {return false;}
     }
 
-    public static boolean actualizarUsuarioNombre(String nombre) {
-        String sql = "UPDATE k1furydb.usuario (nombre) " +
-                "SET (?);";
+    public static boolean actualizarUsuarioNombre(String nombre, int id) {
+        String sql = "UPDATE k1furydb.usuario " +
+                "SET nombre = ? " +
+                "WHERE id = ?";
 
-        Object[] params = {nombre};
+        Object[] params = {nombre, id};
+
+        long res = dbK1Fury.ejecutarUpdateSQL(sql, params);
+
+        if (res > 0){
+            return true;
+        } else {return false;}
+    }
+
+    public static boolean actualizarUsuarioApellido(String apellido, int id) {
+        String sql = "UPDATE k1furydb.usuario " +
+                "SET apellido = ? " +
+                "WHERE id = ?";
+
+        Object[] params = {apellido, id};
+
+        long res = dbK1Fury.ejecutarUpdateSQL(sql, params);
+
+        if (res > 0){
+            return true;
+        } else {return false;}
+    }
+
+    public static boolean actualizarUsuarioPwd(String contraseña, int id) {
+        String sql = "UPDATE k1furydb.usuario " +
+                "SET contraseña = ? " +
+                "WHERE id = ?";
+
+        Object[] params = {contraseña, id};
+
+        long res = dbK1Fury.ejecutarUpdateSQL(sql, params);
+
+        if (res > 0){
+            return true;
+        } else {return false;}
+    }
+
+    public static boolean actualizarUsuarioRol(int rol, int id) {
+        String sql = "UPDATE k1furydb.usuario " +
+                "SET rol = ? " +
+                "WHERE id = ?";
+
+        Object[] params = {rol, id};
+
+        long res = dbK1Fury.ejecutarUpdateSQL(sql, params);
+
+        if (res > 0){
+            return true;
+        } else {return false;}
+    }
+
+    public static boolean actualizarUsuarioPeso(int peso, int id) {
+        String sql = "UPDATE k1furydb.usuario " +
+                "SET peso = ? " +
+                "WHERE id = ?";
+
+        Object[] params = {peso, id};
+
+        long res = dbK1Fury.ejecutarUpdateSQL(sql, params);
+
+        if (res > 0){
+            return true;
+        } else {return false;}
+    }
+
+    public static boolean eliminarUsuario(int id) {
+        String sql = "DELETE FROM k1furydb.usuario WHERE id = ?";
+
+        Object[] params = {id};
 
         long res = dbK1Fury.ejecutarUpdateSQL(sql, params);
 
@@ -67,9 +136,7 @@ public class UserDao {
     }
 
     public static void main(String[] args) {
-        insertarUsuario("Ivan", "1234", "Casas", 2, 70);
+        System.out.println(eliminarUsuario(44));
     }
-
-
 
 }

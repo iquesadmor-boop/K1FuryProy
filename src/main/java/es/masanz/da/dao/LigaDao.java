@@ -4,6 +4,9 @@ import es.masanz.da.db.dbK1Fury;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.sql.Date;
+import java.time.LocalDate;
+
 public class LigaDao {
 
     static {
@@ -12,7 +15,7 @@ public class LigaDao {
 
     private static Logger logger = LogManager.getLogger();
 
-    public static boolean crearLiga(int peso, String fechaInicio) {
+    public static boolean crearLiga(int peso, LocalDate fechaInicio) {
         String sql = "insert into k1furydb.liga (peso,fecha_inicio)" +
                 "values (?,?);";
 
@@ -24,4 +27,6 @@ public class LigaDao {
             return true;
         } else {return false;}
     }
+
+
 }
