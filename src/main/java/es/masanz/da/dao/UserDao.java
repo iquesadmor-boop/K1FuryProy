@@ -60,7 +60,7 @@ public class UserDao {
 
         Object[] params = {nombre, id};
 
-        long res = dbK1Fury.ejecutarUpdateSQL(sql, params);
+        long res = DbK1Fury.ejecutarUpdateSQL(sql, params);
 
         if (res > 0){
             return true;
@@ -74,7 +74,7 @@ public class UserDao {
 
         Object[] params = {apellido, id};
 
-        long res = dbK1Fury.ejecutarUpdateSQL(sql, params);
+        long res = DbK1Fury.ejecutarUpdateSQL(sql, params);
 
         if (res > 0){
             return true;
@@ -88,7 +88,7 @@ public class UserDao {
 
         Object[] params = {contraseña, id};
 
-        long res = dbK1Fury.ejecutarUpdateSQL(sql, params);
+        long res = DbK1Fury.ejecutarUpdateSQL(sql, params);
 
         if (res > 0){
             return true;
@@ -102,7 +102,7 @@ public class UserDao {
 
         Object[] params = {rol, id};
 
-        long res = dbK1Fury.ejecutarUpdateSQL(sql, params);
+        long res = DbK1Fury.ejecutarUpdateSQL(sql, params);
 
         if (res > 0){
             return true;
@@ -116,7 +116,7 @@ public class UserDao {
 
         Object[] params = {peso, id};
 
-        long res = dbK1Fury.ejecutarUpdateSQL(sql, params);
+        long res = DbK1Fury.ejecutarUpdateSQL(sql, params);
 
         if (res > 0){
             return true;
@@ -128,7 +128,7 @@ public class UserDao {
 
         Object[] params = {id};
 
-        long res = dbK1Fury.ejecutarUpdateSQL(sql, params);
+        long res = DbK1Fury.ejecutarUpdateSQL(sql, params);
 
         if (res > 0){
             return true;

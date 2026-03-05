@@ -41,13 +41,17 @@ public class LigaDao {
                 Usuario u = new Usuario();
                 int id = Integer.parseInt(resultado[i][0].toString());
                 u.setId(id);
-                // TODO: rellenar campos usuario consulta
-
+                String nombre = (String) resultado[i][1];
+                u.setNombre(nombre);
+                String apellido = (String) resultado[i][2];
+                u.setApellido(apellido);
+                u.setPeso(peso);
                 lista.add(u);
             }
         }
         return lista;
     }
+<<<<<<< HEAD
 
     public static boolean updateLigaFecha_fin(int id, String fecha){
         String sql = "update k1furydb.liga " +
@@ -105,4 +109,6 @@ public class LigaDao {
     }
 
 
+=======
+>>>>>>> 798666b50a12073a833b923303142f77e0a3ba6e
 }

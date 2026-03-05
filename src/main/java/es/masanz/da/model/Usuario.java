@@ -72,9 +72,20 @@ public class Usuario {
         this.peso = peso;
     }
 
-
-
     // endregion
+
+
+    @Override
+    public String toString() {
+        return "Usuario{" +
+                "id=" + id +
+                ", nombre='" + nombre + '\'' +
+                ", apellido='" + apellido + '\'' +
+                ", password='" + password + '\'' +
+                ", rol=" + rol +
+                ", peso=" + peso +
+                '}';
+    }
 
     public String toXml() {
         StringBuilder sb = new StringBuilder();
