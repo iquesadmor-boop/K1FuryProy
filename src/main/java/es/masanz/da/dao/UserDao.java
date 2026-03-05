@@ -40,11 +40,11 @@ public class UserDao {
         return false;
     }
 
-    public static boolean insertarUsuario(String nombre, String pwd, String apellido, int rol) {
-        String sql = "INSERT INTO k1furydb.usuario (nombre,contraseña, apellido, rol) " +
-                "VALUES (?, ?, ?, ?);";
+    public static boolean insertarUsuario(String nombre, String pwd, String apellido, int rol, int peso) {
+        String sql = "INSERT INTO k1furydb.usuario (nombre,contraseña, apellido, rol, peso) " +
+                "VALUES (?, ?, ?, ?, ?);";
 
-        Object[] params = {nombre, pwd, apellido, rol};
+        Object[] params = {nombre, pwd, apellido, rol, peso};
 
         long res = dbK1Fury.ejecutarInsertSQL(sql, params);
 
@@ -53,9 +53,23 @@ public class UserDao {
         } else {return false;}
     }
 
-    public static void main(String[] args) {
-        insertarUsuario("Ivan", "1234", "Casas", 2);
+    public static boolean actualizarUsuarioNombre(String nombre) {
+        String sql = "UPDATE k1furydb.usuario (nombre) " +
+                "SET (?);";
+
+        Object[] params = {nombre};
+
+        long res = dbK1Fury.ejecutarUpdateSQL(sql, params);
+
+        if (res > 0){
+            return true;
+        } else {return false;}
     }
+
+    public static void main(String[] args) {
+        insertarUsuario("Ivan", "1234", "Casas", 2, 70);
+    }
+
 
 
 }
