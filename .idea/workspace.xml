@@ -6,7 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="47d82a8c-7d5e-4a29-bbc6-9860c514f164" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/app.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/masanz/da/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/masanz/da/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/masanz/da/controller/LigaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/masanz/da/controller/LigaController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/es/masanz/da/dao/LigaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/masanz/da/dao/LigaDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/masanz/da/service/LigaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/masanz/da/service/LigaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tLiga/nueva-liga.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/tLiga/nueva-liga.ftl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,13 +47,26 @@
       <recent name="C:\Users\msalinaber\DAW1\K1FuryProy\src\main\resources\templates\tClasificacion" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LigaDao">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="LigaDao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="es.masanz.da.dao.LigaDao" />
       <module name="K1FuryProy" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="es.masanz.da.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="es.masanz.da.Main" />
+      <module name="K1FuryProy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="es.masanz.da.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -71,6 +89,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.LigaDao" />
         <item itemvalue="Application.UserDao" />
       </list>
