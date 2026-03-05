@@ -1,12 +1,20 @@
 package es.masanz.da.controller;
 
+import es.masanz.da.model.Usuario;
+import es.masanz.da.service.LigaService;
 import io.javalin.http.Context;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class NavigationController {
+
+    public static void mostrarMenu(@NotNull Context context) {
+        context.render("templates/menu.ftl");
+    }
+
     public static void mostrarGestionLiga(@NotNull Context context){
         Map<String, Object> model = new HashMap<>();
         context.render("templates/tLiga/gestion-liga.ftl", model);
@@ -53,18 +61,34 @@ public class NavigationController {
         context.render("templates/tClasificacion/clasificacion.ftl", model);
     }
 
-    public static void mostrarClasif72KG(@NotNull Context context) {
+    public static void mostrarClasificacion(@NotNull Context context) {
+        int peso = 0;
+        try {
+            peso = Integer.parseInt(context.pathParam("peso"));
+        } catch (Exception e) {
+            System.out.println(e);
+            context.redirect("/");
+        }
+        List<Usuario> peleadores = LigaService.getPeleadores(peso);
         Map<String, Object> model = new HashMap<>();
-        context.render("templates/tClasificacion/clasif72kg.ftl", model);
+        model.put("peso",peso);
+        model.put("peleadores",peleadores);
+        context.render("templates/tClasificacion/clasif-peso.ftl", model);
     }
 
-    public static void mostrarClasif76KG(@NotNull Context context) {
-        Map<String, Object> model = new HashMap<>();
-        context.render("templates/tClasificacion/clasif76kg.ftl", model);
-    }
-
-    public static void mostrarClasif80KG(@NotNull Context context) {
-        Map<String, Object> model = new HashMap<>();
-        context.render("templates/tClasificacion/clasif80kg.ftl", model);
-    }
+//
+//    public static void mostrarClasif72KG(@NotNull Context context) {
+//        Map<String, Object> model = new HashMap<>();
+//        context.render("templates/tClasificacion/clasif72kg.ftl", model);
+//    }
+//
+//    public static void mostrarClasif76KG(@NotNull Context context) {
+//        Map<String, Object> model = new HashMap<>();
+//        context.render("templates/tClasificacion/clasif76kg.ftl", model);
+//    }
+//
+//    public static void mostrarClasif80KG(@NotNull Context context) {
+//        Map<String, Object> model = new HashMap<>();
+//        context.render("templates/tClasificacion/clasif80kg.ftl", model);
+//    }
 }

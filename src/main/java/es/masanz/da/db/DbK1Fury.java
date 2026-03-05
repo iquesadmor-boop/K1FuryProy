@@ -4,7 +4,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class dbK1Fury {
+public class DbK1Fury {
     private static Connection conexion;
 
     public static boolean conectar(String bd, String usuario, String contrasena){
