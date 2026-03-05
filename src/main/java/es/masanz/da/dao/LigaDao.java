@@ -29,4 +29,23 @@ public class LigaDao {
     }
 
 
+    public static boolean updateLigaFecha_fin(int id, LocalDate fecha){
+        String sql = "update k1furydb.liga " +
+                "set fecha_fin = ? " +
+                "where id = ?;";
+
+        Object[] params = {id, fecha};
+
+        long resultado = dbK1Fury.ejecutarUpdateSQL(sql, params);
+
+        if (resultado > 0){
+            return true;
+        } else {return false;}
+    }
+
+    public static void main(String[] args) {
+        System.out.println(updateLigaFecha_fin(1, LocalDate.now()));
+    }
+
+
 }

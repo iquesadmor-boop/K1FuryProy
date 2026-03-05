@@ -21,7 +21,7 @@ public class LigaController {
 //        logger.info("Creando Nueva Liga");
 //
 //        String nombre = context.formParam("nombre");
-//        int peso = context;
+//        int peso = context.formParam("");
 //        Map<Integer,> =
 //
 //
