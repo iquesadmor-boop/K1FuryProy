@@ -17,9 +17,9 @@ public class LigaDao {
 
     private static Logger logger = LogManager.getLogger();
 
-    public static boolean crearLiga(int peso, String fechaInicio) {
-        String sql = "insert into k1furydb.liga (peso,fecha_inicio)" +
-                "values (?,?);";
+    public static boolean crearLiga(int peso, LocalDate fechaInicio) {
+        String sql = "INSERT into k1furydb.liga (peso,fecha_inicio)" +
+                "VALUES (?,?);";
 
         Object[] params = {peso, fechaInicio};
 
@@ -51,68 +51,4 @@ public class LigaDao {
         }
         return lista;
     }
-
-
-    public static boolean updateLigaFecha_fin(int id, String fecha){
-        String sql = "update k1furydb.liga " +
-                "set fecha_fin = ? " +
-                "where id = ?;";
-
-        Object[] params = {fecha, id};
-
-        long resultado = DbK1Fury.ejecutarUpdateSQL(sql, params);
-
-        if (resultado > 0){
-            return true;
-        } else {return false;}
-    }
-
-
-    public static boolean updateCampeon(int id, int campeon){
-        String sql = "update k1furydb.liga " +
-                "set campeon = ? " +
-                "where id = ?;";
-
-        Object[] params = {campeon, id};
-
-        long resultado = DbK1Fury.ejecutarUpdateSQL(sql, params);
-
-        if (resultado > 0){
-            return true;
-        } else {return false;}
-    }
-
-    public static boolean terminarLiga(int id){
-        String sql = "update k1furydb.liga " +
-                "set activa = false " +
-                "where id = ?;";
-
-        Object[] params = {id};
-
-        long resultado = DbK1Fury.ejecutarUpdateSQL(sql, params);
-
-        if (resultado > 0){
-            return true;
-        } else {return false;}
-    }
-
-    public static boolean eliminarLiga(int id){
-        String sql = "DELETE FROM k1furydb.liga WHERE id = ?;";
-
-        Object[] params = {id};
-
-        long resultado = DbK1Fury.ejecutarUpdateSQL(sql, params);
-
-        if (resultado > 0){
-            return true;
-        } else {return false;}
-    }
-
-//    public static void main(String[] args) {
-//        LigaDao.eliminarLiga(6);
-//        LigaDao.updateLigaFecha_fin(5,"2020-03-21");
-//        LigaDao.updateCampeon(2,6);
-//        LigaDao.terminarLiga(3);
-//    }
-
 }
