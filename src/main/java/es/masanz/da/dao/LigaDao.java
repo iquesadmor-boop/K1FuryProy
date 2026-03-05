@@ -29,23 +29,7 @@ public class LigaDao {
     }
 
 
-    public static boolean updateLigaFecha_fin(int id, String fecha){
-        String sql = "update k1furydb.liga " +
-                "set fecha_fin = ? " +
-                "where id = ?;";
 
-        Object[] params = {fecha, id};
-
-        long resultado = dbK1Fury.ejecutarUpdateSQL(sql, params);
-
-        if (resultado > 0){
-            return true;
-        } else {return false;}
-    }
-
-    public static void main(String[] args) {
-        System.out.println(updateLigaFecha_fin(1, "2002-02-11"));
-    }
 
 
 }
