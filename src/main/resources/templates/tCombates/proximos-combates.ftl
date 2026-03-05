@@ -10,7 +10,6 @@
 <body>
     <div class="contenedor">
         <header>
-            <header>
             <div class="headerTop">
                 <img src="/img/LogoFuryK1.png">
             </div>
@@ -20,7 +19,7 @@
             </div>
         </header>
         <main>
-            <div class="main">
+            <div class="mainList">
                 <div class="combate_box">
                     <h2>LIGA 70KG</h2>
                     <div class="peleador_box">

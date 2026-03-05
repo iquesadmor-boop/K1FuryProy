@@ -1,14 +1,13 @@
 package es.masanz.da.dao;
 
-import es.masanz.da.db.dbK1Fury;
-import es.masanz.da.model.Usuario;
+import es.masanz.da.db.DbK1Fury;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class UserDao {
 
     static {
-        dbK1Fury.conectar("k1furydb", "proyfuryk1", "password");
+        DbK1Fury.conectar("k1furydb", "proyfuryk1", "password");
     }
 
     private static Logger logger = LogManager.getLogger();
@@ -22,7 +21,7 @@ public class UserDao {
 
         Object[] params = {nombre, pwd};
 
-        Object[][] resultado = dbK1Fury.ejecutarSelectSQL(sql, params);
+        Object[][] resultado = DbK1Fury.ejecutarSelectSQL(sql, params);
 
             if (resultado != null && resultado.length == 1) {
             for (int i = 0; i < resultado.length; i++) {
@@ -47,7 +46,7 @@ public class UserDao {
 
         Object[] params = {nombre, pwd, apellido, rol, peso};
 
-        long res = dbK1Fury.ejecutarInsertSQL(sql, params);
+        long res = DbK1Fury.ejecutarInsertSQL(sql, params);
 
         if (res > 0){
             return true;
@@ -61,7 +60,7 @@ public class UserDao {
 
         Object[] params = {nombre, id};
 
-        long res = dbK1Fury.ejecutarUpdateSQL(sql, params);
+        long res = DbK1Fury.ejecutarUpdateSQL(sql, params);
 
         if (res > 0){
             return true;
@@ -75,7 +74,7 @@ public class UserDao {
 
         Object[] params = {apellido, id};
 
-        long res = dbK1Fury.ejecutarUpdateSQL(sql, params);
+        long res = DbK1Fury.ejecutarUpdateSQL(sql, params);
 
         if (res > 0){
             return true;
@@ -89,7 +88,7 @@ public class UserDao {
 
         Object[] params = {contraseña, id};
 
-        long res = dbK1Fury.ejecutarUpdateSQL(sql, params);
+        long res = DbK1Fury.ejecutarUpdateSQL(sql, params);
 
         if (res > 0){
             return true;
@@ -103,7 +102,7 @@ public class UserDao {
 
         Object[] params = {rol, id};
 
-        long res = dbK1Fury.ejecutarUpdateSQL(sql, params);
+        long res = DbK1Fury.ejecutarUpdateSQL(sql, params);
 
         if (res > 0){
             return true;
@@ -117,7 +116,7 @@ public class UserDao {
 
         Object[] params = {peso, id};
 
-        long res = dbK1Fury.ejecutarUpdateSQL(sql, params);
+        long res = DbK1Fury.ejecutarUpdateSQL(sql, params);
 
         if (res > 0){
             return true;
@@ -129,36 +128,12 @@ public class UserDao {
 
         Object[] params = {id};
 
-        long res = dbK1Fury.ejecutarUpdateSQL(sql, params);
+        long res = DbK1Fury.ejecutarUpdateSQL(sql, params);
 
         if (res > 0){
             return true;
         } else {return false;}
     }
-
-
-    public static Usuario getUsuario(int id){
-        String sql = "SELECT id, nombre, apellido, contraseña, rol, peso FROM usuario WHERE id = ?";
-
-        Object[] params = {id};
-
-        Object[][] resultados = dbK1Fury.ejecutarSelectSQL(sql, params);
-
-        if (resultados[0][0] == null) {
-            return null;}
-        else {
-            Usuario usuario = new Usuario();
-            usuario.setId((Integer) resultados[0][0]);
-            usuario.setNombre((String) resultados[0][1]);
-            usuario.setApellido((String) resultados[0][2]);
-            usuario.setPassword((String) resultados[0][3]);
-            usuario.setRol((Integer) resultados[0][4]);
-            usuario.setPeso((Integer) resultados[0][5]);
-            return usuario;
-        }
-    }
-
-
 
     public static void main(String[] args) {
         System.out.println(eliminarUsuario(44));

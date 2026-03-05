@@ -47,6 +47,16 @@ public class Main {
 
         app.post("/autenticar", UserController::autenticar);
 
+
+        app.get("/menu", NavigationController::mostrarMenu);
+
+        app.get("/clasificacion/{peso}", NavigationController::mostrarClasificacion);
+        app.get("/clasificacion", NavigationController::mostrarClasificaciones);
+//        app.get("/clasif72kg", NavigationController::mostrarClasif72KG);
+//        app.get("/clasif76kg", NavigationController::mostrarClasif76KG);
+//        app.get("/clasif80kg", NavigationController::mostrarClasif80KG);
+
+
         app.get("/tLiga/gestion-liga", NavigationController::mostrarGestionLiga);
         app.get("/tLiga/listado-ligas", NavigationController::mostrarListadoLiga);
         app.get("/tLiga/nueva-liga", LigaController::mostrarNuevaLiga);
@@ -59,10 +69,11 @@ public class Main {
         app.get("/tCombates/proximos-combates", NavigationController::mostrarProximosCombates);
         app.get("/tCombates/anotar-resultado", NavigationController::mostrarAnotarResultados);
 
-        app.get("/tClasificacion/clasificacion", NavigationController::mostrarClasificaciones);
-        app.get("/tClasificacion/clasif72kg", NavigationController::mostrarClasif72KG);
-        app.get("/tClasificacion/clasif76kg", NavigationController::mostrarClasif76KG);
-        app.get("/tClasificacion/clasif80kg", NavigationController::mostrarClasif80KG);
+        app.get("/clasificacion", NavigationController::mostrarClasificaciones);
+        app.get("/clasificacion/{peso}", NavigationController::mostrarClasificacion);
+//        app.get("/clasif72kg", NavigationController::mostrarClasif72KG);
+//        app.get("/clasif76kg", NavigationController::mostrarClasif76KG);
+//        app.get("/clasif80kg", NavigationController::mostrarClasif80KG);
 
 //        app.get("/adm/menu", AdmController::mostrarMenuAdm);
 //        app.post("/adm/menu", AdmController::gestionarMenuAdm);

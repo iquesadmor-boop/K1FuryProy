@@ -7,6 +7,7 @@ import org.apache.logging.log4j.Logger;
 import org.jetbrains.annotations.NotNull;
 
 public class UserController {
+
     private static Logger logger = LogManager.getLogger();
 
     public static void autenticar(@NotNull Context context) {
@@ -15,10 +16,9 @@ public class UserController {
         logger.info("Logeando con las credenciales User: " + nombre + " Password " + pwd);
         if (UserService.autenticar(nombre, pwd)){
             logger.info("Ha ido mal");
-            context.render("/templates/menu.ftl");
+            context.redirect("/menu");
         } else {
-            logger.info("Ha ido bien");
-            context.render("/templates/index.ftl");
+            context.render("/login");
         }
 
     }
