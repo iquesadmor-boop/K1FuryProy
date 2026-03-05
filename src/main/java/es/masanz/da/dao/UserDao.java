@@ -53,5 +53,9 @@ public class UserDao {
         } else {return false;}
     }
 
+    public static void main(String[] args) {
+        insertarUsuario("Ivan", "1234", "Casas", 2);
+    }
+
 
 }
