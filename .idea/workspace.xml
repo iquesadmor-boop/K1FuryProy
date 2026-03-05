@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47d82a8c-7d5e-4a29-bbc6-9860c514f164" name="Changes" comment="" />
+    <list default="true" id="47d82a8c-7d5e-4a29-bbc6-9860c514f164" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/app.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/masanz/da/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/masanz/da/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/menu.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/menu.ftl" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,5 +94,15 @@
       <updated>1772191934536</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalArgumentException" package="java.lang" />
+          <option name="timeStamp" value="4" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
