@@ -41,12 +41,14 @@ public class LigaDao {
                 Usuario u = new Usuario();
                 int id = Integer.parseInt(resultado[i][0].toString());
                 u.setId(id);
-                // TODO: rellenar campos usuario consulta
-
+                String nombre = (String) resultado[i][1];
+                u.setNombre(nombre);
+                String apellido = (String) resultado[i][2];
+                u.setApellido(apellido);
+                u.setPeso(peso);
                 lista.add(u);
             }
         }
         return lista;
     }
-
 }
