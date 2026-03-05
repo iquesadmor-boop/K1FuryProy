@@ -19,59 +19,65 @@
             </div>
         </header>
         <main>
-            <div class="mainList">
-                <div class="combate_box">
-                    <h2>LIGA 70KG</h2>
-                    <div class="peleador_box">
-                        <p>Jhonny Sins</p>
-                        <p>70Kg</p>
-                        <p>3-1-4 V</p>
-                    </div>
-                    <div class="vs">
-                        <p>VS</p>
-                    </div>
-                    <div class="peleador_box">
-                        <p>Jhonny Sins</p>
-                        <p>70Kg</p>
-                        <p>3-1-4</p>
-                    </div>
-                </div>
+                    <div class="mainMatch">
+                        <div class="combate_box">
+                            <h2>LIGA 70KG</h2>
+                            <div class="detalles_box">
+                                <div class="peleador_box">
+                                    <p>Jhonny Sins</p>
+                                    <p>70Kg</p>
+                                    <p>3-1-4</p>
+                                </div>
+                                <div class="vs">
+                                    <p>VS</p>
+                                </div>
+                                <div class="peleador_box">
+                                    <p>Jhonny Sins</p>
+                                    <p>70Kg</p>
+                                    <p>3-1-4</p>
+                                </div>
+                            </div>
+                        </div>
 
-                <div class="combate_box">
-                    <h2>LIGA 70KG</h2>
-                    <div class="peleador_box">
-                        <p>Jhonny Sins</p>
-                        <p>70Kg</p>
-                        <p>3-1-4</p>
-                    </div>
-                    <div class="vs">
-                        <p>VS</p>
-                    </div>
-                    <div class="peleador_box">
-                        <p>Jhonny Sins</p>
-                        <p>70Kg</p>
-                        <p>3-1-4 V</p>
-                    </div>
-                </div>
+                        <div class="combate_box">
+                            <h2>LIGA 70KG</h2>
+                            <div class="detalles_box">
+                                <div class="peleador_box">
+                                    <p>Jhonny Sins</p>
+                                    <p>70Kg</p>
+                                    <p>3-1-4</p>
+                                </div>
+                                <div class="vs">
+                                    <p>VS</p>
+                                </div>
+                                <div class="peleador_box">
+                                    <p>Jhonny Sins</p>
+                                    <p>70Kg</p>
+                                    <p>3-1-4</p>
+                                </div>
+                            </div>
+                        </div>
 
-                <div class="combate_box">
-                    <h2>LIGA 70KG</h2>
-                    <div class="peleador_box">
-                        <p>Jhonny Sins</p>
-                        <p>70Kg</p>
-                        <p>3-1-4 V</p>
+                        <div class="combate_box">
+                            <h2>LIGA 70KG</h2>
+                            <div class="detalles_box">
+                                <div class="peleador_box">
+                                    <p>Jhonny Sins</p>
+                                    <p>70Kg</p>
+                                    <p>3-1-4</p>
+                                </div>
+                                <div class="vs">
+                                    <p>VS</p>
+                                </div>
+                                <div class="peleador_box">
+                                    <p>Jhonny Sins</p>
+                                    <p>70Kg</p>
+                                    <p>3-1-4</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="vs">
-                        <p>VS</p>
-                    </div>
-                    <div class="peleador_box">
-                        <p>Jhonny Sins</p>
-                        <p>70Kg</p>
-                        <p>3-1-4</p>
-                    </div>
-                </div>
-            </div>
-        </main>
+                </main>
         <footer>
             <div class="footer">
                 <a href="menu.html"><i class="fa-solid fa-house"></i></a>
