@@ -49,4 +49,60 @@ public class LigaDao {
         return lista;
     }
 
+    public static boolean updateLigaFecha_fin(int id, String fecha){
+        String sql = "update k1furydb.liga " +
+                "set fecha_fin = ? " +
+                "where id = ?;";
+
+        Object[] params = {fecha, id};
+
+        long resultado = DbK1Fury.ejecutarUpdateSQL(sql, params);
+
+        if (resultado > 0){
+            return true;
+        } else {return false;}
+    }
+
+
+    public static boolean updateCampeon(int id, int campeon){
+        String sql = "update k1furydb.liga " +
+                "set campeon = ? " +
+                "where id = ?;";
+
+        Object[] params = {campeon, id};
+
+        long resultado = DbK1Fury.ejecutarUpdateSQL(sql, params);
+
+        if (resultado > 0){
+            return true;
+        } else {return false;}
+    }
+
+    public static boolean terminarLiga(int id){
+        String sql = "update k1furydb.liga " +
+                "set activa = false " +
+                "where id = ?;";
+
+        Object[] params = {id};
+
+        long resultado = DbK1Fury.ejecutarUpdateSQL(sql, params);
+
+        if (resultado > 0){
+            return true;
+        } else {return false;}
+    }
+
+    public static boolean eliminarLiga(int id){
+        String sql = "DELETE FROM k1furydb.liga WHERE id = ?;";
+
+        Object[] params = {id};
+
+        long resultado = DbK1Fury.ejecutarUpdateSQL(sql, params);
+
+        if (resultado > 0){
+            return true;
+        } else {return false;}
+    }
+
+
 }
