@@ -15,4 +15,6 @@ public class LigaService {
     public static List<Usuario> getPeleadores(int peso) {
         return LigaDao.getPeleadores(peso);
     }
+
+
 }
