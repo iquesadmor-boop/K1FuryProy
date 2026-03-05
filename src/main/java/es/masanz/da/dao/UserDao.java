@@ -1,6 +1,7 @@
 package es.masanz.da.dao;
 
 import es.masanz.da.db.dbK1Fury;
+import es.masanz.da.model.Usuario;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -134,6 +135,30 @@ public class UserDao {
             return true;
         } else {return false;}
     }
+
+
+    public static Usuario getUsuario(int id){
+        String sql = "SELECT id, nombre, apellido, contraseña, rol, peso FROM usuario WHERE id = ?";
+
+        Object[] params = {id};
+
+        Object[][] resultados = dbK1Fury.ejecutarSelectSQL(sql, params);
+
+        if (resultados[0][0] == null) {
+            return null;}
+        else {
+            Usuario usuario = new Usuario();
+            usuario.setId((Integer) resultados[0][0]);
+            usuario.setNombre((String) resultados[0][1]);
+            usuario.setApellido((String) resultados[0][2]);
+            usuario.setPassword((String) resultados[0][3]);
+            usuario.setRol((Integer) resultados[0][4]);
+            usuario.setPeso((Integer) resultados[0][5]);
+            return usuario;
+        }
+    }
+
+
 
     public static void main(String[] args) {
         System.out.println(eliminarUsuario(44));
