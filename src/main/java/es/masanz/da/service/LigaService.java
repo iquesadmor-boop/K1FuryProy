@@ -6,7 +6,7 @@ import java.time.LocalDate;
 
 public class LigaService {
 
-    public static boolean crearLiga(int peso, LocalDate fechaInicio){
+    public static boolean crearLiga(int peso, String fechaInicio){
         return LigaDao.crearLiga(peso,fechaInicio);
     }
 }

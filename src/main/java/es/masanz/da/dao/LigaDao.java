@@ -15,7 +15,7 @@ public class LigaDao {
 
     private static Logger logger = LogManager.getLogger();
 
-    public static boolean crearLiga(int peso, LocalDate fechaInicio) {
+    public static boolean crearLiga(int peso, String fechaInicio) {
         String sql = "insert into k1furydb.liga (peso,fecha_inicio)" +
                 "values (?,?);";
 
@@ -29,12 +29,12 @@ public class LigaDao {
     }
 
 
-    public static boolean updateLigaFecha_fin(int id, LocalDate fecha){
+    public static boolean updateLigaFecha_fin(int id, String fecha){
         String sql = "update k1furydb.liga " +
                 "set fecha_fin = ? " +
                 "where id = ?;";
 
-        Object[] params = {id, fecha};
+        Object[] params = {fecha, id};
 
         long resultado = dbK1Fury.ejecutarUpdateSQL(sql, params);
 
@@ -44,7 +44,7 @@ public class LigaDao {
     }
 
     public static void main(String[] args) {
-        System.out.println(updateLigaFecha_fin(1, LocalDate.now()));
+        System.out.println(updateLigaFecha_fin(1, "2002-02-11"));
     }
 
 
