@@ -22,6 +22,7 @@ CREATE TABLE IF NOT EXISTS k1furydb.usuario (
 
 CREATE TABLE IF NOT EXISTS k1furydb.liga (
 	id int AUTO_INCREMENT,
+	nombre varchar(30),
     peso varchar(30) DEFAULT NULL,
     fecha_inicio varchar(30) default null,
     fecha_fin  varchar(30) default null,
