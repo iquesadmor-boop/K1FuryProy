@@ -58,7 +58,7 @@ public class NavigationController {
 
     public static void mostrarAnotarResultados(@NotNull Context context){
         Map<String, Object> model = new HashMap<>();
-        context.render("templates/tCombates/anotar-resultados.ftl", model);
+        context.render("templates/tCombates/anotar-resultado.ftl", model);
     }
 
     public static void mostrarClasificaciones(@NotNull Context context) {

@@ -8,8 +8,8 @@ import java.util.List;
 
 public class LigaService {
 
-    public static boolean crearLiga(int peso, String fechaInicio){
-        return LigaDao.crearLiga(peso,fechaInicio);
+    public static boolean crearLiga(String nombre, int peso, String fechaInicio){
+        return LigaDao.crearLiga(nombre, peso,fechaInicio);
     }
 
     public static List<Usuario> getPeleadores(int peso) {

@@ -1,5 +1,6 @@
 package es.masanz.da.controller;
 
+import es.masanz.da.dao.LigaDao;
 import es.masanz.da.model.Usuario;
 import es.masanz.da.service.LigaService;
 import io.javalin.http.Context;
@@ -27,13 +28,14 @@ public class LigaController {
         int peso = Integer.parseInt(context.formParam("peso"));
         String fecha_inicio = context.formParam("nombre");
 
-        List<Usuario> peleadores = LigaService.getPeleadores(peso);
 
-        Map<String,Object> model= new HashMap<>();
-        model.put("nombre", nombre);
-        model.put("peso", peso);
-        model.put("fechaInicio", fecha_inicio);
-        model.put("peleadores", peleadores);
+        LigaDao.crearLiga(nombre,peso,fecha_inicio);
+        context.redirect("/menu");
+//        Map<String,Object> model= new HashMap<>();
+//        model.put("nombre", nombre);
+//        model.put("peso", peso);
+//        model.put("fechaInicio", fecha_inicio);
+//        model.put("peleadores", peleadores);
 
     }
 }

@@ -1,6 +1,5 @@
-
 /*AJUESTES GENERALES*/
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,7 +12,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.contenedor{
+.contenedor {
     width: 320px;
     min-height: 100vh;
     margin: 0 auto;
@@ -50,7 +49,7 @@ header{
     background-color: #0f0f14;
     text-align: center;
     padding: 8px 0;
-    border-bottom: 2px solid #ff2a2a; 
+    border-bottom: 2px solid #ff2a2a;
 }
 
 .headerTitle h4{
@@ -74,7 +73,7 @@ footer{
     border-top: 2px solid #ff2a2a;
 }
 
-.footer a{
+.footer a {
     color: #ff2a2a;
     font-size: 26px;
     text-decoration: none;
@@ -98,7 +97,7 @@ footer{
 }
 
 
-#nombre{
+#nombre {
     height: 35px;
     border-radius: 10px;
     border: none;
@@ -125,7 +124,43 @@ footer{
     transition: 0.2s ease;
 }
 
+.btn_result_anotar{
+    margin-bottom: 30px;
+    padding: 0px 10px;
+    height: 35px;
+    background-color: #291818;
+    color: white;
+    background-color: #ff2a2a;
+    border: 2px solid #ff2a2a;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+
+.boton_clasificac{
+    margin-bottom: 30px;
+    height: 40px;
+    background-color: #291818;
+    color: #ff2a2a;
+    border: 2px solid #ff2a2a;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+
 .btn:hover{
+    background-color: #ff2a2a;
+    color: white;
+}
+
+.btn_result_anotar:hover{
+    background-color: #ff2a2a;
+    color: white;
+}
+
+.boton_clasificac{
     background-color: #ff2a2a;
     color: white;
 }
@@ -134,8 +169,8 @@ footer{
 .mainMenu{
     flex: 1;                     
     display: flex;
-    justify-content: center;     
-    align-items: center;         
+    justify-content: center;
+    align-items: center;
 }
 
 .mainMenu div{
@@ -242,4 +277,60 @@ form label{
 a{
     text-decoration: none;
     color: inherit;
+}
+
+/*COMBATES*/
+.mainMatch{                   
+    display: flex;
+    flex-direction: column;
+}
+
+.detalles_box{
+    display: flex;
+    flex-direction: row;
+    align-items: space-around;
+    padding: 10px 20px;
+}
+
+.combate_box{
+    border: 2px solid #ff2a2a;
+    border-radius: 50px;
+    padding: 10px 0px;
+    margin: 0px 20px;
+    display: block;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.combate_box h2{
+    display: flex;
+    justify-content: center;
+    color: #ff2a2a;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ff2a2a;
+}
+
+.peleador_box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.peleador_box h3{
+    font-size: 18px;
+}
+
+.vs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 15px;
+    font-size: 18px;
+    color: #ff2a2a;
+}
+
+.box_anotar_resultados{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
 }
