@@ -25,6 +25,11 @@ public class NavigationController {
         context.render("templates/tLiga/listado-ligas.ftl", model);
     }
 
+    public static void mostrarGestionUsuario(@NotNull Context context) {
+        Map<String, Object> model = new HashMap<>();
+        context.render("templates/tUsuarios/gestion-usuarios.ftl", model);
+    }
+
 
     public static void mostrarEditarLiga(@NotNull Context context) {
         Map<String, Object> model = new HashMap<>();
