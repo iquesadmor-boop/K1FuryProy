@@ -19,7 +19,7 @@
             </div>
         </header>
         <main>
-            <div class="mainMenu">
+            <div class="mainList">
                 <button class="boton_clasificac"><a href="/clasificacion/72">72 KG</a></button>
                 <button class="boton_clasificac"><a href="/clasificacion/76">76 KG</a></button>
                 <button class="boton_clasificac"><a href="/clasificacion/80">80 KG</a></button>
