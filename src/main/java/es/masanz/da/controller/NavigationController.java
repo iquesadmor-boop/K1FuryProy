@@ -61,10 +61,11 @@ public class NavigationController {
         context.render("templates/tCombates/anotar-resultado.ftl", model);
     }
 
-    public static void mostrarClasificaciones(@NotNull Context context) {
+    public static void mostrarMenuClasificaciones(@NotNull Context context) {
         Map<String, Object> model = new HashMap<>();
         context.render("templates/tClasificacion/clasificacion.ftl", model);
     }
+
 
     public static void mostrarClasificacion(@NotNull Context context) {
         int peso = 0;

@@ -11,15 +11,15 @@
     <div class="contenedor">
         <header>
             <div class="headerTop">
-                <img src="/img/LogoFuryK1.png"
+                <img src="/img/LogoFuryK1.png">
             </div>
 
             <div class="headerTitle">
-                <h4>CLASIFICACIÓN</h4>
+                <h4>CLASIFICACION</h4>
             </div>
         </header>
         <main>
-            <div class="main">
+            <div class="mainMenu">
                 <button class="boton_clasificac"><a href="/clasificacion/72">72 KG</a></button>
                 <button class="boton_clasificac"><a href="/clasificacion/76">76 KG</a></button>
                 <button class="boton_clasificac"><a href="/clasificacion/80">80 KG</a></button>
