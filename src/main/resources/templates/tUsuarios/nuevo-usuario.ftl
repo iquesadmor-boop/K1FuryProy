@@ -21,7 +21,7 @@
             </div>
         </header>
         <main>
-            <div class="main">
+            <div class="caja-form">
                 <form class="form" action="menu.html">
                     <label for="nombre">Usuario</label>
                     <input type="text" id="nombre" name="nombre">

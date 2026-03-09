@@ -30,6 +30,21 @@ public class LigaDao {
         } else {return false;}
     }
 
+    public static boolean editarLiga(String nombre, String fecha_fin, int id){
+        String sql = "update liga " +
+                "SET nombre = ?, fecha_fin = ? " +
+                "where id = ? ";
+
+        Object[] params = {nombre, fecha_fin, id};
+
+        int resultado = DbK1Fury.ejecutarUpdateSQL(sql,params);
+
+        if (resultado > 0){
+            return true;
+        } else {return false;}
+
+    }
+
 
     public static List<Usuario> getPeleadores(int peso) {
         List<Usuario> lista = new ArrayList<>();

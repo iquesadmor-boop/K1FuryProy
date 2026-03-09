@@ -16,5 +16,7 @@ public class LigaService {
         return LigaDao.getPeleadores(peso);
     }
 
-
+    public static boolean editarLiga(String nombre, String fecha_fin, int id){
+        return LigaDao.editarLiga(nombre, fecha_fin, id);
+    }
 }

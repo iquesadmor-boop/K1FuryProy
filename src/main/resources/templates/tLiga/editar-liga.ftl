@@ -22,23 +22,19 @@
         <main>
             <div class="main">
                 <div class="EditarLiga">
-                    <form class="form">
+                    <form class="form" method="POST" action="/editarLiga">
                         <select class="selector">
                             <option value="" disabled selected hidden>Seleccionar Liga</option>
-                            <option value="k1_fury_72kg">K1 Fury 72Kg</option>
-                            <option value="k1_fury_76kg">K1 Fury 76Kg</option>
-                            <option value="k1_fury_80kg">K1 Fury 80Kg</option>
+                            <option value="72">K1 Fury 72Kg</option>
+                            <option value="76">K1 Fury 76Kg</option>
+                            <option value="80">K1 Fury 80Kg</option>
                         </select>
                         
                         <label for="nombre">Nuevo Nombre</label>
                         <input type="text" id="nombre" name="nombre">
 
-                        <select class="selector">
-                        <option value="" disabled selected hidden>Peleadores</option>
-                        <option value="jhonny_sins">Jhonny Sins</option>
-                        <option value="manolo_lama">Manolo Lama</option>
-                        <option value="martin">Martin</option>
-                        </select>
+                        <label for="fecha_fin">Fecha Fin</label>
+                        <input type="text" id="nombre" name="nombre">
 
                         <input type="submit" value="Editar" class="btn">
                 

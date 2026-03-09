@@ -38,4 +38,21 @@ public class LigaController {
 //        model.put("peleadores", peleadores);
 
     }
+
+    public static void procesarEditarLiga(Context context){
+        logger.info("Editando la liga");
+
+        String nombre = context.formParam("nombre");
+        String fecha_fin = context.formParam("fecha_fin");
+        int id = Integer.parseInt(context.formParam("id_Liga"));
+
+
+        LigaDao.editarLiga(nombre,fecha_fin,id_Liga);
+        context.redirect("/menu");
+    }
+
+    public static void mostrarEditarLiga(@NotNull Context context) {
+        Map<String, Object> model = new HashMap<>();
+        context.render("templates/tLiga/editar-liga.ftl", model);
+    }
 }
