@@ -8,14 +8,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/app.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/es/masanz/da/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/masanz/da/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/masanz/da/controller/LigaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/masanz/da/controller/LigaController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/es/masanz/da/controller/NavigationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/masanz/da/controller/NavigationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/masanz/da/dao/LigaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/masanz/da/dao/LigaDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/masanz/da/service/LigaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/masanz/da/service/LigaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/k1Fury.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/k1Fury.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tLiga/editar-liga.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/tLiga/editar-liga.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tLiga/nueva-liga.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/tLiga/nueva-liga.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tUsuarios/nuevo-usuario.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/tUsuarios/nuevo-usuario.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/menu.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/menu.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tClasificacion/clasif-peso.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/tClasificacion/clasif-peso.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tClasificacion/clasificacion.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/tClasificacion/clasificacion.ftl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +65,7 @@
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="es.masanz.da.Main" />
-      <module name="K1FuryProy" />
+      <module name="torneo" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="es.masanz.da.*" />

@@ -50,13 +50,6 @@ public class Main {
 
         app.get("/menu", NavigationController::mostrarMenu);
 
-        app.get("/clasificacion/{peso}", NavigationController::mostrarClasificacion);
-        app.get("/clasificacion", NavigationController::mostrarClasificaciones);
-//        app.get("/clasif72kg", NavigationController::mostrarClasif72KG);
-//        app.get("/clasif76kg", NavigationController::mostrarClasif76KG);
-//        app.get("/clasif80kg", NavigationController::mostrarClasif80KG);
-
-
         app.get("/tLiga/gestion-liga", NavigationController::mostrarGestionLiga);
 
         app.get("/tLiga/listado-ligas", NavigationController::mostrarListadoLiga);
@@ -77,8 +70,9 @@ public class Main {
 
         app.get("/tUsuarios/gestion-usuarios", NavigationController::mostrarGestionUsuario);
 
- //       app.get("/clasificacion", NavigationController::mostrarClasificaciones);
- //       app.get("/clasificacion/{peso}", NavigationController::mostrarClasificacion);
+        app.get("/tClasificacion/clasificacion", NavigationController::mostrarMenuClasificaciones);
+        app.get("/clasificacion/{peso}", NavigationController::mostrarClasificacion);
+
 //        app.get("/clasif72kg", NavigationController::mostrarClasif72KG);
 //        app.get("/clasif76kg", NavigationController::mostrarClasif76KG);
 //        app.get("/clasif80kg", NavigationController::mostrarClasif80KG);

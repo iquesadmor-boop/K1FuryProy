@@ -12,16 +12,16 @@
 <body>
     <div class="contenedor">
         <header>
-            <div class="headerTop">
-                <img src="/img/LogoFuryK1.png"
-            </div>
+                    <div class="headerTop">
+                        <img src="/img/LogoFuryK1.png">
+                    </div>
 
-            <div class="headerTitle">
-                <h4>CLASIFICACIÓN</h4>
-            </div>
-        </header>
+                    <div class="headerTitle">
+                        <h4>CLASIFICACION</h4>
+                    </div>
+                </header>
         <main>
-            <div class="main">
+            <div class="mainList">
             <#list peleadores as peleador>
                 <label class="selectorEliminar">${peleador.nombre} ${peleador.apellido}</label>
             </#list>

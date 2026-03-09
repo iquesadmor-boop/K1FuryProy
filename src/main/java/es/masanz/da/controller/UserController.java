@@ -15,7 +15,7 @@ public class UserController {
         String pwd = context.formParam("pwd");
         logger.info("Logeando con las credenciales User: " + nombre + " Password " + pwd);
         if (UserService.autenticar(nombre, pwd)){
-            logger.info("Ha ido mal");
+            logger.info("Ha ido mal");  
             context.redirect("/menu");
         } else {
             context.render("/login");
