@@ -12,6 +12,7 @@ CREATE TABLE IF NOT EXISTS k1furydb.usuario (
     contraseña varchar(30) DEFAULT NULL,
     rol int not null,
     peso int,
+    liga int,
 
     primary key(id),
     foreign key (rol) references k1furydb.rol (id)
@@ -22,7 +23,7 @@ CREATE TABLE IF NOT EXISTS k1furydb.usuario (
 
 CREATE TABLE IF NOT EXISTS k1furydb.liga (
 	id int AUTO_INCREMENT,
-	nombre varchar(30),
+	nombre varchar(30) unique not null,
     peso varchar(30) DEFAULT NULL,
     fecha_inicio varchar(30) default null,
     fecha_fin  varchar(30) default null,
@@ -32,6 +33,11 @@ CREATE TABLE IF NOT EXISTS k1furydb.liga (
     primary key(id),
     foreign key (campeon) references k1furydb.usuario (id)
 );
+
+ALTER TABLE k1furydb.usuario
+add constraint fk_liga
+foreign key (liga)
+references liga (id);
 
 CREATE TABLE IF NOT EXISTS k1furydb.registros (
 	id int AUTO_INCREMENT,

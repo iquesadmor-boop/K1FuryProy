@@ -25,9 +25,9 @@
                     <form class="form" method="POST" action="/editarLiga">
                         <select class="selector">
                             <option value="" disabled selected hidden>Seleccionar Liga</option>
-                            <option value="72">K1 Fury 72Kg</option>
-                            <option value="76">K1 Fury 76Kg</option>
-                            <option value="80">K1 Fury 80Kg</option>
+                            <#list ligas as liga>
+                            <option value="${liga}">${liga}</option>
+                            </#list>
                         </select>
                         
                         <label for="nombre">Nuevo Nombre</label>

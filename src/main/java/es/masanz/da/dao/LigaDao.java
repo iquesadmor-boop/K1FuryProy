@@ -1,6 +1,7 @@
 package es.masanz.da.dao;
 
 import es.masanz.da.db.DbK1Fury;
+import es.masanz.da.model.Liga;
 import es.masanz.da.model.Usuario;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -45,6 +46,14 @@ public class LigaDao {
 
     }
 
+    public static int getIdByNombre(String nombre){
+        String sql = "SELECT id FROM liga WHERE nombre = ?";
+        Object[] params = {nombre};
+        Object[][] resultado = DbK1Fury.ejecutarSelectSQL(sql,params);
+
+        return (int) resultado[0][0];
+    }
+
 
     public static List<Usuario> getPeleadores(int peso) {
         List<Usuario> lista = new ArrayList<>();
@@ -63,6 +72,54 @@ public class LigaDao {
                 u.setPeso(peso);
                 lista.add(u);
             }
+        }
+        return lista;
+    }
+
+    public static List<String> getNombresLigas (String nombre){
+        List<String> lista = new ArrayList<>();
+        String sql = "select nombre " +
+                "from liga" +
+                "where id = id";
+        Object[] params = {};
+        Object[][] resultado = DbK1Fury.ejecutarSelectSQL(sql, params);
+
+        if (resultado != null && resultado.length >= 1){
+            for (int i = 0; i < resultado.length; i++) {
+                String nombre = resultado[i][0].toString();
+                lista.add(nombre);
+            }
+        }
+
+        return lista;
+    }
+
+    public static List<Liga> getLigas() {
+        List<Liga> lista = new ArrayList<>();
+        String sql = "select id, nombre, liga" +
+                "from liga";
+        Object[] params = {};
+        Object[][] resultado = DbK1Fury.ejecutarSelectSQL(sql, params);
+
+        if (resultado != null && resultado.length >= 1){
+            Liga l1 = new Liga();
+
+        }
+
+        return lista;
+    }
+
+    public static List<String> getPeleadoresLiga(int id_liga){
+        List<String> lista = new ArrayList<>();
+        String sql = "select concat(o.nombre, ' ', o.apellido) NombreCompleto " +
+                "from usuario o join liga l on o.liga = l.id " +
+                "where liga = ?";
+        Object[] params = {};
+        Object[][] resultado = DbK1Fury.ejecutarSelectSQL(sql, params);
+
+        for (int i = 0; i < resultado.length; i++) {
+            String nombre = resultado[i][i].toString();
+            lista.add(nombre);
         }
         return lista;
     }

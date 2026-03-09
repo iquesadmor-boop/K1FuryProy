@@ -56,11 +56,11 @@ public class Main {
         app.get("/tLiga/nueva-liga", LigaController::mostrarNuevaLiga);
         app.post("/crearLiga", LigaController::procesarNuevaLiga);
 
-        app.get("/tLiga/nueva-liga", LigaController::mostrarEditarLiga);
+        app.get("/tLiga/editar-liga", LigaController::mostrarEditarLiga);
         app.post("/editarLiga", LigaController::procesarEditarLiga);
 
         app.post("/tLiga/nueva-liga", LigaController::procesarNuevaLiga);
-        app.get("/tLiga/editar-liga", NavigationController::mostrarEditarLiga);
+       // app.get("/tLiga/editar-liga", NavigationController::mostrarEditarLiga);
         app.get("/tLiga/eliminar-liga", NavigationController::mostrarEliminarLiga);
 
         app.get("/tCombates/combates", NavigationController::mostrarCombates);

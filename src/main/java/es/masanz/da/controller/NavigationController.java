@@ -27,11 +27,6 @@ public class NavigationController {
         context.render("templates/tUsuarios/gestion-usuarios.ftl");
     }
 
-
-    public static void mostrarEditarLiga(@NotNull Context context) {
-        context.render("templates/tLiga/editar-liga.ftl");
-    }
-
     public static void mostrarEliminarLiga(@NotNull Context context) {
         context.render("templates/tLiga/eliminar-liga.ftl");
     }
@@ -70,24 +65,11 @@ public class NavigationController {
         }
         List<Usuario> peleadores = LigaService.getPeleadores(peso);
         Map<String, Object> model = new HashMap<>();
-        model.put("peso",peso);
-        model.put("peleadores",peleadores);
+        model.put("peso", peso);
+        model.put("peleadores", peleadores);
         context.render("templates/tClasificacion/clasif-peso.ftl", model);
     }
 
-//
-//    public static void mostrarClasif72KG(@NotNull Context context) {
-//        Map<String, Object> model = new HashMap<>();
-//        context.render("templates/tClasificacion/clasif72kg.ftl", model);
-//    }
-//
-//    public static void mostrarClasif76KG(@NotNull Context context) {
-//        Map<String, Object> model = new HashMap<>();
-//        context.render("templates/tClasificacion/clasif76kg.ftl", model);
-//    }
-//
-//    public static void mostrarClasif80KG(@NotNull Context context) {
-//        Map<String, Object> model = new HashMap<>();
-//        context.render("templates/tClasificacion/clasif80kg.ftl", model);
-//    }
+
+
 }
