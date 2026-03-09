@@ -44,7 +44,8 @@ public class LigaController {
 
         String nombre = context.formParam("nombre");
         String fecha_fin = context.formParam("fecha_fin");
-        int id = Integer.parseInt(context.formParam("id_Liga"));
+        int id_Liga = Integer.parseInt(context.formParam("id_Liga"));
+
 
 
         LigaDao.editarLiga(nombre,fecha_fin,id_Liga);
