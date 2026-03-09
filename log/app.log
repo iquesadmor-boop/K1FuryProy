@@ -392,10 +392,14 @@
 [2026-03-05 14:01:10] [INFO ] [UserController: 16] Logeando con las credenciales User: admin Password admin
 [2026-03-05 14:01:10] [INFO ] [UserDao: 32] Atenticación realizada con exito
 [2026-03-05 14:01:10] [INFO ] [UserController: 18] Ha ido mal
-[2026-03-05 14:01:46] [INFO ] [Main: 28] ARRANCANDO APLICACION MODO WEB
-[2026-03-05 14:01:58] [INFO ] [Main: 28] ARRANCANDO APLICACION MODO WEB
-[2026-03-05 14:02:00] [INFO ] [MainController: 17] iniciar
-[2026-03-05 14:02:07] [INFO ] [UserController: 16] Logeando con las credenciales User: admin Password admin
-[2026-03-05 14:02:07] [INFO ] [UserDao: 32] Atenticación realizada con exito
-[2026-03-05 14:02:07] [INFO ] [UserController: 18] Ha ido mal
-[2026-03-06 13:13:01] [INFO ] [Main: 28] ARRANCANDO APLICACION MODO WEB
+[2026-03-06 12:59:55] [INFO ] [Main: 28] ARRANCANDO APLICACION MODO WEB
+[2026-03-06 12:59:58] [INFO ] [MainController: 17] iniciar
+[2026-03-06 13:00:06] [INFO ] [UserController: 16] Logeando con las credenciales User: admin Password admin
+[2026-03-06 13:00:06] [INFO ] [UserDao: 32] Atenticación realizada con exito
+[2026-03-06 13:00:06] [INFO ] [UserController: 18] Ha ido mal
+[2026-03-06 13:00:31] [INFO ] [LigaController: 25] Creando Nueva Liga
+[2026-03-06 13:15:05] [INFO ] [Main: 28] ARRANCANDO APLICACION MODO WEB
+[2026-03-06 13:15:09] [INFO ] [MainController: 17] iniciar
+[2026-03-06 13:16:51] [INFO ] [UserController: 16] Logeando con las credenciales User: admin Password admin
+[2026-03-06 13:16:52] [INFO ] [UserDao: 32] Atenticación realizada con exito
+[2026-03-06 13:16:52] [INFO ] [UserController: 18] Ha ido mal

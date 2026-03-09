@@ -22,7 +22,7 @@
         <main class="mainMenu">
             <div>
             <button class="button"><a href="/tLiga/gestion-liga" class="button">Gestión Liga</a></button>
-            <button class="button"><a href="../inc/gestion-usuarios.html">Gestión Usuarios</a></button>
+            <button class="button"><a href="./tUsuarios/gestion-usuarios">Gestión Usuarios</a></button>
             <button class="button"><a href="/tCombates/combates">Combates</a></button>
             <button class="button"><a href="/tClasificacion/clasificacion">Clasificación</a></button>
             </div>
