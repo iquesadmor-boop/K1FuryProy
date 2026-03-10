@@ -22,9 +22,9 @@
         <main class="mainMenu">
             <div>
             <button class="button"><a href="./listado-usuarios">Listado</a></button>
-            <button class="button"><a href="./nuevo-usuario">Nueva Usuarios</a></button>
-            <button class="button"><a href="./editar-usuario">Editar Usuarios</a></button>
-            <button class="button"><a href="./eliminar-usuario">Eliminar Usuarios</a></button>
+            <button class="button"><a href="./nuevo-usuario">Nuevo Usuario</a></button>
+            <button class="button"><a href="./editar-usuario">Editar Usuario</a></button>
+            <button class="button"><a href="./eliminar-usuario">Eliminar Usuario</a></button>
             </div>
         </main>
         

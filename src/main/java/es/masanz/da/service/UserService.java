@@ -16,4 +16,8 @@ public class UserService {
     public static boolean autenticar(String nombre, String pwd) {
         return UserDao.autenticar(nombre, pwd);
     }
+
+    public static boolean crearUsuario(String nombre, String pwd, String apellido, int rol, int peso){
+        return UserDao.insertarUsuario( nombre, pwd, apellido,rol,peso);
+    }
 }
