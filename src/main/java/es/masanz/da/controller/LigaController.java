@@ -58,12 +58,18 @@ public class LigaController {
     }
 
     public static void mostrarListadoLiga(Context context){
-        int id_liga = Integer.parseInt(context.formParam("id"));
         List<String> ligas = LigaService.getNombresLigas();
-        List<String> nombre = LigaService.getNombresLigas();
         Map<String, Object> model = new HashMap<>();
-        model.put("nombre", nombre);
         model.put("ligas", ligas);
-        context.render("templates/tLiga/listado-ligas", model);
+        context.render("templates/tLiga/listado-ligas.ftl", model);
     }
+
+
+    public static void mostrarEliminarLiga(@NotNull Context context) {
+        List<String> ligas = LigaService.getNombresLigas();
+        Map<String, Object> model = new HashMap<>();
+        model.put("ligas", ligas);
+        context.render("templates/tLiga/eliminar-liga.ftl", model);
+    }
+
 }
