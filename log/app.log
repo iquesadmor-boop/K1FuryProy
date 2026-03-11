@@ -137,3 +137,29 @@
 [2026-03-11 18:08:27] [INFO ] [UserController: 23] Logeando con las credenciales User: admin Password admin
 [2026-03-11 18:08:27] [INFO ] [UserDao: 36] Atenticación realizada con exito
 [2026-03-11 18:08:27] [INFO ] [UserController: 25] Ha ido mal
+[2026-03-11 18:09:31] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-11 18:09:54] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-11 18:10:08] [INFO ] [MainController: 17] iniciar
+[2026-03-11 18:10:16] [INFO ] [UserController: 23] Logeando con las credenciales User: admin Password admin
+[2026-03-11 18:10:16] [INFO ] [UserDao: 36] Atenticación realizada con exito
+[2026-03-11 18:10:16] [INFO ] [UserController: 25] Ha ido mal
+[2026-03-11 18:11:15] [INFO ] [MainController: 17] iniciar
+[2026-03-11 18:11:18] [INFO ] [UserController: 23] Logeando con las credenciales User: admin Password admin
+[2026-03-11 18:11:18] [INFO ] [UserDao: 36] Atenticación realizada con exito
+[2026-03-11 18:11:18] [INFO ] [UserController: 25] Ha ido mal
+[2026-03-11 18:15:41] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-11 18:17:12] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-11 18:17:13] [INFO ] [MainController: 17] iniciar
+[2026-03-11 18:17:18] [INFO ] [UserController: 23] Logeando con las credenciales User: admin Password admin
+[2026-03-11 18:17:19] [INFO ] [UserDao: 36] Atenticación realizada con exito
+[2026-03-11 18:17:19] [INFO ] [UserController: 25] Ha ido mal
+[2026-03-11 18:19:18] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-11 18:19:21] [INFO ] [MainController: 17] iniciar
+[2026-03-11 18:19:27] [INFO ] [UserController: 23] Logeando con las credenciales User: admin Password admin
+[2026-03-11 18:19:27] [INFO ] [UserDao: 36] Atenticación realizada con exito
+[2026-03-11 18:19:27] [INFO ] [UserController: 25] Ha ido mal
+[2026-03-11 18:20:04] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-11 18:20:06] [INFO ] [MainController: 17] iniciar
+[2026-03-11 18:20:09] [INFO ] [UserController: 23] Logeando con las credenciales User: admin Password admin
+[2026-03-11 18:20:09] [INFO ] [UserDao: 36] Atenticación realizada con exito
+[2026-03-11 18:20:09] [INFO ] [UserController: 25] Ha ido mal

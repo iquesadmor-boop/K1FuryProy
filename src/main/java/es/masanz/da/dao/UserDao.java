@@ -85,8 +85,8 @@ public class UserDao {
 
     public static List<String> getNombresUsuarios (){
         List<String> lista = new ArrayList<>();
-        String sql = "select nombre, apellido " +
-                "from usuario";
+        String sql = "select concat(nombre, apellido) " +
+                "from usuario ";
 
         Object[] params = {};
         Object[][] resultado = DbK1Fury.ejecutarSelectSQL(sql, params);
