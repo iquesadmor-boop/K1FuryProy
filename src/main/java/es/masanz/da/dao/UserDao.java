@@ -5,6 +5,9 @@ import es.masanz.da.model.Usuario;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class UserDao {
 
     static {
@@ -78,6 +81,24 @@ public class UserDao {
         if (res > 0){
             return true;
         } else {return false;}
+    }
+
+    public static List<String> getNombresUsuarios (){
+        List<String> lista = new ArrayList<>();
+        String sql = "select nombre, apellido " +
+                "from usuario";
+
+        Object[] params = {};
+        Object[][] resultado = DbK1Fury.ejecutarSelectSQL(sql, params);
+
+        if (resultado != null && resultado.length >= 1){
+            for (int i = 0; i < resultado.length; i++) {
+                String nombreU = resultado[i][0].toString();
+                lista.add(nombreU);
+            }
+        }
+
+        return lista;
     }
 
     public static void main(String[] args) {
