@@ -85,7 +85,7 @@ public class UserDao {
 
     public static List<String> getNombresUsuarios (){
         List<String> lista = new ArrayList<>();
-        String sql = "select concat(nombre, apellido) " +
+        String sql = "select concat(nombre, ' ' , apellido) " +
                 "from usuario ";
 
         Object[] params = {};
@@ -93,8 +93,10 @@ public class UserDao {
 
         if (resultado != null && resultado.length >= 1){
             for (int i = 0; i < resultado.length; i++) {
-                String nombreU = resultado[i][0].toString();
-                lista.add(nombreU);
+                String nombreU = String.valueOf(resultado[i][0]);
+                if (! nombreU.equals("null")) {
+                    lista.add(nombreU);
+                }
             }
         }
 
