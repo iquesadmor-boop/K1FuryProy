@@ -19,17 +19,10 @@ public class NavigationController {
         context.render("templates/tLiga/gestion-liga.ftl");
     }
 
-    public static void mostrarListadoLiga(@NotNull Context context) {
-        context.render("templates/tLiga/listado-ligas.ftl");
-    }
-
     public static void mostrarGestionUsuario(@NotNull Context context) {
         context.render("templates/tUsuarios/gestion-usuarios.ftl");
     }
 
-    public static void mostrarEliminarLiga(@NotNull Context context) {
-        context.render("templates/tLiga/eliminar-liga.ftl");
-    }
 
     public static void mostrarCombates(@NotNull Context context){
         context.render("templates/tCombates/combates.ftl");

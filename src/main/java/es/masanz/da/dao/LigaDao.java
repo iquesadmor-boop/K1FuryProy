@@ -43,15 +43,18 @@ public class LigaDao {
         if (resultado > 0){
             return true;
         } else {return false;}
-
     }
 
     public static int getIdByNombre(String nombre){
         String sql = "SELECT id FROM liga WHERE nombre = ?";
         Object[] params = {nombre};
+        int id_liga = 0;
         Object[][] resultado = DbK1Fury.ejecutarSelectSQL(sql,params);
 
-        return (int) resultado[0][0];
+        for (int i = 0; i < resultado.length; i++) {
+            id_liga = Integer.parseInt(resultado[i][0].toString());
+        }
+        return  id_liga;
     }
 
 
@@ -76,38 +79,38 @@ public class LigaDao {
         return lista;
     }
 
-    public static List<String> getNombresLigas (String nombre){
+    public static List<String> getNombresLigas (){
         List<String> lista = new ArrayList<>();
         String sql = "select nombre " +
-                "from liga" +
-                "where id = id";
+                "from liga";
+
         Object[] params = {};
         Object[][] resultado = DbK1Fury.ejecutarSelectSQL(sql, params);
 
         if (resultado != null && resultado.length >= 1){
             for (int i = 0; i < resultado.length; i++) {
-                String nombre = resultado[i][0].toString();
-                lista.add(nombre);
+                String nombreL = resultado[i][0].toString();
+                lista.add(nombreL);
             }
         }
 
         return lista;
     }
 
-    public static List<Liga> getLigas() {
-        List<Liga> lista = new ArrayList<>();
-        String sql = "select id, nombre, liga" +
-                "from liga";
-        Object[] params = {};
-        Object[][] resultado = DbK1Fury.ejecutarSelectSQL(sql, params);
-
-        if (resultado != null && resultado.length >= 1){
-            Liga l1 = new Liga();
-
-        }
-
-        return lista;
-    }
+//    public static List<Liga> getLigas() {
+//        List<Liga> lista = new ArrayList<>();
+//        String sql = "select id, nombre, liga" +
+//                "from liga";
+//        Object[] params = {};
+//        Object[][] resultado = DbK1Fury.ejecutarSelectSQL(sql, params);
+//
+//        if (resultado != null && resultado.length >= 1){
+//            Liga l1 = new Liga();
+//
+//        }
+//
+//        return lista;
+//    }
 
     public static List<String> getPeleadoresLiga(int id_liga){
         List<String> lista = new ArrayList<>();

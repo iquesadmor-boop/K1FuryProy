@@ -24,10 +24,8 @@
         <main>
             <div class="mainList">
                 <#list ligas as liga>
-                    <#list peleadores as peleador>
-                        <option value="" disabled selected hidden>${liga.nombre}</option>
-                        <option value="${peleadores.nombre}">${peleador.nombre}</option>
-                    </#list>
+                        <option value="" disabled selected hidden>${liga}</option>
+                        <option value="${liga}">${liga}</option>
                 </#list>
             
             </div>
