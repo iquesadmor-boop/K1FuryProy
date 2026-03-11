@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92d587f0-9a5c-4d8a-9096-77366138a923" name="Changes" comment="" />
+    <list default="true" id="92d587f0-9a5c-4d8a-9096-77366138a923" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/inserts.sql" beforeDir="false" afterPath="$PROJECT_DIR$/doc/inserts.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/app.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/masanz/da/controller/NavigationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/masanz/da/controller/NavigationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/masanz/da/dao/LigaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/masanz/da/dao/LigaDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/masanz/da/service/LigaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/masanz/da/service/LigaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tClasificacion/clasif-peso.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/tClasificacion/clasif-peso.ftl" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,12 +36,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/es/masanz/da/dao/RegistroDao.java</url>
-          <line>33</line>
+          <line>37</line>
           <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/es/masanz/da/dao/RegistroDao.java</url>
-          <line>35</line>
+          <line>39</line>
           <properties>
             <option name="lambda-ordinal" value="-1" />
           </properties>
@@ -41,17 +49,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/es/masanz/da/dao/RegistroDao.java</url>
-          <line>34</line>
+          <line>38</line>
           <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/es/masanz/da/dao/RegistroDao.java</url>
-          <line>31</line>
+          <line>35</line>
           <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/es/masanz/da/dao/RegistroDao.java</url>
-          <line>29</line>
+          <line>33</line>
           <option name="timeStamp" value="48" />
         </line-breakpoint>
       </breakpoints>

@@ -60,7 +60,10 @@ public class LigaDao {
 
     public static List<Usuario> getPeleadores(int peso) {
         List<Usuario> lista = new ArrayList<>();
-        String sql = "SELECT id, nombre, apellido, contraseña, rol, peso, liga FROM usuario WHERE peso = ?";
+        String sql = "SELECT id, nombre, apellido, contraseña, rol, peso, liga , victorias " +
+                "FROM usuario " +
+                "WHERE peso = ? " +
+                "order by victorias desc";
         Object[] params = {peso};
         Object[][] resultado = DbK1Fury.ejecutarSelectSQL(sql, params);
         if (resultado != null && resultado.length >= 1) {
@@ -147,6 +150,16 @@ public class LigaDao {
         }
 
         return l;
+    }
+
+    public static int getVictorias(int id) {
+        String sql = "select victorias " +
+                "from usuario " +
+                "where id = ?";
+        Object[] params = {id};
+        Object[][] resultado = DbK1Fury.ejecutarSelectSQL(sql, params);
+
+        return Integer.parseInt(String.valueOf(resultado[0][0]));
     }
 
 //    public static boolean procesarEliminarLiga(String nombre){

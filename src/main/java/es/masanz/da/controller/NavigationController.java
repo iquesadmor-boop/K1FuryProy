@@ -8,6 +8,7 @@ import io.javalin.http.Context;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -82,8 +83,16 @@ public class NavigationController {
             System.out.println(e);
             context.redirect("/menu");
         }
-        List<Usuario> peleadores = LigaService.getPeleadores(peso);
-        Map<String, Object> model = new HashMap<>();
+        List<Usuario> listaPeleadores = LigaService.getPeleadores(peso);
+        LinkedHashMap<Usuario, Integer> peleadores = new LinkedHashMap<>();
+        //Para que nos respete el orden que viene de la base de datos
+
+        for (Usuario u : listaPeleadores) {
+            int victorias = LigaService.getVictorias(u.getId());
+            peleadores.put(u,victorias);
+        }
+
+        Map <String, Object> model = new HashMap<>();
         model.put("peso", peso);
         model.put("peleadores", peleadores);
         context.render("templates/tClasificacion/clasif-peso.ftl", model);
