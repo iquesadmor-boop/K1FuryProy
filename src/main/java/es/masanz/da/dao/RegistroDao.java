@@ -1,9 +1,13 @@
 package es.masanz.da.dao;
 
 import es.masanz.da.db.DbK1Fury;
+import es.masanz.da.model.Registro;
 import es.masanz.da.model.Usuario;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class RegistroDao {
     static {
@@ -113,5 +117,25 @@ public class RegistroDao {
         if (res > 0){
             return true;
         } else {return false;}
+    }
+
+    public static List<Registro> getRegistrosConNombreLiga() {
+        List<Registro> lista = new ArrayList<>();
+        String sql = "SELECT id, liga, peleador1, peleador2, ganador FROM registros";
+        Object[] params = {};
+        Object[][] resultado = DbK1Fury.ejecutarSelectSQL(sql, params);
+
+        if (resultado != null && resultado.length > 0) {
+            for (int i = 0; i < resultado.length; i++) {
+                Registro r = new Registro();
+                r.setId(Integer.parseInt(resultado[i][0].toString()));
+
+                int idLiga = Integer.parseInt(resultado[i][1].toString());
+                r.setNombreLiga(LigaDao.getNombreById(idLiga));
+
+                lista.add(r);
+            }
+        }
+        return lista;
     }
 }
