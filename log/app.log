@@ -1,0 +1,5 @@
+[2026-03-11 18:11:22] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-11 18:11:23] [INFO ] [MainController: 17] iniciar
+[2026-03-11 18:11:29] [INFO ] [UserController: 23] Logeando con las credenciales User: admin Password admin
+[2026-03-11 18:11:30] [INFO ] [UserDao: 36] Atenticación realizada con exito
+[2026-03-11 18:11:30] [INFO ] [UserController: 25] Ha ido mal
