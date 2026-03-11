@@ -6,15 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="47d82a8c-7d5e-4a29-bbc6-9860c514f164" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/create-tables.sql" beforeDir="false" afterPath="$PROJECT_DIR$/doc/create-tables.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/inserts.sql" beforeDir="false" afterPath="$PROJECT_DIR$/doc/inserts.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/masanz/da/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/masanz/da/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/masanz/da/controller/LigaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/masanz/da/controller/LigaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/masanz/da/controller/NavigationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/masanz/da/controller/NavigationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/masanz/da/dao/LigaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/masanz/da/dao/LigaDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tCombates/combates.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/tCombates/combates.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tLiga/confirmar-eliminar-liga.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/tLiga/confirmar-eliminar-liga.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tLiga/eliminar-liga.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/tLiga/eliminar-liga.ftl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,20 +24,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.LigaDao.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.UserDao.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/msalinaber/DAW1/K1FuryProy/src/main/resources/templates/tClasificacion&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.LigaDao.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.UserDao.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/msali/Desktop/DAW/K1FuryProy"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\msalinaber\DAW1\K1FuryProy\src\main\resources\templates\tClasificacion" />
@@ -130,5 +122,13 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
   </component>
 </project>
