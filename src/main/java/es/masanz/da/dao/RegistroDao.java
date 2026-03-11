@@ -2,9 +2,13 @@ package es.masanz.da.dao;
 
 import es.masanz.da.db.DbK1Fury;
 import es.masanz.da.model.Liga;
+import es.masanz.da.model.Registro;
 import es.masanz.da.model.Usuario;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class RegistroDao {
     static {
@@ -49,7 +53,7 @@ public class RegistroDao {
             for (int i = 0; i < resultado.length; i++) {
                 Registro r = new es.masanz.da.model.Registro();
                 r.setId(Integer.parseInt(String.valueOf(resultado[i][0])));
-                r.setLiga(Integer.parseInt(String.valueOf(resultado[i][1])));
+                r.setPeso(Integer.parseInt(String.valueOf(resultado[i][1])));
                 r.setNombreLiga(String.valueOf(resultado[i][2]));
                 r.setArbitro(Integer.parseInt(String.valueOf(resultado[i][3])));
                 r.setPeleador1(Integer.parseInt(String.valueOf(resultado[i][4])));
