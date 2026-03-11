@@ -23,14 +23,12 @@
         <main>
             <div class="main">
                 <form class="form" action="/editar-usuario", method = "POST">
-                    <label for="nombreActual">Nombre actual</label>
-                    <input type="text" id="nombreActual" name="nombreActual">
-                    <label for="apellidoActual">Apelldio actual</label>
-                    <input type="text" id="apellidoActual" name="apellidoActual">
-                    <label for="nuevoNombre">Nuevo Nombre</label>
-                    <input type="text" id="nuevoNombre" name="nuevoNombre">
-                    <label for="nuevoApellido">Nuevo Apellido</label>
-                    <input type="text" id="nuevoApellido" name="nuevoApellido">
+                    <label for="dni">DNI</label>
+                    <input type="text" id="dni" name="dni">
+                    <label for="nombre">Nuevo Nombre</label>
+                    <input type="text" id="nombre" name="nombre">
+                    <label for="apellido">Nuevo Apellido</label>
+                    <input type="text" id="apellido" name="apellido">
                     <label for="pwd">Contraseña</label>
                     <input type="password" id="pwd" name="pwd">
                     <select class="selector" id="rol" name="rol">

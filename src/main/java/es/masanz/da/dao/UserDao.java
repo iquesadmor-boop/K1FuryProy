@@ -44,11 +44,11 @@ public class UserDao {
         return false;
     }
 
-    public static boolean insertarUsuario(String nombre, String pwd, String apellido, int rol, int peso) {
-        String sql = "INSERT INTO k1furydb.usuario (nombre,contraseña, apellido, rol, peso) " +
-                "VALUES (?, ?, ?, ?, ?);";
+    public static boolean insertarUsuario(String dni ,String nombre, String pwd, String apellido, int rol, int peso) {
+        String sql = "INSERT INTO k1furydb.usuario (dni, nombre,contraseña, apellido, rol, peso) " +
+                "VALUES (?,?, ?, ?, ?, ?);";
 
-        Object[] params = {nombre, pwd, apellido, rol, peso};
+        Object[] params = {dni, nombre, pwd, apellido, rol, peso};
 
         long res = DbK1Fury.ejecutarInsertSQL(sql, params);
 
@@ -57,12 +57,12 @@ public class UserDao {
         } else {return false;}
     }
 
-    public static boolean actualizarUsuario(String nombreActual, String apellidoActual,String nuevoNombre ,String nuevoApellido, String pwd, int rol) {
+    public static boolean actualizarUsuario(String dni, String nuevoNombre ,String nuevoApellido, String pwd, int rol) {
         String sql = "UPDATE k1furydb.usuario " +
                 "SET nombre = ?, contraseña = ?, apellido = ?, rol = ? " +
-                "WHERE nombre = ? and apellido = ?";
+                "WHERE dni = ? ";
 
-        Object[] params = {nuevoNombre, pwd, nuevoApellido, rol, nombreActual, apellidoActual};
+        Object[] params = {nuevoNombre, pwd, nuevoApellido, rol, dni};
 
         long res = DbK1Fury.ejecutarUpdateSQL(sql, params);
 
@@ -71,10 +71,10 @@ public class UserDao {
         } else {return false;}
     }
 
-    public static boolean eliminarUsuario(int id) {
-        String sql = "DELETE FROM k1furydb.usuario WHERE id = ?";
+    public static boolean eliminarUsuario(String dni) {
+        String sql = "DELETE FROM k1furydb.usuario WHERE dni = ?";
 
-        Object[] params = {id};
+        Object[] params = {dni};
 
         long res = DbK1Fury.ejecutarUpdateSQL(sql, params);
 
@@ -101,10 +101,6 @@ public class UserDao {
         }
 
         return lista;
-    }
-
-    public static void main(String[] args) {
-        System.out.println(eliminarUsuario(44));
     }
 
     public static Usuario getUsuarioByNombreApellido(String nombre, String apellido) {

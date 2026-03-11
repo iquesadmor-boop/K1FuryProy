@@ -18,8 +18,8 @@ public class UserService {
         return UserDao.autenticar(nombre, pwd);
     }
 
-    public static boolean crearUsuario(String nombre, String pwd, String apellido, int rol, int peso){
-        return UserDao.insertarUsuario( nombre, pwd, apellido,rol,peso);
+    public static boolean crearUsuario(String dni, String nombre, String pwd, String apellido, int rol, int peso){
+        return UserDao.insertarUsuario(dni, nombre, pwd, apellido,rol,peso);
     }
 
     public static List<String > getNombresUsuarios() {
