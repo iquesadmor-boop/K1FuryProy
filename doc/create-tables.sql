@@ -13,6 +13,7 @@ CREATE TABLE IF NOT EXISTS k1furydb.usuario (
     rol int not null,
     peso int,
     liga int,
+    victorias int,
 
     primary key(id),
     foreign key (rol) references k1furydb.rol (id)
