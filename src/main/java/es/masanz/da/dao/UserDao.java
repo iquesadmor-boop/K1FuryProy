@@ -54,68 +54,12 @@ public class UserDao {
         } else {return false;}
     }
 
-    public static boolean actualizarUsuarioNombre(String nombre, int id) {
+    public static boolean actualizarUsuario(String nombreActual, String apellidoActual,String nuevoNombre ,String nuevoApellido, String pwd, int rol) {
         String sql = "UPDATE k1furydb.usuario " +
-                "SET nombre = ? " +
-                "WHERE id = ?";
+                "SET nombre = ?, contraseña = ?, apellido = ?, rol = ? " +
+                "WHERE nombre = ? and apellido = ?";
 
-        Object[] params = {nombre, id};
-
-        long res = DbK1Fury.ejecutarUpdateSQL(sql, params);
-
-        if (res > 0){
-            return true;
-        } else {return false;}
-    }
-
-    public static boolean actualizarUsuarioApellido(String apellido, int id) {
-        String sql = "UPDATE k1furydb.usuario " +
-                "SET apellido = ? " +
-                "WHERE id = ?";
-
-        Object[] params = {apellido, id};
-
-        long res = DbK1Fury.ejecutarUpdateSQL(sql, params);
-
-        if (res > 0){
-            return true;
-        } else {return false;}
-    }
-
-    public static boolean actualizarUsuarioPwd(String contraseña, int id) {
-        String sql = "UPDATE k1furydb.usuario " +
-                "SET contraseña = ? " +
-                "WHERE id = ?";
-
-        Object[] params = {contraseña, id};
-
-        long res = DbK1Fury.ejecutarUpdateSQL(sql, params);
-
-        if (res > 0){
-            return true;
-        } else {return false;}
-    }
-
-    public static boolean actualizarUsuarioRol(int rol, int id) {
-        String sql = "UPDATE k1furydb.usuario " +
-                "SET rol = ? " +
-                "WHERE id = ?";
-
-        Object[] params = {rol, id};
-
-        long res = DbK1Fury.ejecutarUpdateSQL(sql, params);
-
-        if (res > 0){
-            return true;
-        } else {return false;}
-    }
-
-    public static boolean actualizarUsuarioPeso(int peso, int id) {
-        String sql = "UPDATE k1furydb.usuario " +
-                "SET peso = ? " +
-                "WHERE id = ?";
-
-        Object[] params = {peso, id};
+        Object[] params = {nuevoNombre, pwd, nuevoApellido, rol, nombreActual, apellidoActual};
 
         long res = DbK1Fury.ejecutarUpdateSQL(sql, params);
 
@@ -160,7 +104,7 @@ public class UserDao {
                 u.setRol(Integer.parseInt(String.valueOf(res[i][4])));
                 u.setPeso(Integer.parseInt(String.valueOf(res[i][5])));
                 u.setLiga(Integer.parseInt(String.valueOf(res[i][6])));
-                u.setVictorias(Integer.parseInt(String.valueOf(res[i][7])));
+                //u.setVictorias(Integer.parseInt(String.valueOf(res[i][7])));
             }
         }
         return u;
