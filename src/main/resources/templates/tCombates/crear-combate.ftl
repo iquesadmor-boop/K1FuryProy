@@ -33,14 +33,23 @@
                             <option value="80">K1 Fury 80Kg</option>
                         </select>
 
-                        <label for="arbitro">Nombre Arbitro</label>
-                        <input type="text" id="arbitro" name="arbitro">
+                        <label for="arbitroNombre">Nombre Arbitro</label>
+                        <input type="text" id="arbitroNombre" name="arbitroNombre">
 
-                        <label for="peleador1">Nombre Peleador 1</label>
-                        <input type="text" id="peleador1" name="peleador1">
+                        <label for="arbitroApellido">Apellido Arbitro</label>
+                        <input type="text" id="arbitroApellido" name="arbitroApellido">
 
-                        <label for="peleador2">Nombre Peleador 2</label>
-                        <input type="text" id="peleador2" name="peleador2">
+                        <label for="peleador1Nombre">Nombre Peleador 1</label>
+                        <input type="text" id="peleador1Nombre" name="peleador1Nombre">
+
+                        <label for="peleador1Apellido">Apellido Peleador 1</label>
+                        <input type="text" id="peleador1Apellido" name="peleador1Apellido">
+
+                        <label for="peleador2Nombre">Nombre Peleador 2</label>
+                        <input type="text" id="peleador2Nombre" name="peleador2Nombre">
+
+                        <label for="peleador2Apellido">Apellido Peleador 2</label>
+                        <input type="text" id="peleador2Apellido" name="peleador2Apellido">
 
                         <input type="submit" value="Crear" class="btn">
 

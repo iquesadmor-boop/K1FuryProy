@@ -1,6 +1,7 @@
 package es.masanz.da.dao;
 
 import es.masanz.da.db.DbK1Fury;
+import es.masanz.da.model.Usuario;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -11,11 +12,19 @@ public class RegistroDao {
 
     private static Logger logger = LogManager.getLogger();
 
-    public static boolean crearRegsitro(int peso, int idArbitro, int idPeleadorUno, int idPeleadorDos, int idGanador){
-        String sql = "INSERT into k1furydb.registros (peso, idArbitro, idPeleadorUno, idPeleadorDos, idGanador)" +
-                "VALUES (?,?,?,?,?);";
+    public static boolean crearRegsitro(int peso, String nombreArbitro, String apellidoArbitro, String nombrePeleador1, String apellidoPeleador1, String nombrePeleador2, String apellidoPeleador2){
+        String sql = "INSERT into k1furydb.registros (peso, idArbitro, idPeleadorUno, idPeleadorDos)" +
+                "VALUES (?,?,?,?);";
 
-        Object[] params = {peso, idArbitro, idPeleadorUno, idPeleadorDos, idGanador };
+        Usuario arbitro = UserDao.getUsuarioByNombreApellido(nombreArbitro, apellidoArbitro);
+        Usuario peleador1 = UserDao.getUsuarioByNombreApellido(nombrePeleador1, apellidoPeleador1);
+        Usuario peleador2 = UserDao.getUsuarioByNombreApellido(nombrePeleador2, apellidoPeleador2);
+
+        int idArbitro = arbitro.getId();
+        int idPeleadorUno = peleador1.getId();
+        int idPeleadorDos = peleador2.getId();
+
+        Object[] params = {peso, idArbitro, idPeleadorUno, idPeleadorDos };
 
         long resultado = DbK1Fury.ejecutarInsertSQL(sql, params);
 
