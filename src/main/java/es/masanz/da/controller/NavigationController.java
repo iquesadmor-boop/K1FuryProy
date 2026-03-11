@@ -35,9 +35,7 @@ public class NavigationController {
     }
 
     public static void mostrarCombatesAnteriores(@NotNull Context context){
-        List<Registro> combates = RegistroDao.getRegistrosConNombreLiga();
         Map<String, Object> model = new HashMap<>();
-        model.put("combates", combates);
         context.render("templates/tCombates/combates-anteriores.ftl");
     }
 
