@@ -21,3 +21,67 @@
 [2026-03-11 15:37:49] [INFO ] [UserDao: 32] Atenticación realizada con exito
 [2026-03-11 15:37:49] [INFO ] [UserController: 23] Ha ido mal
 [2026-03-11 15:37:49] [INFO ] [UserController: 23] Ha ido mal
+[2026-03-11 15:38:38] [INFO ] [Main: 28] ARRANCANDO APLICACION MODO WEB
+[2026-03-11 15:38:40] [INFO ] [MainController: 17] iniciar
+[2026-03-11 15:38:45] [INFO ] [UserController: 21] Logeando con las credenciales User: admin Password admin
+[2026-03-11 15:38:46] [INFO ] [UserDao: 32] Atenticación realizada con exito
+[2026-03-11 15:38:46] [INFO ] [UserController: 23] Ha ido mal
+[2026-03-11 16:15:07] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-11 16:15:10] [INFO ] [MainController: 17] iniciar
+[2026-03-11 16:15:16] [INFO ] [UserController: 21] Logeando con las credenciales User: admin Password admin
+[2026-03-11 16:15:18] [INFO ] [UserDao: 33] Atenticación realizada con exito
+[2026-03-11 16:15:18] [INFO ] [UserController: 23] Ha ido mal
+[2026-03-11 16:17:45] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-11 16:17:48] [INFO ] [MainController: 17] iniciar
+[2026-03-11 16:17:53] [INFO ] [UserController: 21] Logeando con las credenciales User: admin Password admin
+[2026-03-11 16:17:55] [INFO ] [UserDao: 33] Atenticación realizada con exito
+[2026-03-11 16:17:55] [INFO ] [UserController: 23] Ha ido mal
+[2026-03-11 16:18:35] [INFO ] [CombateController: 13] Creando Nuevo Combate
+[2026-03-11 16:23:43] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-11 16:24:12] [INFO ] [MainController: 17] iniciar
+[2026-03-11 16:24:18] [INFO ] [UserController: 21] Logeando con las credenciales User: admin Password admin
+[2026-03-11 16:24:19] [INFO ] [UserDao: 33] Atenticación realizada con exito
+[2026-03-11 16:24:19] [INFO ] [UserController: 23] Ha ido mal
+[2026-03-11 16:25:18] [INFO ] [CombateController: 13] Creando Nuevo Combate
+[2026-03-11 16:32:44] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-11 16:32:46] [INFO ] [MainController: 17] iniciar
+[2026-03-11 16:32:51] [INFO ] [UserController: 21] Logeando con las credenciales User: admin Password admin
+[2026-03-11 16:32:53] [INFO ] [UserDao: 33] Atenticación realizada con exito
+[2026-03-11 16:32:53] [INFO ] [UserController: 23] Ha ido mal
+[2026-03-11 16:33:57] [INFO ] [CombateController: 13] Creando Nuevo Combate
+[2026-03-11 16:36:32] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-11 16:36:35] [INFO ] [MainController: 17] iniciar
+[2026-03-11 16:36:40] [INFO ] [UserController: 21] Logeando con las credenciales User: admin Password admin
+[2026-03-11 16:36:42] [INFO ] [UserDao: 33] Atenticación realizada con exito
+[2026-03-11 16:36:42] [INFO ] [UserController: 23] Ha ido mal
+[2026-03-11 16:37:30] [INFO ] [CombateController: 13] Creando Nuevo Combate
+[2026-03-11 16:40:18] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-11 16:40:24] [INFO ] [MainController: 17] iniciar
+[2026-03-11 16:40:31] [INFO ] [UserController: 21] Logeando con las credenciales User: admin Password admin
+[2026-03-11 16:40:32] [INFO ] [UserDao: 33] Atenticación realizada con exito
+[2026-03-11 16:40:32] [INFO ] [UserController: 23] Ha ido mal
+[2026-03-11 16:40:59] [INFO ] [CombateController: 13] Creando Nuevo Combate
+[2026-03-11 16:44:29] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-11 16:44:31] [INFO ] [MainController: 17] iniciar
+[2026-03-11 16:44:37] [INFO ] [UserController: 21] Logeando con las credenciales User: admin Password admin
+[2026-03-11 16:44:39] [INFO ] [UserDao: 33] Atenticación realizada con exito
+[2026-03-11 16:44:39] [INFO ] [UserController: 23] Ha ido mal
+[2026-03-11 16:45:02] [INFO ] [CombateController: 13] Creando Nuevo Combate
+[2026-03-11 16:46:03] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-11 16:46:06] [INFO ] [MainController: 17] iniciar
+[2026-03-11 16:46:18] [INFO ] [UserController: 21] Logeando con las credenciales User: admin Password admin
+[2026-03-11 16:46:19] [INFO ] [UserDao: 33] Atenticación realizada con exito
+[2026-03-11 16:46:19] [INFO ] [UserController: 23] Ha ido mal
+[2026-03-11 16:47:26] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-11 16:47:28] [INFO ] [MainController: 17] iniciar
+[2026-03-11 16:47:35] [INFO ] [UserController: 21] Logeando con las credenciales User: admin Password admin
+[2026-03-11 16:47:37] [INFO ] [UserDao: 33] Atenticación realizada con exito
+[2026-03-11 16:47:37] [INFO ] [UserController: 23] Ha ido mal
+[2026-03-11 16:48:01] [INFO ] [CombateController: 15] Creando Nuevo Combate
+[2026-03-11 16:48:04] [INFO ] [CombateController: 15] Creando Nuevo Combate
+[2026-03-11 16:49:53] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-11 16:49:57] [INFO ] [MainController: 17] iniciar
+[2026-03-11 16:50:04] [INFO ] [UserController: 21] Logeando con las credenciales User: admin Password admin
+[2026-03-11 16:50:06] [INFO ] [UserDao: 33] Atenticación realizada con exito
+[2026-03-11 16:50:06] [INFO ] [UserController: 23] Ha ido mal
+[2026-03-11 16:50:33] [INFO ] [CombateController: 15] Creando Nuevo Combate

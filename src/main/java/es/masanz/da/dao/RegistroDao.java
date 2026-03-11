@@ -12,19 +12,20 @@ public class RegistroDao {
 
     private static Logger logger = LogManager.getLogger();
 
-    public static boolean crearRegsitro(int peso, String nombreArbitro, String apellidoArbitro, String nombrePeleador1, String apellidoPeleador1, String nombrePeleador2, String apellidoPeleador2){
-        String sql = "INSERT into k1furydb.registros (peso, idArbitro, idPeleadorUno, idPeleadorDos)" +
+    public static boolean crearRegsitro(String liga, String arbitroNombre, String arbitroApellido, String peleador1Nombre, String peleador1Apellido, String peleador2Nombre, String peleador2Apellido){
+        String sql = "INSERT into k1furydb.registros (liga, idArbitro, idPeleadorUno, idPeleadorDos)" +
                 "VALUES (?,?,?,?);";
 
-        Usuario arbitro = UserDao.getUsuarioByNombreApellido(nombreArbitro, apellidoArbitro);
-        Usuario peleador1 = UserDao.getUsuarioByNombreApellido(nombrePeleador1, apellidoPeleador1);
-        Usuario peleador2 = UserDao.getUsuarioByNombreApellido(nombrePeleador2, apellidoPeleador2);
+        Usuario arbitro = UserDao.getUsuarioByNombreApellido(arbitroNombre, arbitroApellido);
+        Usuario peleador1 = UserDao.getUsuarioByNombreApellido(peleador1Nombre, peleador1Apellido);
+        Usuario peleador2 = UserDao.getUsuarioByNombreApellido(peleador2Nombre, peleador2Apellido);
 
         int idArbitro = arbitro.getId();
         int idPeleadorUno = peleador1.getId();
         int idPeleadorDos = peleador2.getId();
+        int idLiga = liga.getIdFromNombre();
 
-        Object[] params = {peso, idArbitro, idPeleadorUno, idPeleadorDos };
+        Object[] params = {liga, idArbitro, idPeleadorUno, idPeleadorDos };
 
         long resultado = DbK1Fury.ejecutarInsertSQL(sql, params);
 
