@@ -127,6 +127,28 @@ public class LigaDao {
         return lista;
     }
 
+    public static Liga getLigabyNombre(String liga) {
+        String sql = "select id, nombre, peso, fecha_inicio, fecha_fin, campeon, activa " +
+                "from liga " +
+                "where nombre = ?";
+        Object[] params = {liga};
+        Object[][] resultado = DbK1Fury.ejecutarSelectSQL(sql, params);
+        Liga l = new Liga();
+        if (resultado != null && resultado.length > 0) {
+            for (int i = 0; i < resultado.length; i++) {
+                l.setId(Integer.parseInt(String.valueOf(resultado[i][0])));
+                l.setNombre(String.valueOf(resultado[i][1]));
+                l.setPeso(Integer.parseInt(String.valueOf(resultado[i][2])));
+                l.setFechaInicio(String.valueOf(resultado[i][3]));
+                l.setFechaFin(String.valueOf(resultado[i][4]));
+//                l.setCampeon(Integer.valueOf(String.valueOf(resultado[i][5])));
+//                l.setEstaActiva(Integer.valueOf(String.valueOf(resultado[i][6])));
+            }
+        }
+
+        return l;
+    }
+
 //    public static boolean procesarEliminarLiga(String nombre){
 //        int idLiga = getIdByNombre(nombre);
 //

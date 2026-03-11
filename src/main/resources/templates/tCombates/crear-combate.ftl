@@ -26,12 +26,14 @@
                 <div class="EditarLiga">
                     <form class="form" action="/crearCombate" method="POST">
                         
+                        
+                        <select class="selector" name="liga">
                         <#list ligas as liga>
-                        <select class="selector" name="peso">
                             <option value="" disabled selected  hidden>Liga</option>
                             <option value="${liga}">${liga}</option>
-                        </select>
                         </#list>
+                        </select>
+                        
                         <label for="arbitroNombre">Nombre Arbitro</label>
                         <input type="text" id="arbitroNombre" name="arbitroNombre">
 

@@ -66,7 +66,7 @@ public class Main {
         app.get("/tCombates/proximos-combates", NavigationController::mostrarProximosCombates);
         app.get("/tCombates/anotar-resultado", NavigationController::mostrarAnotarResultados);
 
-        app.get("/crear-combate", NavigationController::mostrarCrearCombate);
+        app.get("/crear-combate", CombateController::mostrarCrearCombate);
         app.post("/crearCombate", CombateController::procesarNuevoCombate);
 
 
