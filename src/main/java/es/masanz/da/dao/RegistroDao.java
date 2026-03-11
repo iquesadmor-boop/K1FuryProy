@@ -36,6 +36,31 @@ public class RegistroDao {
         } else {return false;}
     }
 
+    public static List<Registro> getRegistros() {
+        String sql = "SELECT r.id, r.liga, l.nombre, r.arbitro, r.peleador1, r.peleador2, r.ganador " +
+                "FROM k1furydb.registros r " +
+                "JOIN k1furydb.liga l ON r.liga = l.id";
+
+        Object[] params = {};
+        Object[][] resultado = DbK1Fury.ejecutarSelectSQL(sql, params);
+        java.util.List<Registro> lista = new ArrayList<>();
+
+        if (resultado != null && resultado.length > 0) {
+            for (int i = 0; i < resultado.length; i++) {
+                Registro r = new es.masanz.da.model.Registro();
+                r.setId(Integer.parseInt(String.valueOf(resultado[i][0])));
+                r.setLiga(Integer.parseInt(String.valueOf(resultado[i][1])));
+                r.setNombreLiga(String.valueOf(resultado[i][2]));
+                r.setArbitro(Integer.parseInt(String.valueOf(resultado[i][3])));
+                r.setPeleador1(Integer.parseInt(String.valueOf(resultado[i][4])));
+                r.setPeleador2(Integer.parseInt(String.valueOf(resultado[i][5])));
+                r.setGanador(Integer.parseInt(String.valueOf(resultado[i][6])));
+                lista.add(r);
+            }
+        }
+        return lista;
+    }
+
     public static boolean actualizarUsuarioPeso(int peso, int id) {
         String sql = "UPDATE k1furydb.registros " +
                 "SET peso = ? " +
