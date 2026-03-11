@@ -164,14 +164,13 @@ public class LigaDao {
 //
 //    }
 
-    public static String getNombreById(int id) {
-        String sql = "SELECT nombre FROM liga WHERE id = ?";
-        Object[] params = {id};
-        Object[][] res = DbK1Fury.ejecutarSelectSQL(sql, params);
-
-        if (res != null && res.length > 0) {
-            return res[0][0].toString();
-        }
-        return "";
-    }
+//      public static String getNombreById(int id) {
+//          String sql = "SELECT nombre FROM liga WHERE id = ?";
+//          Object[] params = {id};
+//          Object[][] res = DbK1Fury.ejecutarSelectSQL(sql, params);
+//              if (res != null && res.length > 0)
+//                  return res[0][0].toString();
+//              }
+//          return "";
+//      }
 }
