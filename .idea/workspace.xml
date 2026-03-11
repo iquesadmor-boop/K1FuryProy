@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47d82a8c-7d5e-4a29-bbc6-9860c514f164" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/app.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/masanz/da/controller/CombateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/masanz/da/controller/CombateController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/masanz/da/controller/NavigationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/masanz/da/controller/NavigationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/masanz/da/dao/LigaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/masanz/da/dao/LigaDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/masanz/da/dao/RegistroDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/masanz/da/dao/RegistroDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/masanz/da/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/masanz/da/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/masanz/da/model/Registro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/masanz/da/model/Registro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tCombates/combates-anteriores.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/tCombates/combates-anteriores.ftl" afterDir="false" />
-    </list>
+    <list default="true" id="47d82a8c-7d5e-4a29-bbc6-9860c514f164" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
