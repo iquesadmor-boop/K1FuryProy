@@ -7,13 +7,8 @@
     <list default="true" id="47d82a8c-7d5e-4a29-bbc6-9860c514f164" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/app.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/masanz/da/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/masanz/da/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/masanz/da/controller/LigaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/masanz/da/controller/LigaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/masanz/da/controller/NavigationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/masanz/da/controller/NavigationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/es/masanz/da/dao/LigaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/masanz/da/dao/LigaDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tLiga/eliminar-liga.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/tLiga/eliminar-liga.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tLiga/listado-ligas.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/tLiga/listado-ligas.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tLiga/nueva-liga.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/tLiga/nueva-liga.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/menu.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/menu.ftl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +62,7 @@
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="es.masanz.da.Main" />
-      <module name="K1FuryProy" />
+      <module name="torneo" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="es.masanz.da.*" />
@@ -108,16 +103,5 @@
       <updated>1772191934536</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/es/masanz/da/dao/LigaDao.java</url>
-          <line>82</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
