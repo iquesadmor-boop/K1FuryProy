@@ -36,27 +36,29 @@ INSERT INTO k1furydb.liga(nombre,peso,fecha_inicio)
 VALUES ("Liga80Kg",80, now());
 
 -- INSERTS DE PELEADOR
-INSERT INTO k1furydb.usuario (nombre, apellido, rol, peso, liga)
-VALUES ("Alejandro", "Morales", 2, 72,1),
-("Ricardo", "Herrera", 2, 72,1),
-("Fernando", "Ortega", 2, 72,1),
-("Hugo", "Mendoza", 2, 72,1),
-("Mateo", "Salazar", 2, 72,1),
-("Rodrigo", "Esquivel", 2, 72,1),
-("Adrián", "Pardo", 2, 72,1),
-("Gonzalo", "Méndez", 2, 76,2),
-("Samuel", "Vargas", 2, 76,2),
-("Joaquín", "Ibáñez", 2, 76,2),
-("Marcos", "Benítez", 2, 76,2),
-("Emiliano", "Vega", 2, 76,2),
-("Santiago", "Peralta", 2, 76,2),
-("Ismael", "Cabrera", 2, 76,2),
-("Óscar", "Márquez", 2, 80,3),
-("Raúl", "Beltrán", 2, 80,3),
-("Felipe", "Durán", 2, 80,3),
-("Ignacio", "Soto", 2, 80,3),
-("Valentín", "Olmos", 2, 80,3),
-("Rafael", "Gallardo", 2, 80,3);
+INSERT INTO k1furydb.usuario (dni, nombre, apellido, rol, peso, liga)
+VALUES
+("12345678A", "Alejandro", "Morales", 2, 72, 1),
+("23456789B", "Ricardo", "Herrera", 2, 72, 1),
+("34567890C", "Fernando", "Ortega", 2, 72, 1),
+("45678901D", "Hugo", "Mendoza", 2, 72, 1),
+("56789012E", "Mateo", "Salazar", 2, 72, 1),
+("67890123F", "Rodrigo", "Esquivel", 2, 72, 1),
+("78901234G", "Adrián", "Pardo", 2, 72, 1),
+("89012345H", "Gonzalo", "Méndez", 2, 76, 2),
+("90123456I", "Samuel", "Vargas", 2, 76, 2),
+("01234567J", "Joaquín", "Ibáñez", 2, 76, 2),
+("11234567K", "Marcos", "Benítez", 2, 76, 2),
+("22234567L", "Emiliano", "Vega", 2, 76, 2),
+("33234567M", "Santiago", "Peralta", 2, 76, 2),
+("44234567N", "Ismael", "Cabrera", 2, 76, 2),
+("55234567O", "Óscar", "Márquez", 2, 80, 3),
+("66234567P", "Raúl", "Beltrán", 2, 80, 3),
+("77234567Q", "Felipe", "Durán", 2, 80, 3),
+("88234567R", "Ignacio", "Soto", 2, 80, 3),
+("99234567S", "Valentín", "Olmos", 2, 80, 3),
+("00234567T", "Rafael", "Gallardo", 2, 80, 3);
+
 
 
 select *

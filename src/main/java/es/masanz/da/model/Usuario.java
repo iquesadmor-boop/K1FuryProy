@@ -3,6 +3,7 @@ package es.masanz.da.model;
 public class Usuario {
 
     private int id;
+    private  String dni;
     private String nombre;
     private String apellido;
     private String password;
@@ -12,11 +13,12 @@ public class Usuario {
     private int victorias;
 
     public Usuario() {
-        this(0, "", "", "", 0, 0,0,0);
+        this(0,"0000000000A","", "", "", 0, 0,0,0);
     }
 
-    public Usuario(int id, String nombre, String apellido, String password, int rol, int peso, int liga, int victorias) {
+    public Usuario(int id, String dni, String nombre, String apellido, String password, int rol, int peso, int liga, int victorias) {
         this.id = id;
+        this.dni = dni;
         this.nombre = nombre;
         this.apellido = apellido;
         this.password = password;
@@ -90,6 +92,14 @@ public class Usuario {
 
     public void setVictorias(int victorias) {
         this.victorias = victorias;
+    }
+
+    public String getDni() {
+        return dni;
+    }
+
+    public void setDni(String dni) {
+        this.dni = dni;
     }
 
     // endregion

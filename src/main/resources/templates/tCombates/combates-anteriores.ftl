@@ -19,12 +19,12 @@
             </div>
         </header>
         <main>
-                    <div class="mainMatch">
-                        <div class="combate_box">
+            <div class="mainMatch">
+                <div class="combate_box">
                             <h2>${combate.nombreLiga}</h2>
                             <div class="detalles_box">
                                 <div class="peleador_box">
-                                    <p>Jhonny Sins</p>
+                                    <p>${combate.peleador1}</p>
                                     <p>70Kg</p>
                                     <p>3-1-4</p>
                                 </div>
@@ -32,52 +32,15 @@
                                     <p>VS</p>
                                 </div>
                                 <div class="peleador_box">
-                                    <p>Jhonny Sins</p>
+                                    <p>${combate.peleador2}</p>
                                     <p>70Kg</p>
                                     <p>3-1-4</p>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="combate_box">
-                            <h2>${combate.nombreLiga}</h2>
-                            <div class="detalles_box">
-                                <div class="peleador_box">
-                                    <p>Jhonny Sins</p>
-                                    <p>70Kg</p>
-                                    <p>3-1-4</p>
-                                </div>
-                                <div class="vs">
-                                    <p>VS</p>
-                                </div>
-                                <div class="peleador_box">
-                                    <p>Jhonny Sins</p>
-                                    <p>70Kg</p>
-                                    <p>3-1-4</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="combate_box">
-                            <h2>${combate.nombreLiga}</h2>
-                            <div class="detalles_box">
-                                <div class="peleador_box">
-                                    <p>Jhonny Sins</p>
-                                    <p>70Kg</p>
-                                    <p>3-1-4</p>
-                                </div>
-                                <div class="vs">
-                                    <p>VS</p>
-                                </div>
-                                <div class="peleador_box">
-                                    <p>Jhonny Sins</p>
-                                    <p>70Kg</p>
-                                    <p>3-1-4</p>
-                                </div>
-                            </div>
-                        </div>
                     </div>
-                </main>
+            </div>
+
+        </main>
         <footer>
             <div class="footer">
                 <a href="menu.html"><i class="fa-solid fa-house"></i></a>
