@@ -612,3 +612,9 @@
 [2026-03-10 18:42:35] [INFO ] [UserController: 16] Logeando con las credenciales User: admin Password admin
 [2026-03-10 18:42:35] [INFO ] [UserDao: 32] Atenticación realizada con exito
 [2026-03-10 18:42:35] [INFO ] [UserController: 18] Ha ido mal
+[2026-03-11 11:27:15] [INFO ] [Main: 28] ARRANCANDO APLICACION MODO WEB
+[2026-03-11 11:27:24] [INFO ] [MainController: 17] iniciar
+[2026-03-11 11:27:38] [INFO ] [UserController: 21] Logeando con las credenciales User: admin Password admin
+[2026-03-11 11:27:38] [INFO ] [UserDao: 32] Atenticación realizada con exito
+[2026-03-11 11:27:38] [INFO ] [UserController: 23] Ha ido mal
+[2026-03-11 11:28:29] [INFO ] [LigaController: 25] Creando Nueva Liga
