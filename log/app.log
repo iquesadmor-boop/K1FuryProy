@@ -677,3 +677,18 @@
 [2026-03-11 12:50:51] [INFO ] [UserDao: 32] Atenticación realizada con exito
 [2026-03-11 12:50:51] [INFO ] [UserController: 23] Ha ido mal
 [2026-03-11 12:51:06] [INFO ] [LigaController: 43] Editando la liga
+[2026-03-11 12:54:24] [INFO ] [Main: 28] ARRANCANDO APLICACION MODO WEB
+[2026-03-11 12:54:26] [INFO ] [MainController: 17] iniciar
+[2026-03-11 12:54:33] [INFO ] [UserController: 21] Logeando con las credenciales User: admin Password admin
+[2026-03-11 12:54:33] [INFO ] [UserDao: 32] Atenticación realizada con exito
+[2026-03-11 12:54:33] [INFO ] [UserController: 23] Ha ido mal
+[2026-03-11 13:05:16] [INFO ] [Main: 28] ARRANCANDO APLICACION MODO WEB
+[2026-03-11 13:05:19] [INFO ] [MainController: 17] iniciar
+[2026-03-11 13:05:25] [INFO ] [UserController: 21] Logeando con las credenciales User: admin Password admin
+[2026-03-11 13:05:26] [INFO ] [UserDao: 32] Atenticación realizada con exito
+[2026-03-11 13:05:26] [INFO ] [UserController: 23] Ha ido mal
+[2026-03-11 13:06:11] [INFO ] [Main: 28] ARRANCANDO APLICACION MODO WEB
+[2026-03-11 13:06:13] [INFO ] [MainController: 17] iniciar
+[2026-03-11 13:06:19] [INFO ] [UserController: 21] Logeando con las credenciales User: admin Password admin
+[2026-03-11 13:06:20] [INFO ] [UserDao: 32] Atenticación realizada con exito
+[2026-03-11 13:06:20] [INFO ] [UserController: 23] Ha ido mal

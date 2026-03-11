@@ -60,6 +60,7 @@ public class Main {
         app.post("/editarLiga", LigaController::procesarEditarLiga);
 
         app.get("/tLiga/eliminar-liga", LigaController::mostrarEliminarLiga);
+        app.get("/confirmarEliminarLiga", NavigationController::mostrarConfirmarEliminarLiga);
 
 
         app.get("/tCombates/combates", NavigationController::mostrarCombates);

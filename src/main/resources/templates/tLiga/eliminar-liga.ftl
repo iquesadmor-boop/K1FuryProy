@@ -25,7 +25,7 @@
             <#list ligas as liga>
                 <label class="selector">${liga}<input class="checkboxSelectorEliminar" type="checkbox" name="liga" value="${liga}"></label>
             </#list>
-                <button class="btn"><a href="confirmar-eliminar-liga.html">Eliminar</a></button>
+                <a href="/confirmarEliminarLiga">Eliminar</a>
             </div>
         </main>
         <footer>
