@@ -1,6 +1,7 @@
 package es.masanz.da.dao;
 
 import es.masanz.da.db.DbK1Fury;
+import es.masanz.da.model.Usuario;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -139,4 +140,29 @@ public class UserDao {
         System.out.println(eliminarUsuario(44));
     }
 
+    public static Usuario getUsuarioByNombreApellido(String nombre, String apellido) {
+        String sql = "select id, nombre, apellido, contraseña, rol, peso, liga, victorias " +
+                "from usuario " +
+                "where nombre = ? and apellido = ?";
+
+        Object[] params = {nombre, apellido};
+
+        Object[][] res = DbK1Fury.ejecutarSelectSQL(sql, params);
+        Usuario u = new Usuario();
+
+        if (res.length > 0 && res != null){
+
+            for (int i = 0; i < res.length; i++) {
+                u.setId(Integer.parseInt(String.valueOf(res[i][0])));
+                u.setNombre(String.valueOf(res[i][1]));
+                u.setApellido(String.valueOf(res[i][2]));
+                u.setPassword(String.valueOf(res[i][3]));
+                u.setRol(Integer.parseInt(String.valueOf(res[i][4])));
+                u.setPeso(Integer.parseInt(String.valueOf(res[i][5])));
+                u.setLiga(Integer.parseInt(String.valueOf(res[i][6])));
+                u.setVictorias(Integer.parseInt(String.valueOf(res[i][7])));
+            }
+        }
+        return u;
+    }
 }

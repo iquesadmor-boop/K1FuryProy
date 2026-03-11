@@ -20,8 +20,8 @@
         </header>
         <main>
             <div class="main">
-                <button><a href="gestion-liga.html">Confirmar</a></button>
-                <button><a href="eliminar-liga.html">Cancelar</a></button>
+                <a class = "button" href="/procesarEliminarLiga">Confirmar</a>
+                <a class = "button" href="/tLiga/eliminar-liga">Cancelar</a>
             </div>
         </main>
         <footer>

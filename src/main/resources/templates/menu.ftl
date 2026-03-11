@@ -24,13 +24,13 @@
             <button class="button"><a href="/tLiga/gestion-liga" class="button">Gestión Liga</a></button>
             <button class="button"><a href="./tUsuarios/gestion-usuarios">Gestión Usuarios</a></button>
             <button class="button"><a href="/tCombates/combates">Combates</a></button>
-            <button class="button"><a href="/tClasificacion/clasificacion">Clasificacion</a></button>
+            <a class="button" href="/tClasificacion/clasificacion">Clasificacion</a>
             </div>
         </main>
         
         <footer>
             <div class="footer">
-                <a href="menu.ftl"><i class="fa-solid fa-house"></i></a>
+                <a href="/menu"><i class="fa-solid fa-house"></i></a>
                 <a href="menu.ftl"><i class="fa-solid fa-arrow-left"></i></a>
             </div>
         </footer>

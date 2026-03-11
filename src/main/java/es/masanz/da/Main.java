@@ -1,9 +1,6 @@
 package es.masanz.da;
 
-import es.masanz.da.controller.LigaController;
-import es.masanz.da.controller.MainController;
-import es.masanz.da.controller.NavigationController;
-import es.masanz.da.controller.UserController;
+import es.masanz.da.controller.*;
 import es.masanz.da.service.UserService;
 import io.javalin.Javalin;
 import io.javalin.rendering.template.JavalinFreemarker;
@@ -60,12 +57,18 @@ public class Main {
         app.post("/editarLiga", LigaController::procesarEditarLiga);
 
         app.get("/tLiga/eliminar-liga", LigaController::mostrarEliminarLiga);
+        app.get("/confirmarEliminarLiga", NavigationController::mostrarConfirmarEliminarLiga);
+        //app.get("/procesarEliminarLiga", LigaController::procesarEliminarLiga);
 
 
         app.get("/tCombates/combates", NavigationController::mostrarCombates);
         app.get("/tCombates/combates-anteriores", NavigationController::mostrarCombatesAnteriores);
         app.get("/tCombates/proximos-combates", NavigationController::mostrarProximosCombates);
         app.get("/tCombates/anotar-resultado", NavigationController::mostrarAnotarResultados);
+
+        app.get("/crear-combate", NavigationController::mostrarCrearCombate);
+        app.get("/crearCombate", CombateController::procesarNuevoCombate);
+
 
 
         app.get("/tClasificacion/clasificacion", NavigationController::mostrarMenuClasificaciones);

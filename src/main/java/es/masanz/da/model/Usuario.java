@@ -8,18 +8,22 @@ public class Usuario {
     private String password;
     private int rol;
     private int peso;
+    private int liga;
+    private int victorias;
 
     public Usuario() {
-        this(0, "", "", "", 0, 0);
+        this(0, "", "", "", 0, 0,0,0);
     }
 
-    public Usuario(int id, String nombre, String apellido, String password, int rol, int peso) {
+    public Usuario(int id, String nombre, String apellido, String password, int rol, int peso, int liga, int victorias) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
         this.password = password;
         this.rol = rol;
         this.peso = peso;
+        this.liga = liga;
+        this.victorias = victorias;
     }
 
     // region Getters and Setters
@@ -70,6 +74,22 @@ public class Usuario {
 
     public void setPeso(int peso) {
         this.peso = peso;
+    }
+
+    public int getLiga() {
+        return liga;
+    }
+
+    public void setLiga(int liga) {
+        this.liga = liga;
+    }
+
+    public int getVictorias() {
+        return victorias;
+    }
+
+    public void setVictorias(int victorias) {
+        this.victorias = victorias;
     }
 
     // endregion

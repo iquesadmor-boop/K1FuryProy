@@ -23,6 +23,7 @@
             <button class="button"><a href="./proximos-combates">Proximos Combates</a></button>
             <button class="button"><a href="./combates-anteriores">Combates Anteriores</a></button>
             <button class="button"><a href="./anotar-resultado">Anotar Resultados</a></button>
+            <a class="button" href="/crear-combate">Crear Combate</a>
             </div>
         </main>
         <footer>

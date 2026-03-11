@@ -42,11 +42,11 @@ public class LigaController {
     public static void procesarEditarLiga(Context context){
         logger.info("Editando la liga");
 
-        String nombre = context.formParam("nombre");
+        String nombre = context.formParam("ligas");
+        String NuevoNombre = context.formParam("NuevoNombre");
         String fecha_fin = context.formParam("fecha_fin");
-        int id_Liga = LigaDao.getIdByNombre(nombre);
 
-        LigaDao.editarLiga(nombre,fecha_fin,id_Liga);
+        LigaDao.editarLiga(NuevoNombre,fecha_fin,nombre);
         context.redirect("/menu");
     }
 
@@ -72,4 +72,8 @@ public class LigaController {
         context.render("templates/tLiga/eliminar-liga.ftl", model);
     }
 
+//    public static void procesarEliminarLiga(@NotNull Context context) {
+//        List<String> nombres = null;
+//        Map<String,Object> model = new HashMap<>();
+//    }
 }

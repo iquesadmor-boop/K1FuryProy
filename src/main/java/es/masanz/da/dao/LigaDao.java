@@ -31,12 +31,12 @@ public class LigaDao {
         } else {return false;}
     }
 
-    public static boolean editarLiga(String nombre, String fecha_fin, int id){
+    public static boolean editarLiga(String NuevoNombre, String fecha_fin, String nombre){
         String sql = "update liga " +
                 "SET nombre = ?, fecha_fin = ? " +
-                "where id = ? ";
+                "where nombre = ? ";
 
-        Object[] params = {nombre, fecha_fin, id};
+        Object[] params = {NuevoNombre, fecha_fin, nombre };
 
         int resultado = DbK1Fury.ejecutarUpdateSQL(sql,params);
 
@@ -60,7 +60,7 @@ public class LigaDao {
 
     public static List<Usuario> getPeleadores(int peso) {
         List<Usuario> lista = new ArrayList<>();
-        String sql = "SELECT id, nombre, apellido, contraseña, rol, peso FROM usuario WHERE peso = ?";
+        String sql = "SELECT id, nombre, apellido, contraseña, rol, peso, liga FROM usuario WHERE peso = ?";
         Object[] params = {peso};
         Object[][] resultado = DbK1Fury.ejecutarSelectSQL(sql, params);
         if (resultado != null && resultado.length >= 1) {
@@ -126,4 +126,19 @@ public class LigaDao {
         }
         return lista;
     }
+
+//    public static boolean procesarEliminarLiga(String nombre){
+//        int idLiga = getIdByNombre(nombre);
+//
+//        String sql = "update liga" +
+//                "set id = 0, nombre = null, peso = 0, fecha_inicio = null, fecha_fin = null, activa = 0 " +
+//                "where id = ?";
+//        Object[] params = {idLiga};
+//        int resultado = DbK1Fury.ejecutarUpdateSQL(sql, params);
+//
+//        if (resultado > 0){
+//            return true;
+//        } else {return false;}
+//
+//    }
 }
