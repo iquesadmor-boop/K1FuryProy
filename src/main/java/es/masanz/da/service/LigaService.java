@@ -25,7 +25,7 @@ public class LigaService {
         return LigaDao.getPeleadoresLiga(id_liga);
     }
 
-    public static boolean editarLiga(String nombre, String fecha_fin, int id){
-        return LigaDao.editarLiga(nombre, fecha_fin, id);
-    }
+//    public static boolean editarLiga(String nombre, String fecha_fin){
+//        return LigaDao.editarLiga(nombre, fecha_fin);
+//    }
 }
