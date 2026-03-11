@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nueva Liga</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../k1Fury.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <header>
+            <div class="headerTop">
+                <img src="/img/LogoFuryK1.png">
+            </div>
+
+            <div class="headerTitle">
+                <h4>NUEVO COMBATE</h4>
+            </div>
+        </header>
+
+        <main>
+            <div class="main">
+                <div class="EditarLiga">
+                    <form class="form" action="/crearCombate" method="POST">
+                        
+                        <select class="selector" name="peso">
+                            <option value="" disabled selected  hidden>Liga</option>
+                            <option value="72">K1 Fury 72Kg</option>
+                            <option value="76">K1 Fury 76Kg</option>
+                            <option value="80">K1 Fury 80Kg</option>
+                        </select>
+
+                        <label for="arbitro">Nombre Arbitro</label>
+                        <input type="text" id="arbitro" name="arbitro">
+
+                        <label for="peleador1">Nombre Peleador 1</label>
+                        <input type="text" id="peleador1" name="peleador1">
+
+                        <label for="peleador2">Nombre Peleador 2</label>
+                        <input type="text" id="peleador2" name="peleador2">
+
+                        <input type="submit" value="Crear" class="btn">
+
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer">
+                <a href="menu.html"><i class="fa-solid fa-house"></i></a>
+                <a href="gestion-liga.html"><i class="fa-solid fa-arrow-left"></i></a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

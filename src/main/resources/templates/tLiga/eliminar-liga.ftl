@@ -23,7 +23,7 @@
         <main>
             <div class="mainList">
             <#list ligas as liga>
-                <label class="selector">${liga}<input class="checkboxSelectorEliminar" type="checkbox" name="liga" value="${liga}"></label>
+                <label class="selector">${liga}<input class="checkboxSelectorEliminar" type="checkbox" name="${liga}" value="${liga}"></label>
             </#list>
                 <a href="/confirmarEliminarLiga">Eliminar</a>
             </div>

@@ -61,12 +61,16 @@ public class Main {
 
         app.get("/tLiga/eliminar-liga", LigaController::mostrarEliminarLiga);
         app.get("/confirmarEliminarLiga", NavigationController::mostrarConfirmarEliminarLiga);
+        //app.get("/procesarEliminarLiga", LigaController::procesarEliminarLiga);
 
 
         app.get("/tCombates/combates", NavigationController::mostrarCombates);
         app.get("/tCombates/combates-anteriores", NavigationController::mostrarCombatesAnteriores);
         app.get("/tCombates/proximos-combates", NavigationController::mostrarProximosCombates);
         app.get("/tCombates/anotar-resultado", NavigationController::mostrarAnotarResultados);
+
+        app.get("/crear-combate", NavigationController::mostrarCrearCombate);
+
 
 
         app.get("/tClasificacion/clasificacion", NavigationController::mostrarMenuClasificaciones);

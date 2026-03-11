@@ -68,5 +68,7 @@ public class NavigationController {
     }
 
 
-
+    public static void mostrarCrearCombate(@NotNull Context context) {
+        context.redirect("templates/tCombates/crear-combate.ftl");
+    }
 }

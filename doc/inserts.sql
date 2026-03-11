@@ -22,7 +22,8 @@ INSERT INTO k1furydb.usuario (nombre,contraseña,rol)
 VALUES ("admin1", "admin1",4);
 INSERT INTO k1furydb.usuario (nombre,contraseña,rol)
 VALUES ("admin2", "admin2",4);
-
+INSERT INTO k1furydb.usuario (nombre,contraseña,rol)
+VALUES ("javier", "fabo",3);
 select *
 from k1furydb.usuario;
 

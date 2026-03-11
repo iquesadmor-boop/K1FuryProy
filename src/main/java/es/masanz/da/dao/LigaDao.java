@@ -126,4 +126,19 @@ public class LigaDao {
         }
         return lista;
     }
+
+//    public static boolean procesarEliminarLiga(String nombre){
+//        int idLiga = getIdByNombre(nombre);
+//
+//        String sql = "update liga" +
+//                "set id = 0, nombre = null, peso = 0, fecha_inicio = null, fecha_fin = null, activa = 0 " +
+//                "where id = ?";
+//        Object[] params = {idLiga};
+//        int resultado = DbK1Fury.ejecutarUpdateSQL(sql, params);
+//
+//        if (resultado > 0){
+//            return true;
+//        } else {return false;}
+//
+//    }
 }
