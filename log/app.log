@@ -67,3 +67,4 @@
 [2026-03-11 16:59:24] [INFO ] [UserController: 23] Logeando con las credenciales User: admin Password admin
 [2026-03-11 16:59:25] [INFO ] [UserDao: 33] Atenticación realizada con exito
 [2026-03-11 16:59:25] [INFO ] [UserController: 25] Ha ido mal
+[2026-03-11 16:59:51] [INFO ] [UserController: 58] Editando usuario
