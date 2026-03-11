@@ -34,12 +34,12 @@ public class NavigationController {
         context.render("templates/tCombates/combates.ftl");
     }
 
-    public static void mostrarCombatesAnteriores(@NotNull Context context){
-        List<Registro> combates = RegistroDao.getRegistrosConNombreLiga();
-        Map<String, Object> model = new HashMap<>();
-        model.put("combates", combates);
-        context.render("templates/tCombates/combates-anteriores.ftl");
-    }
+//    public static void mostrarCombatesAnteriores(@NotNull Context context){
+//        List<Registro> combates = RegistroDao.getRegistrosConNombreLiga();
+//        Map<String, Object> model = new HashMap<>();
+//        model.put("combates", combates);
+//        context.render("templates/tCombates/combates-anteriores.ftl");
+//    }
 
     public static void mostrarProximosCombates(@NotNull Context context){
         Map<String, Object> model = new HashMap<>();
