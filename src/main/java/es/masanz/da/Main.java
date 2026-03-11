@@ -80,9 +80,11 @@ public class Main {
         app.get("/tUsuarios/nuevo-usuario", UserController::mostrarNuevoUsuario);
         app.get("/tUsuarios/editar-usuario", UserController::mostrarEditarUsuario);
         app.get("/tUsuarios/listado-usuarios", UserController::mostrarListadoUsuarios);
+        app.get("/tUsuarios/eliminar-usuario", UserController::mostrarEliminarUsuario);
 
         app.post("/nuevo-usuario", UserController::procesarNuevoUsuario);
         app.post("/editar-usuario", UserController::procesarEditarUsuario);
+        app.post("/eliminar-usuario", UserController::procesarEliminarUsuario);
 
 //        app.get("/clasif72kg", NavigationController::mostrarClasif72KG);
 //        app.get("/clasif76kg", NavigationController::mostrarClasif76KG);

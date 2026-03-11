@@ -38,6 +38,7 @@ public class UserController {
     public static void procesarNuevoUsuario (Context context){
         logger.info("Creando Nueva Usuario");
 
+        String dni = context.formParam("dni");
         String nombre = context.formParam("nombre");
         int peso = Integer.parseInt(context.formParam("peso"));
         String apellido = context.formParam("apellido");
@@ -45,7 +46,7 @@ public class UserController {
         int rol = Integer.parseInt(context.formParam("rol"));
 
 
-        UserDao.insertarUsuario(nombre,pwd,apellido,rol,peso);
+        UserDao.insertarUsuario(dni,nombre,pwd,apellido,rol,peso);
         context.redirect("/menu");
     }
 
@@ -64,14 +65,28 @@ public class UserController {
     public static void procesarEditarUsuario(Context context){
         logger.info("Editando usuario");
 
-        String nombreActual = context.formParam("nombreActual");
-        String apellidoActual = context.formParam("apellidoActual");
-        String nuevoNombre = context.formParam("nuevoNombre");
-        String nuevoApellido = context.formParam("nuevoApellido");
+        String dni = context.formParam("dni");
+        String nombre = context.formParam("nombre");
+        String apellido = context.formParam("apellido");
         String pwd = context.formParam("contraseña");
         int rol = Integer.parseInt(context.formParam("rol"));
 
-        UserDao.actualizarUsuario(nombreActual,apellidoActual,nuevoNombre,nuevoApellido,pwd,rol);
+        UserDao.actualizarUsuario(dni,nombre,apellido,pwd,rol);
+        context.redirect("/menu");
+    }
+
+    public static void mostrarEliminarUsuario(Context context) {
+        Map<String, Object> model = new HashMap<>();
+        context.render("templates/tUsuarios/eliminar-usuario.ftl", model);
+    }
+
+    public static void procesarEliminarUsuario (Context context){
+        logger.info("Borrando usuario");
+
+        String dni = context.formParam("dni");
+
+
+        UserDao.eliminarUsuario(dni);
         context.redirect("/menu");
     }
 }

@@ -23,7 +23,9 @@
         <main>
             <div class="main">
                 <form class="form" action="/nuevo-usuario" method="POST">
-                    <label for="nombre">Usuario</label>
+                    <label for="dni">Dni</label>
+                    <input type="text" id="dni" name="dni">
+                    <label for="nombre">Nombre</label>
                     <input type="text" id="nombre" name="nombre">
                     <label for="apellido">Apellido</label>
                     <input type="text" id="apellido" name="apellido">
