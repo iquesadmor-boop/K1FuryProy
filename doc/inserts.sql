@@ -27,35 +27,35 @@ select *
 from k1furydb.usuario;
 
 -- INSERTS DE LIGAS
-INSERT INTO k1furydb.liga(peso,fecha_inicio)
-VALUES (72, now());
-INSERT INTO k1furydb.liga(peso,fecha_inicio)
-VALUES (76, now());
-INSERT INTO k1furydb.liga(peso,fecha_inicio)
-VALUES (80, now());
+INSERT INTO k1furydb.liga(nombre,peso,fecha_inicio)
+VALUES ("Liga72Kg",72, now());
+INSERT INTO k1furydb.liga(nombre,peso,fecha_inicio)
+VALUES ("Liga76Kg",76, now());
+INSERT INTO k1furydb.liga(nombre,peso,fecha_inicio)
+VALUES ("Liga80Kg",80, now());
 
 -- INSERTS DE PELEADOR
-INSERT INTO k1furydb.usuario (nombre, apellido, rol, peso)
-VALUES ("Alejandro", "Morales", 2, 72),
-("Ricardo", "Herrera", 2, 72),
-("Fernando", "Ortega", 2, 72),
-("Hugo", "Mendoza", 2, 72),
-("Mateo", "Salazar", 2, 72),
-("Rodrigo", "Esquivel", 2, 72),
-("Adrián", "Pardo", 2, 72),
-("Gonzalo", "Méndez", 2, 76),
-("Samuel", "Vargas", 2, 76),
-("Joaquín", "Ibáñez", 2, 76),
-("Marcos", "Benítez", 2, 76),
-("Emiliano", "Vega", 2, 76),
-("Santiago", "Peralta", 2, 76),
-("Ismael", "Cabrera", 2, 76),
-("Óscar", "Márquez", 2, 80),
-("Raúl", "Beltrán", 2, 80),
-("Felipe", "Durán", 2, 80),
-("Ignacio", "Soto", 2, 80),
-("Valentín", "Olmos", 2, 80),
-("Rafael", "Gallardo", 2, 80);
+INSERT INTO k1furydb.usuario (nombre, apellido, rol, peso, liga)
+VALUES ("Alejandro", "Morales", 2, 72,1),
+("Ricardo", "Herrera", 2, 72,1),
+("Fernando", "Ortega", 2, 72,1),
+("Hugo", "Mendoza", 2, 72,1),
+("Mateo", "Salazar", 2, 72,1),
+("Rodrigo", "Esquivel", 2, 72,1),
+("Adrián", "Pardo", 2, 72,1),
+("Gonzalo", "Méndez", 2, 76,2),
+("Samuel", "Vargas", 2, 76.2),
+("Joaquín", "Ibáñez", 2, 76,2),
+("Marcos", "Benítez", 2, 76,2),
+("Emiliano", "Vega", 2, 76,2),
+("Santiago", "Peralta", 2, 76,2),
+("Ismael", "Cabrera", 2, 76,2),
+("Óscar", "Márquez", 2, 80,3),
+("Raúl", "Beltrán", 2, 80,3),
+("Felipe", "Durán", 2, 80,3),
+("Ignacio", "Soto", 2, 80,3),
+("Valentín", "Olmos", 2, 80,3),
+("Rafael", "Gallardo", 2, 80,3);
 
 
 select *

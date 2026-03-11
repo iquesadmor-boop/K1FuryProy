@@ -22,10 +22,9 @@
         </header>
         <main>
             <div class="mainList">
-                <label class="selector">72KG<input class="checkboxSelectorEliminar" type="checkbox" name="liga" value="72kg"></label>
-                <label class="selector">76KG<input class="checkboxSelectorEliminar" type="checkbox" name="liga" value="76kg"></label>
-                <label class="selector">80KG<input class="checkboxSelectorEliminar"  type="checkbox" name="liga" value="80kg"></label>
-
+            <#list ligas as liga>
+                <label class="selector">${liga}<input class="checkboxSelectorEliminar" type="checkbox" name="liga" value="${liga}"></label>
+            </#list>
                 <button class="btn"><a href="confirmar-eliminar-liga.html">Eliminar</a></button>
             </div>
         </main>

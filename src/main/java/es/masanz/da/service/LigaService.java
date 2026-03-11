@@ -1,6 +1,7 @@
 package es.masanz.da.service;
 
 import es.masanz.da.dao.LigaDao;
+import es.masanz.da.model.Liga;
 import es.masanz.da.model.Usuario;
 
 import java.time.LocalDate;
@@ -16,5 +17,15 @@ public class LigaService {
         return LigaDao.getPeleadores(peso);
     }
 
+    public static List<String > getNombresLigas() {
+        return LigaDao.getNombresLigas();
+    }
 
+    public static List<String> getLigas(int id_liga){
+        return LigaDao.getPeleadoresLiga(id_liga);
+    }
+
+    public static boolean editarLiga(String nombre, String fecha_fin, int id){
+        return LigaDao.editarLiga(nombre, fecha_fin, id);
+    }
 }

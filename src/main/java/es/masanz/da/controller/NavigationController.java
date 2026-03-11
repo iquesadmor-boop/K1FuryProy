@@ -16,44 +16,25 @@ public class NavigationController {
     }
 
     public static void mostrarGestionLiga(@NotNull Context context){
-        Map<String, Object> model = new HashMap<>();
-        context.render("templates/tLiga/gestion-liga.ftl", model);
-    }
-
-    public static void mostrarListadoLiga(@NotNull Context context) {
-        Map<String, Object> model = new HashMap<>();
-        context.render("templates/tLiga/listado-ligas.ftl", model);
+        context.render("templates/tLiga/gestion-liga.ftl");
     }
 
     public static void mostrarGestionUsuario(@NotNull Context context) {
-        Map<String, Object> model = new HashMap<>();
-        context.render("templates/tUsuarios/gestion-usuarios.ftl", model);
+        context.render("templates/tUsuarios/gestion-usuarios.ftl");
     }
 
-
-    public static void mostrarEditarLiga(@NotNull Context context) {
-        Map<String, Object> model = new HashMap<>();
-        context.render("templates/tLiga/editar-liga.ftl", model);
-    }
-
-    public static void mostrarEliminarLiga(@NotNull Context context) {
-        Map<String, Object> model = new HashMap<>();
-        context.render("templates/tLiga/eliminar-liga.ftl", model);
-    }
 
     public static void mostrarCombates(@NotNull Context context){
-        Map<String, Object> model = new HashMap<>();
-        context.render("templates/tCombates/combates.ftl", model);
+        context.render("templates/tCombates/combates.ftl");
     }
 
     public static void mostrarCombatesAnteriores(@NotNull Context context){
-        Map<String, Object> model = new HashMap<>();
-        context.render("templates/tCombates/combates-anteriores.ftl", model);
+        context.render("templates/tCombates/combates-anteriores.ftl");
     }
 
     public static void mostrarProximosCombates(@NotNull Context context){
         Map<String, Object> model = new HashMap<>();
-        context.render("templates/tCombates/proximos-combates.ftl", model);
+        context.render("templates/tCombates/proximos-combates.ftl");
     }
 
     public static void mostrarAnotarResultados(@NotNull Context context){
@@ -73,28 +54,15 @@ public class NavigationController {
             peso = Integer.parseInt(context.pathParam("peso"));
         } catch (Exception e) {
             System.out.println(e);
-            context.redirect("/");
+            context.redirect("/menu");
         }
         List<Usuario> peleadores = LigaService.getPeleadores(peso);
         Map<String, Object> model = new HashMap<>();
-        model.put("peso",peso);
-        model.put("peleadores",peleadores);
+        model.put("peso", peso);
+        model.put("peleadores", peleadores);
         context.render("templates/tClasificacion/clasif-peso.ftl", model);
     }
 
-//
-//    public static void mostrarClasif72KG(@NotNull Context context) {
-//        Map<String, Object> model = new HashMap<>();
-//        context.render("templates/tClasificacion/clasif72kg.ftl", model);
-//    }
-//
-//    public static void mostrarClasif76KG(@NotNull Context context) {
-//        Map<String, Object> model = new HashMap<>();
-//        context.render("templates/tClasificacion/clasif76kg.ftl", model);
-//    }
-//
-//    public static void mostrarClasif80KG(@NotNull Context context) {
-//        Map<String, Object> model = new HashMap<>();
-//        context.render("templates/tClasificacion/clasif80kg.ftl", model);
-//    }
+
+
 }

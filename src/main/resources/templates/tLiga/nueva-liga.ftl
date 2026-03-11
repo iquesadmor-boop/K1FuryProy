@@ -27,6 +27,7 @@
                     <form class="form" action="/crearLiga" method="POST">
                         <label for="nombre">Nombre liga</label>
                         <input type="text" id="nombre" name="nombre">
+                    
                         <select class="selector" name="peso">
                             <option value="" disabled selected  hidden>Peso</option>
                             <option value="72">K1 Fury 72Kg</option>
@@ -37,7 +38,7 @@
                         <label for="fecha_inicio">Fecha Inicio</label>
                         <input type="text" id="fecha_inicio" name="fecha_inicio">
 
-                        <
+
                         <input type="submit" value="Crear" class="btn">
 
                         </label>

@@ -38,4 +38,38 @@ public class LigaController {
 //        model.put("peleadores", peleadores);
 
     }
+
+    public static void procesarEditarLiga(Context context){
+        logger.info("Editando la liga");
+
+        String nombre = context.formParam("nombre");
+        String fecha_fin = context.formParam("fecha_fin");
+        int id_Liga = LigaDao.getIdByNombre(nombre);
+
+        LigaDao.editarLiga(nombre,fecha_fin,id_Liga);
+        context.redirect("/menu");
+    }
+
+    public static void mostrarEditarLiga(@NotNull Context context) {
+        List<String> ligas = LigaService.getNombresLigas();
+        Map<String, Object> model = new HashMap<>();
+        model.put("ligas", ligas);
+        context.render("templates/tLiga/editar-liga.ftl", model);
+    }
+
+    public static void mostrarListadoLiga(Context context){
+        List<String> ligas = LigaService.getNombresLigas();
+        Map<String, Object> model = new HashMap<>();
+        model.put("ligas", ligas);
+        context.render("templates/tLiga/listado-ligas.ftl", model);
+    }
+
+
+    public static void mostrarEliminarLiga(@NotNull Context context) {
+        List<String> ligas = LigaService.getNombresLigas();
+        Map<String, Object> model = new HashMap<>();
+        model.put("ligas", ligas);
+        context.render("templates/tLiga/eliminar-liga.ftl", model);
+    }
+
 }
