@@ -27,11 +27,11 @@ public class RegistroDao {
         int idPeleadorDos = peleador2.getId();
         int idLiga = l.getId();
 
-        Object[] params = {idLiga, idArbitro, idPeleadorUno, idPeleadorDos };
+        Object[] params = {idLiga, idArbitro, idPeleadorUno, idPeleadorDos};
 
         long resultado = DbK1Fury.ejecutarInsertSQL(sql, params);
 
-        if (resultado > 0L){
+        if (resultado > 0){
             return true;
         } else {return false;}
     }

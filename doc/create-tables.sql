@@ -46,7 +46,7 @@ CREATE TABLE IF NOT EXISTS k1furydb.registros (
     arbitro int not null,
     peleador1  int not null,
     peleador2  int not null,
-    ganador int not null,
+    ganador int not null default 0,
 
     primary key (id),
     foreign key (peleador1) references k1furydb.usuario (id),
@@ -54,3 +54,5 @@ CREATE TABLE IF NOT EXISTS k1furydb.registros (
     foreign key (ganador) references k1furydb.usuario (id),
     foreign key (arbitro) references k1furydb.usuario (id)
 );
+
+ALTER TABLE k1furydb.registros MODIFY ganador int NULL;

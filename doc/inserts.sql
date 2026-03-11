@@ -61,3 +61,10 @@ VALUES ("Alejandro", "Morales", 2, 72,1),
 
 select *
 from k1furydb.liga;
+
+
+
+INSERT INTO k1furydb.registros (liga, arbitro, peleador1, peleador2, ganador)
+VALUES (1, 2, 7, 8, 7),
+(2, 10, 11, 12, 12),
+(2, 10, 13, 14, 13);

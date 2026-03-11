@@ -62,7 +62,7 @@ public class Main {
 
 
         app.get("/tCombates/combates", NavigationController::mostrarCombates);
-        //app.get("/tCombates/combates-anteriores", NavigationController::mostrarCombatesAnteriores);
+       // app.get("/tCombates/combates-anteriores", NavigationController::mostrarCombatesAnteriores);
         app.get("/tCombates/proximos-combates", NavigationController::mostrarProximosCombates);
         app.get("/tCombates/anotar-resultado", NavigationController::mostrarAnotarResultados);
 
