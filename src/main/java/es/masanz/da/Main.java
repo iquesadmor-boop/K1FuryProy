@@ -62,7 +62,7 @@ public class Main {
 
 
         app.get("/tCombates/combates", NavigationController::mostrarCombates);
-        app.get("/tCombates/combates-anteriores", NavigationController::mostrarCombatesAnteriores);
+        //app.get("/tCombates/combates-anteriores", NavigationController::mostrarCombatesAnteriores);
         app.get("/tCombates/proximos-combates", NavigationController::mostrarProximosCombates);
         app.get("/tCombates/anotar-resultado", NavigationController::mostrarAnotarResultados);
 
@@ -79,6 +79,7 @@ public class Main {
 
         app.get("/tUsuarios/nuevo-usuario", UserController::mostrarNuevoUsuario);
         app.get("/tUsuarios/editar-usuario", UserController::mostrarEditarUsuario);
+        app.get("/tUsuarios/listado-usuarios", UserController::mostrarListadoUsuarios);
 
         app.post("/nuevo-usuario", UserController::procesarNuevoUsuario);
         app.post("/editar-usuario", UserController::procesarEditarUsuario);
