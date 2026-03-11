@@ -31,12 +31,12 @@ public class LigaDao {
         } else {return false;}
     }
 
-    public static boolean editarLiga(String nombre, String fecha_fin, int id){
+    public static boolean editarLiga(String NuevoNombre, String fecha_fin, String nombre){
         String sql = "update liga " +
                 "SET nombre = ?, fecha_fin = ? " +
-                "where id = ? ";
+                "where nombre = ? ";
 
-        Object[] params = {nombre, fecha_fin, id};
+        Object[] params = {NuevoNombre, fecha_fin, nombre };
 
         int resultado = DbK1Fury.ejecutarUpdateSQL(sql,params);
 

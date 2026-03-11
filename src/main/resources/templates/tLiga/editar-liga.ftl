@@ -23,18 +23,18 @@
             <div class="main">
                 <div class="EditarLiga">
                     <form class="form" method="POST" action="/editarLiga">
-                        <select class="selector">
+                        <select class="selector" name ="ligas">
                             <option value="" disabled selected hidden>Seleccionar Liga</option>
                             <#list ligas as liga>
-                            <option value="${liga}">${liga}</option>
+                                <option value="${liga}">${liga}</option>
                             </#list>
                         </select>
                         
-                        <label for="nombre">Nuevo Nombre</label>
-                        <input type="text" id="nombre" name="nombre">
+                        <label for="NuevoNombre">Nuevo Nombre</label>
+                        <input type="text" id="NuevoNombre" name="NuevoNombre">
 
                         <label for="fecha_fin">Fecha Fin</label>
-                        <input type="text" id="nombre" name="nombre">
+                        <input type="text" id="fecha_fin" name="fecha_fin">
 
                         <input type="submit" value="Editar" class="btn">
                 
