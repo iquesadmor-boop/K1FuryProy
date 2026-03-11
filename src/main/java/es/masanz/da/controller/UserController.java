@@ -2,6 +2,7 @@ package es.masanz.da.controller;
 
 import es.masanz.da.dao.LigaDao;
 import es.masanz.da.dao.UserDao;
+import es.masanz.da.service.LigaService;
 import es.masanz.da.service.UserService;
 import io.javalin.http.Context;
 import org.apache.logging.log4j.LogManager;
@@ -9,6 +10,7 @@ import org.apache.logging.log4j.Logger;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class UserController {
@@ -44,6 +46,25 @@ public class UserController {
 
 
         UserDao.insertarUsuario(nombre,pwd,apellido,rol,peso);
+        context.redirect("/menu");
+    }
+
+    public static void mostrarEditarUsuario(@NotNull Context context) {
+        Map<String, Object> model = new HashMap<>();
+        context.render("templates/tUsuarios/editar-usuario.ftl", model);
+    }
+
+    public static void procesarEditarUsuario(Context context){
+        logger.info("Editando usuario");
+
+        String nombreActual = context.formParam("nombreActual");
+        String apellidoActual = context.formParam("apellidoActual");
+        String nuevoNombre = context.formParam("nuevoNombre");
+        String nuevoApellido = context.formParam("nuevoApellido");
+        String pwd = context.formParam("contraseña");
+        int rol = Integer.parseInt(context.formParam("rol"));
+
+        UserDao.actualizarUsuario(nombreActual,apellidoActual,nuevoNombre,nuevoApellido,pwd,rol);
         context.redirect("/menu");
     }
 }
