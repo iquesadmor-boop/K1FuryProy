@@ -1,5 +1,7 @@
 package es.masanz.da.controller;
 
+import es.masanz.da.dao.RegistroDao;
+import es.masanz.da.model.Registro;
 import es.masanz.da.model.Usuario;
 import es.masanz.da.service.LigaService;
 import io.javalin.http.Context;
@@ -33,6 +35,9 @@ public class NavigationController {
     }
 
     public static void mostrarCombatesAnteriores(@NotNull Context context){
+        List<Registro> combates = RegistroDao.getRegistrosConNombreLiga();
+        Map<String, Object> model = new HashMap<>();
+        model.put("combates", combates);
         context.render("templates/tCombates/combates-anteriores.ftl");
     }
 

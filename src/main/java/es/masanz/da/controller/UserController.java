@@ -54,6 +54,13 @@ public class UserController {
         context.render("templates/tUsuarios/editar-usuario.ftl", model);
     }
 
+    public static void mostrarListadoUsuarios(Context context){
+        List<String> usuarios = UserService.getNombresUsuarios();
+        Map<String, Object> model = new HashMap<>();
+        model.put("usuarios", usuarios);
+        context.render("templates/tUsuarios/listado-usuarios.ftl", model);
+    }
+
     public static void procesarEditarUsuario(Context context){
         logger.info("Editando usuario");
 

@@ -5,6 +5,9 @@ import es.masanz.da.model.Usuario;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class UserDao {
 
     static {
@@ -80,6 +83,24 @@ public class UserDao {
         } else {return false;}
     }
 
+    public static List<String> getNombresUsuarios (){
+        List<String> lista = new ArrayList<>();
+        String sql = "select nombre, apellido " +
+                "from usuario";
+
+        Object[] params = {};
+        Object[][] resultado = DbK1Fury.ejecutarSelectSQL(sql, params);
+
+        if (resultado != null && resultado.length >= 1){
+            for (int i = 0; i < resultado.length; i++) {
+                String nombreU = resultado[i][0].toString();
+                lista.add(nombreU);
+            }
+        }
+
+        return lista;
+    }
+
     public static void main(String[] args) {
         System.out.println(eliminarUsuario(44));
     }
@@ -105,6 +126,32 @@ public class UserDao {
                 u.setPeso(Integer.parseInt(String.valueOf(res[i][5])));
                 u.setLiga(Integer.parseInt(String.valueOf(res[i][6])));
                 //u.setVictorias(Integer.parseInt(String.valueOf(res[i][7])));
+            }
+        }
+        return u;
+    }
+
+    public static Usuario getUsuarioById(int id) {
+        String sql = "select id, nombre, apellido, contraseña, rol, peso, liga, victorias " +
+                "from usuario " +
+                "where id = ?";
+
+        Object[] params = {id};
+
+        Object[][] res = DbK1Fury.ejecutarSelectSQL(sql, params);
+        Usuario u = new Usuario();
+
+        if (res.length > 0 && res != null){
+
+            for (int i = 0; i < res.length; i++) {
+                u.setId(Integer.parseInt(String.valueOf(res[i][0])));
+                u.setNombre(String.valueOf(res[i][1]));
+                u.setApellido(String.valueOf(res[i][2]));
+                u.setPassword(String.valueOf(res[i][3]));
+                u.setRol(Integer.parseInt(String.valueOf(res[i][4])));
+                u.setPeso(Integer.parseInt(String.valueOf(res[i][5])));
+                u.setLiga(Integer.parseInt(String.valueOf(res[i][6])));
+                u.setVictorias(Integer.parseInt(String.valueOf(res[i][7])));
             }
         }
         return u;

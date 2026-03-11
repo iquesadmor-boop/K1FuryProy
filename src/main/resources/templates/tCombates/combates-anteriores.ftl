@@ -21,7 +21,7 @@
         <main>
                     <div class="mainMatch">
                         <div class="combate_box">
-                            <h2></h2>
+                            <h2>${combate.nombreLiga}</h2>
                             <div class="detalles_box">
                                 <div class="peleador_box">
                                     <p>Jhonny Sins</p>
@@ -40,7 +40,7 @@
                         </div>
 
                         <div class="combate_box">
-                            <h2>LIGA 70KG</h2>
+                            <h2>${combate.nombreLiga}</h2>
                             <div class="detalles_box">
                                 <div class="peleador_box">
                                     <p>Jhonny Sins</p>
@@ -59,7 +59,7 @@
                         </div>
 
                         <div class="combate_box">
-                            <h2>LIGA 70KG</h2>
+                            <h2>${combate.nombreLiga}</h2>
                             <div class="detalles_box">
                                 <div class="peleador_box">
                                     <p>Jhonny Sins</p>

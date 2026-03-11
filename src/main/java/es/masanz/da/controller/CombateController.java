@@ -38,4 +38,5 @@ public class CombateController {
         RegistroDao.crearRegsitro(liga, arbitroNombre, arbitroApellido, peleador1Nombre, peleador1Apellido, peleador2Nombre, peleador2Apellido);
         context.redirect("/menu");
     }
+
 }
