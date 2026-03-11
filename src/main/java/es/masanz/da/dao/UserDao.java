@@ -125,7 +125,7 @@ public class UserDao {
                 u.setRol(Integer.parseInt(String.valueOf(res[i][4])));
                 u.setPeso(Integer.parseInt(String.valueOf(res[i][5])));
                 u.setLiga(Integer.parseInt(String.valueOf(res[i][6])));
-                u.setVictorias(Integer.parseInt(String.valueOf(res[i][7])));
+                //u.setVictorias(Integer.parseInt(String.valueOf(res[i][7])));
             }
         }
         return u;
