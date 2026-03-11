@@ -67,7 +67,7 @@ public class Main {
         app.get("/tCombates/anotar-resultado", NavigationController::mostrarAnotarResultados);
 
         app.get("/crear-combate", NavigationController::mostrarCrearCombate);
-        app.post("/crearCombate", CombateController::procesarNuevoCombate);
+//        app.post("/crearCombate", CombateController::procesarNuevoCombate);
 
 
 
@@ -79,7 +79,7 @@ public class Main {
 
         app.get("/tUsuarios/nuevo-usuario", UserController::mostrarNuevoUsuario);
         app.get("/tUsuarios/editar-usuario", UserController::mostrarEditarUsuario);
-        app.get("/tUsuarios/lista-usuarios", UserController::mostrarListadoUsuarios);
+        app.get("/tUsuarios/listado-usuarios", UserController::mostrarListadoUsuarios);
 
         app.post("/nuevo-usuario", UserController::procesarNuevoUsuario);
         app.post("/editar-usuario", UserController::procesarEditarUsuario);

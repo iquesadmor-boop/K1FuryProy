@@ -23,7 +23,7 @@ public class RegistroDao {
         int idArbitro = arbitro.getId();
         int idPeleadorUno = peleador1.getId();
         int idPeleadorDos = peleador2.getId();
-        int idLiga = liga.getIdFromNombre();
+        //int idLiga = liga.getIdFromNombre();
 
         Object[] params = {liga, idArbitro, idPeleadorUno, idPeleadorDos };
 
