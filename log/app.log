@@ -163,3 +163,6 @@
 [2026-03-11 18:20:09] [INFO ] [UserController: 23] Logeando con las credenciales User: admin Password admin
 [2026-03-11 18:20:09] [INFO ] [UserDao: 36] Atenticación realizada con exito
 [2026-03-11 18:20:09] [INFO ] [UserController: 25] Ha ido mal
+[2026-03-11 18:35:27] [INFO ] [UserController: 23] Logeando con las credenciales User: admin Password admin
+[2026-03-11 18:35:27] [INFO ] [UserDao: 36] Atenticación realizada con exito
+[2026-03-11 18:35:27] [INFO ] [UserController: 25] Ha ido mal
