@@ -18,15 +18,19 @@ public class UserController {
     private static Logger logger = LogManager.getLogger();
 
     public static void autenticar(@NotNull Context context) {
+
         String nombre = context.formParam("nombre");
         String pwd = context.formParam("pwd");
-        logger.info("Logeando con las credenciales User: " + nombre + " Password " + pwd);
-        if (UserService.autenticar(nombre, pwd)){
-            logger.info("Ha ido mal");
-            context.redirect("/menu");
-        } else {
-            context.render("/login");
-        }
+
+        logger.info("Intentando login con User: " + nombre);
+
+
+        if (UserService.autenticar(nombre, pwd)) {
+                context.redirect("/menu");
+            } else {
+                context.redirect("/login");
+            }
+
 
     }
 
