@@ -32,9 +32,9 @@
                     <label for="pwd">Contraseña</label>
                     <input type="password" id="pwd" name="pwd">
                     <select class="selector" id="peso" name="peso">
-                        <option value="72">72kg</option>
-                        <option value="76">76kg</option>
-                        <option value="80">80kg</option>
+                        <option value="72">72Kg</option>
+                        <option value="76">76Kg</option>
+                        <option value="80">80Kg</option>
                     </select>
                     <select class="selector" id="rol" name="rol">
                         <option value="1">Usuario</option>

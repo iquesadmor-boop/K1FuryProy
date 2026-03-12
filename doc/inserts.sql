@@ -68,14 +68,14 @@ from k1furydb.liga;
 
 
 INSERT INTO k1furydb.registros (liga, arbitro, peleador1, peleador2, ganador, finalizada)
-VALUES (1, null, 5, 6, 1, 0),
-(1, null, 7, 8, 4, 0),
-(1, null, 9, 10, null, 1),
+VALUES (1, 2, 5, 6, 1, 1),
+(1, 2, 7, 8, 4, 1),
+(1, 2, 9, 10, null, 0),
 
-(2, null, 12, 13, 12, 0),
-(2, null, 14, 15, null, 1),
-(2, null, 16, 17, null, 1),
+(2, 2, 12, 13, 12, 1),
+(2, 2, 14, 15, null, 0),
+(2, 2, 16, 17, null, 0),
 
-(3, null, 19, 20, 19, 0),
-(3, null, 21, 22, 22, 0),
-(3, null, 23, 24, null, 1);
+(3, 2, 19, 20, 19, 1),
+(3, 2, 21, 22, 22, 1),
+(3, 2, 23, 24, null, 0);
