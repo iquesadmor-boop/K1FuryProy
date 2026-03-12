@@ -389,3 +389,5 @@
 [2026-03-12 14:05:25] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
 [2026-03-12 14:05:26] [INFO ] [MainController: 17] iniciar
 [2026-03-12 14:05:30] [INFO ] [UserController: 25] Intentando login con User: admin
+[2026-03-12 14:05:50] [INFO ] [LigaController: 25] Creando Nueva Liga
+[2026-03-12 14:05:57] [INFO ] [LigaController: 25] Creando Nueva Liga
