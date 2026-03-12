@@ -2,7 +2,8 @@ package es.masanz.da.dao;
 
 import es.masanz.da.db.DbK1Fury;
 import es.masanz.da.model.Liga;
-import es.masanz.da.model.Registro;
+import es.masanz.da.model.LigaConPeleas;
+import es.masanz.da.model.Pelea;
 import es.masanz.da.model.Usuario;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -38,31 +39,6 @@ public class RegistroDao {
         if (resultado > 0){
             return true;
         } else {return false;}
-    }
-
-    public static List<Registro> getRegistros() {
-        String sql = "SELECT r.id, r.liga, l.nombre, r.arbitro, r.peleador1, r.peleador2, r.ganador " +
-                "FROM k1furydb.registros r " +
-                "JOIN k1furydb.liga l ON r.liga = l.id";
-
-        Object[] params = {};
-        Object[][] resultado = DbK1Fury.ejecutarSelectSQL(sql, params);
-        java.util.List<Registro> lista = new ArrayList<>();
-
-        if (resultado != null && resultado.length > 0) {
-            for (int i = 0; i < resultado.length; i++) {
-                Registro r = new es.masanz.da.model.Registro();
-                r.setId(Integer.parseInt(String.valueOf(resultado[i][0])));
-                r.setPeso(Integer.parseInt(String.valueOf(resultado[i][1])));
-                r.setNombreLiga(String.valueOf(resultado[i][2]));
-                r.setArbitro(Integer.parseInt(String.valueOf(resultado[i][3])));
-                r.setPeleador1(Integer.parseInt(String.valueOf(resultado[i][4])));
-                r.setPeleador2(Integer.parseInt(String.valueOf(resultado[i][5])));
-                r.setGanador(Integer.parseInt(String.valueOf(resultado[i][6])));
-                lista.add(r);
-            }
-        }
-        return lista;
     }
 
     public static boolean actualizarUsuarioPeso(int peso, int id) {
@@ -146,4 +122,129 @@ public class RegistroDao {
             return true;
         } else {return false;}
     }
+
+    public static List<LigaConPeleas> getListaLigaConPeleadores(){
+        List<LigaConPeleas> res = new ArrayList<>();
+
+        String sql1="select id, nombre " +
+                "from liga " +
+                "order by peso asc";
+
+        Object[] params1 = {};
+        Object[][] resultado1 = DbK1Fury.ejecutarSelectSQL(sql1, params1);
+
+        if (resultado1 != null && resultado1.length > 0) {
+            for (int i = 0; i < resultado1.length; i++) {
+                LigaConPeleas dto = new LigaConPeleas();
+                int idLiga = (int) resultado1[i][0];
+                String nombreLiga = (String) resultado1[i][1];
+                dto.setNombreLiga(nombreLiga);
+
+                String sql2="select " +
+                        "r.peleador1, u1.nombre as 'nombre1', u1.apellido as 'apellido1', u1.victorias as 'victorias1', " +
+                        "r.peleador2, u2.nombre as 'nombre2', u2.apellido as 'apellido2', u2.victorias as 'victorias2' " +
+                        "from registros r " +
+                        "join usuario u1 on r.peleador1 = u1.id   " +
+                        "join usuario u2 on r.peleador2 = u2.id " +
+                        "where u1.rol = 2 and u2.rol = 2 and r.finalizada = 0" +
+                        "and r.liga = ?";
+
+                Object[] params2 = {idLiga};
+                Object[][] resultado2 = DbK1Fury.ejecutarSelectSQL(sql2, params2);
+
+                if (resultado2 != null && resultado2.length > 0) {
+                    for (int j = 0; j < resultado2.length; j++) {
+
+                        Usuario peleador1 = new Usuario();
+                        int idPeleador1 = (int) resultado2[j][0];
+                        peleador1.setId(idPeleador1);
+                        String nombrePeleador1 = (String) resultado2[j][1];
+                        peleador1.setNombre(nombrePeleador1);
+                        String apellidoPeleador1 = (String) resultado2[j][2];
+                        peleador1.setApellido(apellidoPeleador1);
+                        int victoriasPeleador1 = (int) resultado2[j][3];
+                        peleador1.setVictorias(victoriasPeleador1);
+
+                        Usuario peleador2 = new Usuario();
+                        int idPeleador2 = (int) resultado2[j][4];
+                        peleador2.setId(idPeleador2);
+                        String nombrePeleador2 = (String) resultado2[j][5];
+                        peleador2.setNombre(nombrePeleador2);
+                        String apellidoPeleador2 = (String) resultado2[j][6];
+                        peleador2.setApellido(apellidoPeleador2);
+                        int victoriasPeleador2 = (int) resultado2[j][7];
+                        peleador2.setVictorias(victoriasPeleador2);
+
+                        Pelea pelea = new Pelea(peleador1, peleador2);
+                        dto.addPelea(pelea);
+                    }
+                }
+                res.add(dto);
+            }
+        }
+        return res;
+    }
+
+    public static List<LigaConPeleas> getListaLigaConPeleadoresFinalizadas(){
+        List<LigaConPeleas> res = new ArrayList<>();
+
+        String sql1="select id, nombre " +
+                "from liga " +
+                "order by peso asc";
+
+        Object[] params1 = {};
+        Object[][] resultado1 = DbK1Fury.ejecutarSelectSQL(sql1, params1);
+
+        if (resultado1 != null && resultado1.length > 0) {
+            for (int i = 0; i < resultado1.length; i++) {
+                LigaConPeleas dto = new LigaConPeleas();
+                int idLiga = (int) resultado1[i][0];
+                String nombreLiga = (String) resultado1[i][1];
+                dto.setNombreLiga(nombreLiga);
+
+                String sql2="select " +
+                        "r.peleador1, u1.nombre as 'nombre1', u1.apellido as 'apellido1', u1.victorias as 'victorias1', " +
+                        "r.peleador2, u2.nombre as 'nombre2', u2.apellido as 'apellido2', u2.victorias as 'victorias2' " +
+                        "from registros r " +
+                        "join usuario u1 on r.peleador1 = u1.id   " +
+                        "join usuario u2 on r.peleador2 = u2.id " +
+                        "where u1.rol = 2 and u2.rol = 2 and r.finalizada = 0" +
+                        "and r.liga = ?";
+
+                Object[] params2 = {idLiga};
+                Object[][] resultado2 = DbK1Fury.ejecutarSelectSQL(sql2, params2);
+
+                if (resultado2 != null && resultado2.length > 0) {
+                    for (int j = 0; j < resultado2.length; j++) {
+
+                        Usuario peleador1 = new Usuario();
+                        int idPeleador1 = (int) resultado2[j][0];
+                        peleador1.setId(idPeleador1);
+                        String nombrePeleador1 = (String) resultado2[j][1];
+                        peleador1.setNombre(nombrePeleador1);
+                        String apellidoPeleador1 = (String) resultado2[j][2];
+                        peleador1.setApellido(apellidoPeleador1);
+                        int victoriasPeleador1 = (int) resultado2[j][3];
+                        peleador1.setVictorias(victoriasPeleador1);
+
+                        Usuario peleador2 = new Usuario();
+                        int idPeleador2 = (int) resultado2[j][4];
+                        peleador2.setId(idPeleador2);
+                        String nombrePeleador2 = (String) resultado2[j][5];
+                        peleador2.setNombre(nombrePeleador2);
+                        String apellidoPeleador2 = (String) resultado2[j][6];
+                        peleador2.setApellido(apellidoPeleador2);
+                        int victoriasPeleador2 = (int) resultado2[j][7];
+                        peleador2.setVictorias(victoriasPeleador2);
+
+                        Pelea pelea = new Pelea(peleador1, peleador2);
+                        dto.addPelea(pelea);
+                    }
+                }
+                res.add(dto);
+            }
+        }
+        return res;
+    }
+
 }
