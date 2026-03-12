@@ -141,13 +141,13 @@ public class RegistroDao {
                 dto.setNombreLiga(nombreLiga);
 
                 String sql2="select " +
-                        "r.peleador1, u1.nombre as 'nombre1', u1.apellido as 'apellido1', u1.victorias as 'victorias1', " +
-                        "r.peleador2, u2.nombre as 'nombre2', u2.apellido as 'apellido2', u2.victorias as 'victorias2' " +
-                        "from registros r " +
-                        "join usuario u1 on r.peleador1 = u1.id   " +
-                        "join usuario u2 on r.peleador2 = u2.id " +
-                        "where u1.rol = 2 and u2.rol = 2 and r.finalizada = 0" +
-                        "and r.liga = ?";
+                        " r.peleador1, u1.nombre, u1.apellido, u1.victorias, " +
+                        " r.peleador2, u2.nombre, u2.apellido, u2.victorias " +
+                        " from registros r " +
+                        " join usuario u1 on r.peleador1 = u1.id   " +
+                        " join usuario u2 on r.peleador2 = u2.id " +
+                        " where u1.rol = 2 and u2.rol = 2 and r.finalizada = 0 " +
+                        " and r.liga = ? ";
 
                 Object[] params2 = {idLiga};
                 Object[][] resultado2 = DbK1Fury.ejecutarSelectSQL(sql2, params2);
@@ -203,13 +203,13 @@ public class RegistroDao {
                 dto.setNombreLiga(nombreLiga);
 
                 String sql2="select " +
-                        "r.peleador1, u1.nombre as 'nombre1', u1.apellido as 'apellido1', u1.victorias as 'victorias1', " +
-                        "r.peleador2, u2.nombre as 'nombre2', u2.apellido as 'apellido2', u2.victorias as 'victorias2' " +
-                        "from registros r " +
-                        "join usuario u1 on r.peleador1 = u1.id   " +
-                        "join usuario u2 on r.peleador2 = u2.id " +
-                        "where u1.rol = 2 and u2.rol = 2 and r.finalizada = 0" +
-                        "and r.liga = ?";
+                        " r.peleador1, u1.nombre, u1.apellido, u1.victorias, " +
+                        " r.peleador2, u2.nombre, u2.apellido, u2.victorias " +
+                        " from registros r " +
+                        " join usuario u1 on r.peleador1 = u1.id   " +
+                        " join usuario u2 on r.peleador2 = u2.id " +
+                        " where u1.rol = 2 and u2.rol = 2 and r.finalizada = 1 " +
+                        " and r.liga = ? ";
 
                 Object[] params2 = {idLiga};
                 Object[][] resultado2 = DbK1Fury.ejecutarSelectSQL(sql2, params2);
