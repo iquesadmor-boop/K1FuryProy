@@ -22,10 +22,17 @@
         </header>
         <main>
             <div class="mainList">
+            <form class="form" action="/confirmarEliminarLiga", method = "POST">
             <#list ligas as liga>
-                <label class="selector">${liga}<input class="checkboxSelectorEliminar" type="checkbox" name="${liga}" value="${liga}"></label>
+                <option value="" disabled selected hidden>${liga}</option>
+                <option value="${liga}">${liga}</option>
             </#list>
-                <a href="/confirmarEliminarLiga">Eliminar</a>
+            <label for="nombre">Nombre Liga</label>
+            <input type="text" id="nombre" name="nombre">
+
+               <input type="submit" value="Eliminar" class="btn">
+               </form>
+
             </div>
         </main>
         <footer>

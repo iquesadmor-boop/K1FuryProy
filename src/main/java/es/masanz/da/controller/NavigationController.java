@@ -18,10 +18,6 @@ public class NavigationController {
         context.render("templates/menu.ftl");
     }
 
-    public static void mostrarConfirmarEliminarLiga(@NotNull Context context) {
-        context.render("templates/tLiga/confirmar-eliminar-liga.ftl");
-    }
-
     public static void mostrarGestionLiga(@NotNull Context context){
         context.render("templates/tLiga/gestion-liga.ftl");
     }
