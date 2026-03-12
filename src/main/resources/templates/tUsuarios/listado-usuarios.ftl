@@ -24,7 +24,7 @@
             <div class="mainList">
                  <#list usuarios as usuario>
                       <option value="" disabled selected hidden>${usuario}</option>
-                      <option value="${usuario}">${usuario}</option>
+                      <option class="item-ranking" value="${usuario}">${usuario}</option>
                  </#list>
             </div>
         </main>

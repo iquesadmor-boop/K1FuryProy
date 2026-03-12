@@ -389,3 +389,50 @@
 [2026-03-12 13:58:48] [INFO ] [MainController: 17] iniciar
 [2026-03-12 13:58:55] [INFO ] [UserController: 25] Intentando login con User: admin
 >>>>>>> 49a4f0a41ae7ea5152956c7995d7fd9f6762ceec
+[2026-03-12 15:19:18] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 15:19:22] [INFO ] [MainController: 17] iniciar
+[2026-03-12 15:19:35] [INFO ] [UserController: 25] Intentando login con User: admina
+[2026-03-12 15:19:36] [INFO ] [MainController: 17] iniciar
+[2026-03-12 15:19:44] [INFO ] [UserController: 25] Intentando login con User: admin
+[2026-03-12 15:20:16] [INFO ] [LigaController: 25] Creando Nueva Liga
+[2026-03-12 15:20:42] [INFO ] [LigaController: 43] Editando la liga
+[2026-03-12 15:25:57] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 15:25:59] [INFO ] [MainController: 17] iniciar
+[2026-03-12 15:26:05] [INFO ] [UserController: 25] Intentando login con User: admin
+[2026-03-12 15:29:16] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 15:29:19] [INFO ] [MainController: 17] iniciar
+[2026-03-12 15:29:25] [INFO ] [UserController: 25] Intentando login con User: admin
+[2026-03-12 15:31:24] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 15:31:26] [INFO ] [MainController: 17] iniciar
+[2026-03-12 15:31:32] [INFO ] [UserController: 25] Intentando login con User: admin
+[2026-03-12 15:32:19] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 15:32:21] [INFO ] [MainController: 17] iniciar
+[2026-03-12 15:32:28] [INFO ] [UserController: 25] Intentando login con User: admin
+[2026-03-12 15:34:24] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 15:41:12] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 15:42:28] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 15:42:30] [INFO ] [MainController: 17] iniciar
+[2026-03-12 15:42:36] [INFO ] [UserController: 25] Intentando login con User: admin
+[2026-03-12 15:46:24] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 15:47:34] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 15:49:34] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 15:50:09] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 15:56:28] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 15:56:30] [INFO ] [MainController: 17] iniciar
+[2026-03-12 15:56:36] [INFO ] [UserController: 25] Intentando login con User: admin
+[2026-03-12 15:58:26] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 15:59:09] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 15:59:11] [INFO ] [MainController: 17] iniciar
+[2026-03-12 15:59:16] [INFO ] [UserController: 25] Intentando login con User: admin
+[2026-03-12 16:00:17] [INFO ] [MainController: 17] iniciar
+[2026-03-12 16:00:30] [INFO ] [UserController: 25] Intentando login con User: admin
+[2026-03-12 16:04:23] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 16:10:29] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 16:13:32] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 16:13:34] [INFO ] [MainController: 17] iniciar
+[2026-03-12 16:13:39] [INFO ] [UserController: 25] Intentando login con User: admin
+[2026-03-12 16:13:40] [INFO ] [UserController: 25] Intentando login con User: admin
+[2026-03-12 16:17:11] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 16:17:14] [INFO ] [MainController: 17] iniciar
+[2026-03-12 16:17:19] [INFO ] [UserController: 25] Intentando login con User: admin
+[2026-03-12 16:23:45] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB

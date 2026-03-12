@@ -25,7 +25,7 @@
             <div class="mainList">
                 <#list ligas as liga>
                         <option value="" disabled selected hidden>${liga}</option>
-                        <option value="${liga}">${liga}</option>
+                        <option class="item-ranking" value="${liga}">${liga}</option>
                 </#list>
             
             </div>

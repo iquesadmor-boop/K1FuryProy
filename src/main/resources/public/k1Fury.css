@@ -14,7 +14,8 @@ body{
 
 .contenedor {
     position: relative;
-    padding-top: 180px;
+    padding-top: 150px;
+    padding-bottom: 100px;
     width: 320px;
     min-height: 100vh;
     margin: 0 auto;
@@ -124,10 +125,11 @@ footer{
     border-radius: 12px;
     cursor: pointer;
     font-weight: bold;
-    transition: 0.2s ease;
 }
 
 .btn_result_anotar{
+    width: 100%;
+    min-width: 120px;
     margin-bottom: 30px;
     padding: 0px 10px;
     height: 35px;
@@ -138,19 +140,7 @@ footer{
     border-radius: 20px;
     cursor: pointer;
     font-weight: bold;
-    transition: 0.2s ease;
-}
-
-.boton_clasificac{
-    margin-bottom: 30px;
-    height: 40px;
-    background-color: #291818;
-    color: #ff2a2a;
-    border: 2px solid #ff2a2a;
-    border-radius: 12px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: 0.2s ease;
+    font-size: 10px;
 }
 
 .btn:hover{
@@ -163,10 +153,7 @@ footer{
     color: white;
 }
 
-.boton_clasificac{
-    background-color: #ff2a2a;
-    color: white;
-}
+
 
 .mainMenu a.button {
     width: 280px;
@@ -178,7 +165,6 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 0.3s ease;
     
     
     font-family: 'Segoe UI', Roboto, sans-serif;
@@ -186,17 +172,15 @@ footer{
     font-weight: 800;
     text-transform: uppercase;
     border: none;
-    cursor: pointer;
 
     border: 2px solid #ff2a2a;
     box-shadow: inset 0 0 10px rgba(0,0,0,0.3), 0 5px 15px rgba(0,0,0,0.2);
-    cursor: pointer;
 }
 
 .mainMenu a.button:hover {
     background-color: #e60000;
     border-color: #ffffff;
-    box-shadow: 0 0 20px #FF2A2A; /* Brillo neón suave */
+    box-shadow: 0 0 20px #FF2A2A; 
 }
 
 /*MENÚ*/
@@ -222,9 +206,32 @@ footer{
     flex: 1;                    
     display: flex;
     flex-direction: column;
-    justify-content: center;     
+    justify-content: flex-start;     
     align-items: center;
-    gap: 22px;
+    gap: 10px;
+    padding: 15px 10px;
+    width: 100%;
+    max-width: 320px; 
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.item-ranking {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;                
+    padding: 0 20px;
+    background-color: #1a1a21;    
+    border: 1.5px solid #ff2a2a;  
+    border-radius: 10px;
+    color: white;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .mainList div{
@@ -236,17 +243,22 @@ footer{
 
 /*LABELS*/
 .selectorEliminar{
-    width: 220px;
-    height: 60px;
-    border-radius: 10px;
-    border: 2px solid #ff2a2a;
-    background-color: #291818;
-    color: white;
-    padding: 5px;
-    font-size: 24px;
-    display: flex;
+     display: flex;
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
+    width: 90%;            
+    max-width: 450px;      
+    margin: 15px auto;    
+    padding: 12px 20px;
+    background-color: rgba(255, 42, 42, 0.05); 
+    border: 1.5px solid #ff2a2a;
+    border-radius: 8px;    
+    color: white;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    font-size: 16px;       
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
 }
 
 /*SELECTORES*/
@@ -297,12 +309,6 @@ form label{
     color: white;
 }
 
-/*CHECKBOX*/
-.checkboxSelectorEliminar{
-    margin-left: 10px;
-    width: 20px;
-    height: 20px;
-}
 
 /*ENLACES*/
 a{
@@ -314,19 +320,27 @@ a{
 .mainMatch{                   
     display: flex;
     flex-direction: column;
+    gap: 25px;       
+    padding: 20px 0;
+    width: 100%;
+    align-items: center;
+
 }
 
 .detalles_box{
     display: flex;
-    flex-direction: row;
-    align-items: space-around;
-    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
 }
 
 .combate_box{
+    width: 95%;
+    max-width: 350px;
+    background-color: #1a1a21;
     border: 2px solid #ff2a2a;
-    border-radius: 50px;
-    padding: 10px 0px;
+    border-radius: 20px;
+    padding: 15px 5px;
     margin: 0px 20px;
     display: block;
     flex-wrap: nowrap;
@@ -334,40 +348,48 @@ a{
 }
 
 .combate_box h2{
-    display: flex;
-    justify-content: center;
     color: #ff2a2a;
-    margin-bottom: 10px;
-    border-bottom: 1px solid #ff2a2a;
+    text-align: center;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 1px solid rgba(255, 42, 42, 0.3);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
 }
-
 .peleador_box{
+    flex : 1;
     display: flex;
     align-items: center;
     flex-direction: column;
+    text-align: center;
+    padding: 0 4px;
 }
 
 .peleador_box h3{
-    font-size: 18px;
+    font-size: 13px;
 }
 
 .vs{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 15px;
-    font-size: 18px;
+    padding: 0 10px;
+    font-weight: 900;
+    font-style: italic;
     color: #ff2a2a;
+    font-size: 14px;
+    text-shadow: 0 0 5px rgba(255, 42, 42, 0.5);
 }
 
 .box_anotar_resultados{
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 8px;
+    margin-top: 10px;
+    padding: 0 10px;
 }
 
 
 /* FORMULARIOS ESTILO */
+
 .fury-form {
     display: flex;
     flex-direction: column;
@@ -375,28 +397,25 @@ a{
     max-width: 350px;
     margin: 0 auto;
     padding: 30px 20px;
-    /* Espacio amplio entre cada bloque de etiqueta+input */
-    gap: 22px;
+    gap: 5px;
 }
 
-/* ETIQUETAS (LABELS) */
 .fury-form label {
-    display: block; /* Para que el margen inferior funcione */
+    display: block; 
     color: #ffffff;
     font-family: 'Segoe UI', Roboto, sans-serif;
     font-size: 12px;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    margin-bottom: 8px; /* Separación con el input */
+    margin-bottom: 8px; 
     margin-left: 4px;
     opacity: 0.9;
 }
 
-/* CAJAS DE TEXTO E INPUTS GENERALES */
 
 
-/* SELECTOR (EL QUE TIENE BORDE ROJO SIEMPRE) */
+
 .fury-form input, 
 .fury-form select, 
 .fury-form .selector {
@@ -405,7 +424,7 @@ a{
     background-color: #1a1a21;
     border: 2px solid #ff2a2a;
     border-radius: 10px;
-    padding: 14px 15px;
+    padding: 10px 15px;
     color: white;
     font-size: 15px;
     font-weight: bold;
@@ -417,7 +436,7 @@ a{
 .fury-form label {
     display: block;
     color: white;
-    margin-top: 15px;
+    margin-top: 5px;
     margin-bottom: 5px;
     font-size: 12px;
     font-weight: 800;
@@ -429,19 +448,17 @@ a{
     color: white;
 }
 
-/* EFECTO CUANDO EL USUARIO PINCHA EN UN INPUT */
 .fury-form input:focus {
     border-color: #ff2a2a;
     background-color: #21212b;
     box-shadow: 0 0 8px rgba(255, 42, 42, 0.2);
 }
 
-/* BOTÓN DE CREAR */
-.fury-form .btn-submit {
-    margin-top: 10px;
+.fury-form .btn-submit, .boton_clasificac {
+    margin-top: 20px;
     padding: 16px;
     background-color: transparent;
-    color: #ff2a2a;
+    color: white;
     border: 2px solid #ff2a2a;
     border-radius: 12px;
     font-weight: 900;
@@ -453,6 +470,6 @@ a{
 .fury-form .btn-submit:hover {
     background-color: #ff2a2a;
     color: #ffffff;
-    transform: translateY(-2px); /* Pequeño salto hacia arriba */
+    transform: translateY(-2px); 
     box-shadow: 0 5px 15px rgba(255, 42, 42, 0.3);
 }
