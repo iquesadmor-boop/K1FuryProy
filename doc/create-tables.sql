@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS k1furydb.liga (
 
     primary key(id),
     foreign key (campeon) references k1furydb.usuario (id)
-        on delete set null;
+        on delete set null
 );
 
 ALTER TABLE k1furydb.usuario
