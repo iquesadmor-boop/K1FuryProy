@@ -336,4 +336,9 @@
 [2026-03-12 12:50:09] [INFO ] [UserController: 25] Intentando login con User: admin
 [2026-03-12 12:50:26] [INFO ] [LigaController: 25] Creando Nueva Liga
 >>>>>>> 38c093df7b47e9baa50363322b653229d765cb73
-[2026-03-12 12:55:44] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 13:01:31] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 13:01:32] [INFO ] [MainController: 17] iniciar
+[2026-03-12 13:01:36] [INFO ] [UserController: 25] Intentando login con User: admin
+[2026-03-12 13:02:43] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 13:02:44] [INFO ] [MainController: 17] iniciar
+[2026-03-12 13:02:49] [INFO ] [UserController: 25] Intentando login con User: admin
