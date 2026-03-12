@@ -14,7 +14,7 @@
                 <img src="/img/LogoFuryK1.png">
             </div>
         </header>
-        <main class="main">
+        <main class="fury-form">
             <div class="caja-form">
                 <form class="form" action="autenticar" method="post">
                     <h1>LOGIN</h1>

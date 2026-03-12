@@ -22,9 +22,9 @@
         </header>
 
         <main>
-            <div class="main">
+            <div class="fury-form">
                 <div class="EditarLiga">
-                    <form class="form" action="/crearLiga" method="POST">
+                    <form class="fury-form" action="/crearLiga" method="POST">
                         <label for="nombre">Nombre liga</label>
                         <input type="text" id="nombre" name="nombre">
                     

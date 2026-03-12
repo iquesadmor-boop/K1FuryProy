@@ -20,9 +20,9 @@
         </header>
 
         <main>
-            <div class="main">
+            <div class="fury-form">
                 <div class="EditarLiga">
-                    <form class="form" method="POST" action="/editarLiga">
+                    <form class="fury-form" method="POST" action="/editarLiga">
                         <select class="selector" name ="ligas">
                             <option value="" disabled selected hidden>Seleccionar Liga</option>
                             <#list ligas as liga>
