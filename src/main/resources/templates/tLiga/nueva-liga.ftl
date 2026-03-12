@@ -22,9 +22,9 @@
         </header>
 
         <main>
-            <div class="main">
+            <div class="fury-form">
                 <div class="EditarLiga">
-                    <form class="form" action="/crearLiga" method="POST">
+                    <form class="fury-form" action="/crearLiga" method="POST">
                         <label for="nombre">Nombre liga</label>
                         <input type="text" id="nombre" name="nombre">
                     
@@ -36,7 +36,7 @@
                         </select>
 
                         <label for="fecha_inicio">Fecha Inicio</label>
-                        <input type="text" id="fecha_inicio" name="fecha_inicio">
+                        <input type="date" id="fecha_inicio" name="fecha_inicio">
 
 
                         <input type="submit" value="Crear" class="btn">

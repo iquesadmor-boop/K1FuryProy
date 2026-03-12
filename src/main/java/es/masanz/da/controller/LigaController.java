@@ -26,7 +26,7 @@ public class LigaController {
 
         String nombre = context.formParam("nombre");
         int peso = Integer.parseInt(context.formParam("peso"));
-        String fecha_inicio = context.formParam("nombre");
+        String fecha_inicio = context.formParam("fecha_inicio");
 
 
         LigaDao.crearLiga(nombre,peso,fecha_inicio);

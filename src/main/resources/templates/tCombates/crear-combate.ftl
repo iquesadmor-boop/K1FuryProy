@@ -22,9 +22,9 @@
         </header>
 
         <main>
-            <div class="main">
+            <div class="fury-form">
                 <div class="EditarLiga">
-                    <form class="form" action="/crearCombate" method="POST">
+                    <form class="fury-form" action="/crearCombate" method="POST">
                         
                         
                         <select class="selector" name="liga">
