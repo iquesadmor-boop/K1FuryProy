@@ -36,7 +36,7 @@
                         </select>
 
                         <label for="fecha_inicio">Fecha Inicio</label>
-                        <input type="text" id="fecha_inicio" name="fecha_inicio">
+                        <input type="date" id="fecha_inicio" name="fecha_inicio">
 
 
                         <input type="submit" value="Crear" class="btn">
