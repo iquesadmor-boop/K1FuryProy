@@ -75,7 +75,8 @@ public class LigaController {
     public static void procesarEliminarLiga(@NotNull Context context) {
         String nombre = context.formParam("nombre");
         LigaDao.eliminarLiga(nombre);
-        context.render("templates/tLiga/gestion-liga.ftl");
+        context.redirect("/tLiga/gestion-liga");
+        //context.render("templates/tLiga/gestion-liga.ftl");
     }
 
 //    public static void procesarEliminarLiga(@NotNull Context context) {
