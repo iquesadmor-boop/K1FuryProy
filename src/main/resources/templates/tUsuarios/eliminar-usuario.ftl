@@ -20,7 +20,7 @@
             </div>
         </header>
                 <main>
-                        <div class="mainList">
+                        <div class="fury-form">
                                 <form class="form" action="/eliminar-usuario", method = "POST">
                                      <label for="dni">DNI</label>
                                      <input type="text" id="dni" name="dni">

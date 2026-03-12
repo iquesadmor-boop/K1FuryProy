@@ -25,7 +25,7 @@
         </header>
         <main>
             <div class="mainList">
-            <form class="form" action="/confirmarEliminarLiga", method = "POST">
+            <form class="fury-form" action="/confirmarEliminarLiga", method = "POST">
             <#list ligas as liga>
                 <option value="" disabled selected hidden>${liga}</option>
                 <option value="${liga}">${liga}</option>

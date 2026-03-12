@@ -21,8 +21,8 @@
             </div>
         </header>
         <main>
-            <div class="main">
-                <form class="form" action="/nuevo-usuario" method="POST">
+            <div class="fury-form">
+                <form class="fury-form" action="/nuevo-usuario" method="POST">
                     <label for="dni">Dni</label>
                     <input type="text" id="dni" name="dni">
                     <label for="nombre">Nombre</label>
