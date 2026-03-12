@@ -19,28 +19,29 @@
             </div>
         </header>
         <main>
-            <div class="mainMatch">
-                <div class="combate_box">
-                            <h2>${combate.nombreLiga}</h2>
-                            <div class="detalles_box">
-                                <div class="peleador_box">
-                                    <p>${combate.peleador1}</p>
-                                    <p>70Kg</p>
-                                    <p>3-1-4</p>
-                                </div>
-                                <div class="vs">
-                                    <p>VS</p>
-                                </div>
-                                <div class="peleador_box">
-                                    <p>${combate.peleador2}</p>
-                                    <p>70Kg</p>
-                                    <p>3-1-4</p>
-                                </div>
+                    <div class="mainMatch">
+                        <#list listaLigasConPeleas as ligaConPeleas>
+                            <div class="combate_box">
+                                <h2>${ligaConPeleas.nombreLiga}</h2>
+                                    <#list ligaConPeleas.peleas as pelea>
+                                        <div class="detalles_box">
+                                            <div class="peleador_box">
+                                                <p>${pelea.peleador1.nombre} ${pelea.peleador1.apellido}</p>
+                                                <p>${pelea.peleador1.victorias}</p>
+                                            </div>
+                                            <div class="vs">
+                                                <p>VS</p>
+                                            </div>
+                                             <div class="peleador_box">
+                                                <p>${pelea.peleador2.nombre} ${pelea.peleador2.apellido}</p>
+                                                <p>${pelea.peleador2.victorias}</p>
+                                             </div>
+                                        </div>
+                                    </#list>
                             </div>
+                        </#list>
                     </div>
-            </div>
-
-        </main>
+                </main>
         <footer>
             <div class="footer">
                 <a href="/menu"><i class="fa-solid fa-house"></i></a>

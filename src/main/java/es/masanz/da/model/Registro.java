@@ -8,7 +8,7 @@ public class Registro {
     private int peleador1; //El id de el peleador 1.
     private int peleador2; //El id de el peleador 2.
     private int ganador; //El id del ganador.
-    private String nombreLiga; //El nombre de la liga.
+    private int finalizada;//El combate finalizado.
 
     public Registro(){this(0,0,0,0,0,0);}
 
@@ -23,6 +23,18 @@ public class Registro {
 
     // region Getters and Setters
 
+
+    public boolean isFinalizada() {
+        if (finalizada == 1) {
+            return  true;
+        } else {
+            return false;
+        }
+    }
+
+    public void setFinalizada(int finalizada) {
+        this.finalizada = finalizada;
+    }
 
     public int getId() {
         return id;
@@ -71,10 +83,6 @@ public class Registro {
     public void setGanador(int ganador) {
         this.ganador = ganador;
     }
-
-    public String getNombreLiga() { return nombreLiga; }
-
-    public void setNombreLiga(String nombreLiga) { this.nombreLiga = nombreLiga; }
 
     //endregion
 

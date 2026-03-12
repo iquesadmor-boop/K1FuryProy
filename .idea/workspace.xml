@@ -4,18 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92d587f0-9a5c-4d8a-9096-77366138a923" name="Changes" comment="" />
+    <list default="true" id="92d587f0-9a5c-4d8a-9096-77366138a923" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/masanz/da/model/LigaConPeleas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/masanz/da/model/Pelea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/doc/create-tables.sql" beforeDir="false" afterPath="$PROJECT_DIR$/doc/create-tables.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/inserts.sql" beforeDir="false" afterPath="$PROJECT_DIR$/doc/inserts.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/app.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/masanz/da/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/masanz/da/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/masanz/da/controller/NavigationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/masanz/da/controller/NavigationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/masanz/da/dao/RegistroDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/masanz/da/dao/RegistroDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/masanz/da/model/Registro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/masanz/da/model/Registro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tCombates/combates-anteriores.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/tCombates/combates-anteriores.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tCombates/proximos-combates.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/tCombates/proximos-combates.ftl" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/log/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/app.log" afterDir="false" />
+>>>>>>> 38c093df7b47e9baa50363322b653229d765cb73
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 8
-}</component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
   <component name="ProjectId" id="3Aq3AiQv4KHY3jbBp1KYtP75BEs" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -24,6 +48,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "Application.RegistroDao.executor": "Run",
     "Application.UserDao.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -32,7 +57,7 @@
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="es.masanz.da.Main" />
       <module name="torneo" />
@@ -46,9 +71,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RegistroDao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="es.masanz.da.dao.RegistroDao" />
+      <module name="torneo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="es.masanz.da.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.RegistroDao" />
       </list>
     </recent_temporary>
   </component>
@@ -61,44 +100,5 @@
       <updated>1773306134459</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/es/masanz/da/dao/RegistroDao.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="43" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/es/masanz/da/dao/RegistroDao.java</url>
-          <line>39</line>
-          <properties>
-            <option name="lambda-ordinal" value="-1" />
-          </properties>
-          <option name="timeStamp" value="45" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/es/masanz/da/dao/RegistroDao.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/es/masanz/da/dao/RegistroDao.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/es/masanz/da/dao/RegistroDao.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="48" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/es/masanz/da/controller/LigaController.java</url>
-          <line>75</line>
-          <option name="timeStamp" value="50" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

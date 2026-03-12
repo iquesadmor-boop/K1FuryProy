@@ -1,6 +1,7 @@
 package es.masanz.da.controller;
 
 import es.masanz.da.dao.RegistroDao;
+import es.masanz.da.model.LigaConPeleas;
 import es.masanz.da.model.Registro;
 import es.masanz.da.model.Usuario;
 import es.masanz.da.service.LigaService;
@@ -31,33 +32,22 @@ public class NavigationController {
         context.render("templates/tCombates/combates.ftl");
     }
 
-    public static void mostrarCombatesAnteriores(@NotNull Context context){
-        List<Registro> registros = RegistroDao.getRegistros();
-        List<Map<String, Object>> combates = new java.util.ArrayList<>();
-
-        for (Registro registro : registros) {
-            Map<String, Object> combate = new HashMap<>();
-            combate.put("nombreLiga", registro.getNombreLiga());
-
-            es.masanz.da.model.Usuario peleador1 = es.masanz.da.dao.UserDao.getUsuarioById(registro.getPeleador1());
-            es.masanz.da.model.Usuario peleador2 = es.masanz.da.dao.UserDao.getUsuarioById(registro.getPeleador2());
-            es.masanz.da.model.Usuario ganador = es.masanz.da.dao.UserDao.getUsuarioById(registro.getGanador());
-
-            combate.put("peleador1", peleador1.getNombre() + " " + peleador1.getApellido());
-            combate.put("peleador2", peleador2.getNombre() + " " + peleador2.getApellido());
-            combate.put("ganador", ganador.getNombre() + " " + ganador.getApellido());
-
-            combates.add(combate);
-        }
-
-        Map<String, Object> model = new HashMap<>();
-        model.put("combates", combates);
-        context.render("templates/tCombates/combates-anteriores.ftl", model);
-    }
-
     public static void mostrarProximosCombates(@NotNull Context context){
         Map<String, Object> model = new HashMap<>();
-        context.render("templates/tCombates/proximos-combates.ftl");
+
+        List<LigaConPeleas> listaLigasConPeleas = RegistroDao.getListaLigaConPeleadores();
+        model.put("listaLigasConPeleas", listaLigasConPeleas);
+
+        context.render("templates/tCombates/proximos-combates.ftl", model);
+    }
+
+    public static void mostrarAnterioresCombates(@NotNull Context context){
+        Map<String, Object> model = new HashMap<>();
+
+        List<LigaConPeleas> listaLigasConPeleas = RegistroDao.getListaLigaConPeleadoresFinalizadas();
+        model.put("listaLigasConPeleas", listaLigasConPeleas);
+
+        context.render("templates/tCombates/proximos-combates.ftl", model);
     }
 
     public static void mostrarAnotarResultados(@NotNull Context context){

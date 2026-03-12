@@ -213,6 +213,28 @@
 [2026-03-11 19:14:09] [INFO ] [UserController: 23] Logeando con las credenciales User: admin Password admin
 [2026-03-11 19:14:10] [INFO ] [UserDao: 36] Atenticación realizada con exito
 [2026-03-11 19:14:10] [INFO ] [UserController: 25] Ha ido mal
+<<<<<<< HEAD
+[2026-03-12 12:04:52] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 12:04:59] [INFO ] [MainController: 17] iniciar
+[2026-03-12 12:05:10] [INFO ] [UserController: 23] Logeando con las credenciales User: admin Password admin
+[2026-03-12 12:05:10] [INFO ] [UserDao: 36] Atenticación realizada con exito
+[2026-03-12 12:05:10] [INFO ] [UserController: 25] Ha ido mal
+[2026-03-12 12:07:26] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 12:07:28] [INFO ] [MainController: 17] iniciar
+[2026-03-12 12:07:35] [INFO ] [UserController: 23] Logeando con las credenciales User: admin Password admin
+[2026-03-12 12:07:36] [INFO ] [UserDao: 36] Atenticación realizada con exito
+[2026-03-12 12:07:36] [INFO ] [UserController: 25] Ha ido mal
+[2026-03-12 12:28:35] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 12:28:36] [INFO ] [MainController: 17] iniciar
+[2026-03-12 12:28:42] [INFO ] [UserController: 23] Logeando con las credenciales User: admin Password admin
+[2026-03-12 12:28:43] [INFO ] [UserDao: 36] Atenticación realizada con exito
+[2026-03-12 12:28:43] [INFO ] [UserController: 25] Ha ido mal
+[2026-03-12 12:39:01] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 12:39:03] [INFO ] [MainController: 17] iniciar
+[2026-03-12 12:39:10] [INFO ] [UserController: 23] Logeando con las credenciales User: admin Password admin
+[2026-03-12 12:39:10] [INFO ] [UserDao: 36] Atenticación realizada con exito
+[2026-03-12 12:39:10] [INFO ] [UserController: 25] Ha ido mal
+=======
 [2026-03-11 19:16:39] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
 [2026-03-11 19:17:02] [INFO ] [UserController: 23] Logeando con las credenciales User: admin Password admin
 [2026-03-11 19:17:02] [INFO ] [UserDao: 36] Atenticación realizada con exito
@@ -313,7 +335,4 @@
 [2026-03-12 12:50:01] [INFO ] [MainController: 17] iniciar
 [2026-03-12 12:50:09] [INFO ] [UserController: 25] Intentando login con User: admin
 [2026-03-12 12:50:26] [INFO ] [LigaController: 25] Creando Nueva Liga
-[2026-03-12 12:53:11] [INFO ] [LigaController: 25] Creando Nueva Liga
-[2026-03-12 12:57:14] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
-[2026-03-12 12:57:22] [INFO ] [MainController: 17] iniciar
-[2026-03-12 12:57:33] [INFO ] [UserController: 25] Intentando login con User: admin
+>>>>>>> 38c093df7b47e9baa50363322b653229d765cb73

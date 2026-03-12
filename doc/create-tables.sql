@@ -49,6 +49,7 @@ CREATE TABLE IF NOT EXISTS k1furydb.registros (
     peleador1  int not null,
     peleador2  int not null,
     ganador int not null default 0,
+    finalizada int default 0,
 
     primary key (id),
     foreign key (peleador1) references k1furydb.usuario (id),
