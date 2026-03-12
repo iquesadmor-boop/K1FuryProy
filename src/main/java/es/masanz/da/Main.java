@@ -86,9 +86,6 @@ public class Main {
         app.post("/editar-usuario", UserController::procesarEditarUsuario);
         app.post("/eliminar-usuario", UserController::procesarEliminarUsuario);
 
-//        app.get("/clasif72kg", NavigationController::mostrarClasif72KG);
-//        app.get("/clasif76kg", NavigationController::mostrarClasif76KG);
-//        app.get("/clasif80kg", NavigationController::mostrarClasif80KG);
 
 //        app.get("/adm/menu", AdmController::mostrarMenuAdm);
 //        app.post("/adm/menu", AdmController::gestionarMenuAdm);
