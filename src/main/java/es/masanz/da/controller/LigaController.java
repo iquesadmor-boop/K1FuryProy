@@ -72,6 +72,12 @@ public class LigaController {
         context.render("templates/tLiga/eliminar-liga.ftl", model);
     }
 
+    public static void procesarEliminarLiga(@NotNull Context context) {
+        String nombre = context.formParam("nombre");
+        LigaDao.eliminarLiga(nombre);
+        context.render("templates/tLiga/gestion-liga.ftl");
+    }
+
 //    public static void procesarEliminarLiga(@NotNull Context context) {
 //        List<String> nombres = null;
 //        Map<String,Object> model = new HashMap<>();

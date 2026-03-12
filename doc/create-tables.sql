@@ -34,6 +34,7 @@ CREATE TABLE IF NOT EXISTS k1furydb.liga (
 
     primary key(id),
     foreign key (campeon) references k1furydb.usuario (id)
+        on delete set null
 );
 
 ALTER TABLE k1furydb.usuario
@@ -56,4 +57,15 @@ CREATE TABLE IF NOT EXISTS k1furydb.registros (
     foreign key (arbitro) references k1furydb.usuario (id)
 );
 
+
 ALTER TABLE k1furydb.registros MODIFY ganador int NULL;
+
+ALTER TABLE k1furydb.usuario DROP FOREIGN KEY fk_liga;
+
+ALTER TABLE k1furydb.usuario MODIFY liga INT NULL;
+
+ALTER TABLE k1furydb.usuario
+ADD CONSTRAINT fk_liga
+FOREIGN KEY (liga) REFERENCES k1furydb.liga (id)
+ON DELETE SET NULL
+ON UPDATE CASCADE;

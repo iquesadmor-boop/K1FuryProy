@@ -57,7 +57,7 @@ public class Main {
         app.post("/editarLiga", LigaController::procesarEditarLiga);
 
         app.get("/tLiga/eliminar-liga", LigaController::mostrarEliminarLiga);
-        app.get("/confirmarEliminarLiga", NavigationController::mostrarConfirmarEliminarLiga);
+        app.post("/confirmarEliminarLiga", LigaController::procesarEliminarLiga);
         //app.get("/procesarEliminarLiga", LigaController::procesarEliminarLiga);
 
 
