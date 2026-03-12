@@ -21,9 +21,9 @@
 
         <main class="mainMenu">
             <div>
-            <button class="button"><a href="/tLiga/gestion-liga" class="button">Gestión Liga</a></button>
-            <button class="button"><a href="./tUsuarios/gestion-usuarios">Gestión Usuarios</a></button>
-            <button class="button"><a href="/tCombates/combates">Combates</a></button>
+            <a class="button" href="/tLiga/gestion-liga" class="button">Gestión Liga</a>
+            <a class="button" href="./tUsuarios/gestion-usuarios">Gestión Usuarios</a>
+            <a class="button" href="/tCombates/combates">Combates</a>
             <a class="button" href="/tClasificacion/clasificacion">Clasificacion</a>
             </div>
         </main>
