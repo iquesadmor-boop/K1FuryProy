@@ -287,3 +287,7 @@
 [2026-03-12 12:05:14] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
 [2026-03-12 12:05:19] [INFO ] [MainController: 17] iniciar
 [2026-03-12 12:05:24] [INFO ] [UserController: 25] Intentando login con User: admin
+[2026-03-12 12:07:14] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 12:07:16] [INFO ] [MainController: 17] iniciar
+[2026-03-12 12:07:21] [INFO ] [UserController: 25] Intentando login con User: admin
+[2026-03-12 12:08:28] [INFO ] [UserController: 25] Intentando login con User: admin
