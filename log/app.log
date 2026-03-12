@@ -213,3 +213,27 @@
 [2026-03-11 19:14:09] [INFO ] [UserController: 23] Logeando con las credenciales User: admin Password admin
 [2026-03-11 19:14:10] [INFO ] [UserDao: 36] Atenticación realizada con exito
 [2026-03-11 19:14:10] [INFO ] [UserController: 25] Ha ido mal
+[2026-03-12 11:24:52] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 11:25:11] [INFO ] [MainController: 17] iniciar
+[2026-03-12 11:25:28] [INFO ] [UserController: 25] Intentando login con User: admin
+[2026-03-12 11:30:55] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 11:30:57] [INFO ] [MainController: 17] iniciar
+[2026-03-12 11:31:03] [INFO ] [UserController: 25] Intentando login con User: admin
+[2026-03-12 11:32:24] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 11:32:26] [INFO ] [MainController: 17] iniciar
+[2026-03-12 11:32:33] [INFO ] [UserController: 25] Intentando login con User: admin
+[2026-03-12 11:33:30] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 11:33:32] [INFO ] [MainController: 17] iniciar
+[2026-03-12 11:33:38] [INFO ] [UserController: 25] Intentando login con User: admin
+[2026-03-12 11:37:09] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 11:37:12] [INFO ] [MainController: 17] iniciar
+[2026-03-12 11:37:19] [INFO ] [UserController: 25] Intentando login con User: admin
+[2026-03-12 11:42:06] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 11:42:08] [INFO ] [MainController: 17] iniciar
+[2026-03-12 11:42:16] [INFO ] [UserController: 25] Intentando login con User: admin
+[2026-03-12 11:46:23] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 11:46:25] [INFO ] [MainController: 17] iniciar
+[2026-03-12 11:46:31] [INFO ] [UserController: 25] Intentando login con User: admin
+[2026-03-12 11:47:06] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 11:47:08] [INFO ] [MainController: 17] iniciar
+[2026-03-12 11:47:15] [INFO ] [UserController: 25] Intentando login con User: admin

@@ -31,7 +31,7 @@
         <footer>
             <div class="footer">
                 <a href="/menu"><i class="fa-solid fa-house"></i></a>
-                <a href="menu.ftl"><i class="fa-solid fa-arrow-left"></i></a>
+                <a href="/menu"><i class="fa-solid fa-arrow-left"></i></a>
             </div>
         </footer>
         
