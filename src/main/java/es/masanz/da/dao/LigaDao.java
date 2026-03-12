@@ -162,6 +162,24 @@ public class LigaDao {
         return Integer.parseInt(String.valueOf(resultado[0][0]));
     }
 
+    public static boolean eliminarLiga(String nombre) {
+        Liga liga = getLigabyNombre(nombre);
+
+        if (liga.getNombre().equalsIgnoreCase(nombre)) {
+            String sql = "delete from liga " +
+                    "where nombre = ?";
+            Object[] params = {nombre};
+
+            int resultado = DbK1Fury.ejecutarUpdateSQL(sql, params);
+            if (resultado == 1) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        return false;
+    }
+
 //    public static boolean procesarEliminarLiga(String nombre){
 //        int idLiga = getIdByNombre(nombre);
 //

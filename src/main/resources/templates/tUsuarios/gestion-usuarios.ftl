@@ -21,17 +21,17 @@
 
         <main class="mainMenu">
             <div>
-            <button class="button"><a href="./listado-usuarios">Listado</a></button>
-            <button class="button"><a href="./nuevo-usuario">Nuevo Usuario</a></button>
-            <button class="button"><a href="./editar-usuario">Editar Usuario</a></button>
-            <button class="button"><a href="./eliminar-usuario">Eliminar Usuario</a></button>
+            <a class="button" href="./listado-usuarios">Listado</a></button>
+            <a class="button" href="./nuevo-usuario">Nuevo Usuario</a></button>
+            <a class="button" href="./editar-usuario">Editar Usuario</a></button>
+            <a class="button" href="./eliminar-usuario">Eliminar Usuario</a></button>
             </div>
         </main>
         
         <footer>
             <div class="footer">
-                <a href="menu.html"><i class="fa-solid fa-house"></i></a>
-                <a href="menu.html"><i class="fa-solid fa-arrow-left"></i></a>
+                <a href="/menu"><i class="fa-solid fa-house"></i></a>
+                <a href="/menu"><i class="fa-solid fa-arrow-left"></i></a>
             </div>
         </footer>
         

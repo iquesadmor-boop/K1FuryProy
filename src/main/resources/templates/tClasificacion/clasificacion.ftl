@@ -20,15 +20,15 @@
         </header>
         <main>
             <div class="mainList">
-                <button class="boton_clasificac"><a href="/clasificacion/72">72 KG</a></button>
-                <button class="boton_clasificac"><a href="/clasificacion/76">76 KG</a></button>
-                <button class="boton_clasificac"><a href="/clasificacion/80">80 KG</a></button>
+                <a class="boton_clasificac" href="/clasificacion/72">72 KG</a>
+                <a class="boton_clasificac" href="/clasificacion/76">76 KG</a>
+                <a class="boton_clasificac" href="/clasificacion/80">80 KG</a>
             </div>
         </main>
         <footer>
             <div class="footer">
-                <a href="menu.html"><i class="fa-solid fa-house"></i></a>
-                <a href="menu.html"><i class="fa-solid fa-arrow-left"></i></a>
+                <a href="/menu"><i class="fa-solid fa-house"></i></a>
+                <a href="/menu"><i class="fa-solid fa-arrow-left"></i></a>
             </div>
         </footer>
     </div>

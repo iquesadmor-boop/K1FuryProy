@@ -46,8 +46,8 @@
         </main>
         <footer>
             <div class="footer">
-                <a href="index.html"><i class="fa-solid fa-house"></i></a>
-                <a href="gestion-usuarios.html"><i class="fa-solid fa-arrow-left"></i></a>
+                <a href="/menu"><i class="fa-solid fa-house"></i></a>
+                <a href="/tClasificacion/clasificacion"><i class="fa-solid fa-arrow-left"></i></a>
             </div>
         </footer>
     </div>

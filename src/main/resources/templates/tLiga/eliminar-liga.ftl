@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-store, must-revalidate">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>Eliminar Liga</title>
     <link rel="stylesheet" type="text/css" media="screen" href="../k1Fury.css">
@@ -22,16 +25,23 @@
         </header>
         <main>
             <div class="mainList">
+            <form class="form" action="/confirmarEliminarLiga", method = "POST">
             <#list ligas as liga>
-                <label class="selector">${liga}<input class="checkboxSelectorEliminar" type="checkbox" name="${liga}" value="${liga}"></label>
+                <option value="" disabled selected hidden>${liga}</option>
+                <option value="${liga}">${liga}</option>
             </#list>
-                <a href="/confirmarEliminarLiga">Eliminar</a>
+            <label for="nombre">Nombre Liga</label>
+            <input type="text" id="nombre" name="nombre">
+
+               <input type="submit" value="Eliminar" class="btn">
+               </form>
+
             </div>
         </main>
         <footer>
             <div class="footer">
-                <a href="menu.html"><i class="fa-solid fa-house"></i></a>
-                <a href="gestion-liga.html"><i class="fa-solid fa-arrow-left"></i></a>
+                <a href="/menu"><i class="fa-solid fa-house"></i></a>
+                <a href="/tLiga/gestion-liga"><i class="fa-solid fa-arrow-left"></i></a>
             </div>
         </footer>
     </div>

@@ -19,30 +19,31 @@ public class UserDao {
 
 
     public static boolean autenticar(String nombre, String pwd) {
+        try {
         String sql = "select nombre, contraseña " +
                 "from k1furydb.usuario " +
                 "where nombre = ? and contraseña = ?";
 
-        Object[] params = {nombre, pwd};
+            Object[] params = {nombre, pwd};
+            Object[][] resultado = DbK1Fury.ejecutarSelectSQL(sql, params);
 
-        Object[][] resultado = DbK1Fury.ejecutarSelectSQL(sql, params);
-
-            if (resultado != null && resultado.length == 1) {
-            for (int i = 0; i < resultado.length; i++) {
-                String name = (String) resultado[i][0];
-                String pass = (String) resultado[i][1];
-                if (name.equalsIgnoreCase(nombre)) {
-                    if (pass.equals(pwd)) {
-                        logger.info("Atenticación realizada con exito");
-                        return true;
-
-                    }
-                }
+            if (resultado == null || resultado.length == 0) {
+                return false;
             }
+
+            String name = String.valueOf(resultado[0][0]);
+            String pass = String.valueOf(resultado[0][1]);
+
+            return true;
+
+        } catch (Exception e) {
+            logger.error("Error en autenticar: " + e.getMessage());
+            return false;
         }
-        logger.info("Creedenciales no validas o no reconocidas");
-        return false;
+
+
     }
+
 
     public static boolean insertarUsuario(String dni ,String nombre, String pwd, String apellido, int rol, int peso) {
         String sql = "INSERT INTO k1furydb.usuario (dni, nombre,contraseña, apellido, rol, peso) " +

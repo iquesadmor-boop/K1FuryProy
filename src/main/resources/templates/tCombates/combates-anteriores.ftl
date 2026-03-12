@@ -44,8 +44,8 @@
                 </main>
         <footer>
             <div class="footer">
-                <a href="menu.html"><i class="fa-solid fa-house"></i></a>
-                <a href="combates.html"><i class="fa-solid fa-arrow-left"></i></a>
+                <a href="/menu"><i class="fa-solid fa-house"></i></a>
+                <a href="/tCombates/combates"><i class="fa-solid fa-arrow-left"></i></a>
             </div>
         </footer>
     </div>

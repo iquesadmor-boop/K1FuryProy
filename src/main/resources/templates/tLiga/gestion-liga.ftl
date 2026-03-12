@@ -20,10 +20,10 @@
         </header>
         <main class="mainMenu">
             <div>
-            <button class="button"><a href="./listado-ligas">Listado</a></button>
-            <button class="button"><a href="./nueva-liga">Nueva Liga</a></button>
-            <button class="button"><a href="./editar-liga">Editar Liga</a></button>
-            <button class="button"><a href="./eliminar-liga">Eliminar Liga</a></button>
+            <a class="button" href="./listado-ligas">Listado</a>
+           <a class="button" href="./nueva-liga">Nueva Liga</a>
+           <a class="button" href="./editar-liga">Editar Liga</a>
+         <a class="button" href="./eliminar-liga">Eliminar Liga</a>
             </div>
         </main>
         
