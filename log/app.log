@@ -389,3 +389,6 @@
 [2026-03-12 13:58:48] [INFO ] [MainController: 17] iniciar
 [2026-03-12 13:58:55] [INFO ] [UserController: 25] Intentando login con User: admin
 >>>>>>> 49a4f0a41ae7ea5152956c7995d7fd9f6762ceec
+[2026-03-12 14:05:36] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 14:05:38] [INFO ] [MainController: 17] iniciar
+[2026-03-12 14:05:44] [INFO ] [UserController: 25] Intentando login con User: admin
