@@ -40,12 +40,18 @@
                                                             </#list>
                                                             <#list ligaConPeleas.peleas as pelea>
                                                                 <div class="box_anotar_resultados">
-                                                                    <div class="anotar_resultado_btn">
-                                                                        <button class="btn_result_anotar">${pelea.peleador1.nombre} ${pelea.peleador1.apellido}</button>
-                                                                    </div>
-                                                                    <div class="anotar_resultado_btn">
-                                                                        <button class="btn_result_anotar">${pelea.peleador2.nombre} ${pelea.peleador2.apellido}</button>
-                                                                    </div>
+                                                                    <form action="/sumarVictoria" method="post">
+                                                                        <div class="anotar_resultado_btn">
+                                                                            <input type="hidden" name="idGanador" value="${pelea.peleador1.id}">
+                                                                            <button class="btn_result_anotar">${pelea.peleador1.nombre} ${pelea.peleador1.apellido}</button>
+                                                                        </div>
+                                                                    </form>
+                                                                    <form action="/sumarVictoria" method="post">
+                                                                        <div class="anotar_resultado_btn">
+                                                                            <input type="hidden" name="idGanador" value="${pelea.peleador2.id}">
+                                                                            <button class="btn_result_anotar">${pelea.peleador2.nombre} ${pelea.peleador2.apellido}</button>
+                                                                        </div>
+                                                                    </form>
                                                                 </div>
                                                             </#list>
                                                     </div>

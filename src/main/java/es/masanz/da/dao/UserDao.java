@@ -131,29 +131,18 @@ public class UserDao {
         return u;
     }
 
-    public static Usuario getUsuarioById(int id) {
-        String sql = "select id, nombre, apellido, contraseña, rol, peso, liga, victorias " +
-                "from usuario " +
-                "where id = ?";
+    public static boolean sumarVictoria(int id){
+        String sql = "update usuario " +
+                " set victorias = victorias + 1 " +
+                " where id = ? ";
 
         Object[] params = {id};
 
-        Object[][] res = DbK1Fury.ejecutarSelectSQL(sql, params);
-        Usuario u = new Usuario();
-
-        if (res.length > 0 && res != null){
-
-            for (int i = 0; i < res.length; i++) {
-                u.setId(Integer.parseInt(String.valueOf(res[i][0])));
-                u.setNombre(String.valueOf(res[i][1]));
-                u.setApellido(String.valueOf(res[i][2]));
-                u.setPassword(String.valueOf(res[i][3]));
-                u.setRol(Integer.parseInt(String.valueOf(res[i][4])));
-                u.setPeso(Integer.parseInt(String.valueOf(res[i][5])));
-                u.setLiga(Integer.parseInt(String.valueOf(res[i][6])));
-                u.setVictorias(Integer.parseInt(String.valueOf(res[i][7])));
-            }
+        int res = DbK1Fury.ejecutarUpdateSQL(sql, params);
+        if (res > 0){
+            return true;
+        } else {
+            return false;
         }
-        return u;
     }
 }

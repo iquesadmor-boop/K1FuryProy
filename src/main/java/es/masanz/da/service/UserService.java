@@ -35,4 +35,8 @@ public class UserService {
     public static TreeSet<String > getNombresUsuarios() {
         return UserDao.getNombresUsuarios();
     }
+
+    public static boolean sumarVictoria(int id) {
+        return UserDao.sumarVictoria(id);
+    }
 }

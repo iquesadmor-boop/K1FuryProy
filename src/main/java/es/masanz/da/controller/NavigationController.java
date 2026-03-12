@@ -2,7 +2,6 @@ package es.masanz.da.controller;
 
 import es.masanz.da.dao.RegistroDao;
 import es.masanz.da.model.LigaConPeleas;
-import es.masanz.da.model.Registro;
 import es.masanz.da.model.Usuario;
 import es.masanz.da.service.LigaService;
 import io.javalin.http.Context;
