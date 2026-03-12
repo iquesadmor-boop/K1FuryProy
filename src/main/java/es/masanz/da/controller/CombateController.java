@@ -2,6 +2,7 @@ package es.masanz.da.controller;
 
 import es.masanz.da.dao.LigaDao;
 import es.masanz.da.dao.RegistroDao;
+import es.masanz.da.service.UserService;
 import io.javalin.http.Context;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -39,4 +40,9 @@ public class CombateController {
         context.redirect("/menu");
     }
 
+    public static void sumarVictoria(Context context) {
+        int idGanador = Integer.parseInt(context.formParam("idGanador"));
+        UserService.sumarVictoria(idGanador);
+        context.redirect("/tCombates/anotar-resultado");
+    }
 }

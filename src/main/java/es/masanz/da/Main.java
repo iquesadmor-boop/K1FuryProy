@@ -64,7 +64,10 @@ public class Main {
         app.get("/tCombates/combates", NavigationController::mostrarCombates);
         app.get("/tCombates/combates-anteriores", NavigationController::mostrarAnterioresCombates);
         app.get("/tCombates/proximos-combates", NavigationController::mostrarProximosCombates);
+
         app.get("/tCombates/anotar-resultado", NavigationController::mostrarAnotarResultados);
+        app.post("/sumarVictoria", CombateController::sumarVictoria);
+
 
         app.get("/crear-combate", CombateController::mostrarCrearCombate);
         app.post("/crearCombate", CombateController::procesarNuevoCombate);

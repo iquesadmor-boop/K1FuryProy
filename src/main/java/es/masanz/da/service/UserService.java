@@ -25,4 +25,8 @@ public class UserService {
     public static List<String > getNombresUsuarios() {
         return UserDao.getNombresUsuarios();
     }
+
+    public static boolean sumarVictoria(int id) {
+        return UserDao.sumarVictoria(id);
+    }
 }
