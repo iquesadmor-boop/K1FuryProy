@@ -7,6 +7,7 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.TreeSet;
 
 public class UserDao {
 
@@ -84,8 +85,8 @@ public class UserDao {
         } else {return false;}
     }
 
-    public static List<String> getNombresUsuarios (){
-        List<String> lista = new ArrayList<>();
+    public static TreeSet<String> getNombresUsuarios (){
+        TreeSet<String> lista = new TreeSet<>();
         String sql = "select concat(nombre, ' ' , apellido) " +
                 "from usuario ";
 

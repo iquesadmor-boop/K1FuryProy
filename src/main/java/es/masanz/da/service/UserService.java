@@ -8,6 +8,7 @@ import org.jetbrains.annotations.NotNull;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.TreeSet;
 
 import static es.masanz.da.config.Config.*;
 
@@ -18,11 +19,20 @@ public class UserService {
         return UserDao.autenticar(nombre, pwd);
     }
 
-    public static boolean crearUsuario(String dni, String nombre, String pwd, String apellido, int rol, int peso){
+    public static boolean crearUsuario(String dni ,String nombre, String pwd, String apellido, int rol, int peso){
         return UserDao.insertarUsuario(dni, nombre, pwd, apellido,rol,peso);
     }
 
-    public static List<String > getNombresUsuarios() {
+    public static boolean editarUsuario(String dni, String nuevoNombre ,String nuevoApellido, String pwd, int rol){
+        return UserDao.actualizarUsuario(dni, nuevoNombre, nuevoApellido, pwd, rol);
+    }
+
+
+    public static boolean eliminarUsuario(String dni){
+        return UserDao.eliminarUsuario(dni);
+    }
+
+    public static TreeSet<String > getNombresUsuarios() {
         return UserDao.getNombresUsuarios();
     }
 }

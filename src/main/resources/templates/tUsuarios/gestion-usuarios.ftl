@@ -21,10 +21,10 @@
 
         <main class="mainMenu">
             <div>
-            <a class="button" href="./listado-usuarios">Listado</a></button>
-            <a class="button" href="./nuevo-usuario">Nuevo Usuario</a></button>
-            <a class="button" href="./editar-usuario">Editar Usuario</a></button>
-            <a class="button" href="./eliminar-usuario">Eliminar Usuario</a></button>
+            <a class="button" href="./listado-usuarios">Listado</a>
+            <a class="button" href="./nuevo-usuario">Nuevo Usuario</a>
+            <a class="button" href="./editar-usuario">Editar Usuario</a>
+            <a class="button" href="./eliminar-usuario">Eliminar Usuario</a>
             </div>
         </main>
         

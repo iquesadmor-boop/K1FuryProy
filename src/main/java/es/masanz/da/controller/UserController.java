@@ -12,6 +12,7 @@ import org.jetbrains.annotations.NotNull;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.TreeSet;
 
 public class UserController {
 
@@ -50,7 +51,7 @@ public class UserController {
         int rol = Integer.parseInt(context.formParam("rol"));
 
 
-        UserDao.insertarUsuario(dni,nombre,pwd,apellido,rol,peso);
+        UserService.crearUsuario(dni,nombre,pwd,apellido,rol,peso);
         context.redirect("/menu");
     }
 
@@ -60,7 +61,7 @@ public class UserController {
     }
 
     public static void mostrarListadoUsuarios(Context context){
-        List<String> usuarios = UserService.getNombresUsuarios();
+        TreeSet<String> usuarios = UserService.getNombresUsuarios();
         Map<String, Object> model = new HashMap<>();
         model.put("usuarios", usuarios);
         context.render("templates/tUsuarios/listado-usuarios.ftl", model);
@@ -75,7 +76,7 @@ public class UserController {
         String pwd = context.formParam("contraseña");
         int rol = Integer.parseInt(context.formParam("rol"));
 
-        UserDao.actualizarUsuario(dni,nombre,apellido,pwd,rol);
+        UserService.editarUsuario(dni,nombre,apellido,pwd,rol);
         context.redirect("/menu");
     }
 
@@ -90,7 +91,7 @@ public class UserController {
         String dni = context.formParam("dni");
 
 
-        UserDao.eliminarUsuario(dni);
+        UserService.eliminarUsuario(dni);
         context.redirect("/menu");
     }
 }
