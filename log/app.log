@@ -313,3 +313,7 @@
 [2026-03-12 12:50:01] [INFO ] [MainController: 17] iniciar
 [2026-03-12 12:50:09] [INFO ] [UserController: 25] Intentando login con User: admin
 [2026-03-12 12:50:26] [INFO ] [LigaController: 25] Creando Nueva Liga
+[2026-03-12 12:53:11] [INFO ] [LigaController: 25] Creando Nueva Liga
+[2026-03-12 12:57:14] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 12:57:22] [INFO ] [MainController: 17] iniciar
+[2026-03-12 12:57:33] [INFO ] [UserController: 25] Intentando login con User: admin
