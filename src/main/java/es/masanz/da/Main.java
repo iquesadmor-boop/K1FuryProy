@@ -89,13 +89,6 @@ public class Main {
         app.post("/editar-usuario", UserController::procesarEditarUsuario);
         app.post("/eliminar-usuario", UserController::procesarEliminarUsuario);
 
-
-//        app.get("/adm/menu", AdmController::mostrarMenuAdm);
-//        app.post("/adm/menu", AdmController::gestionarMenuAdm);
-//
-//        app.get("/adm/crear-torneo", AdmController::mostrarCrearTorneo);
-//        app.post("/adm/crear-torneo", AdmController::gestionarCrearTorneo);
-
     }
 
     public static SessionHandler fileSessionHandler(String sessionName) {
