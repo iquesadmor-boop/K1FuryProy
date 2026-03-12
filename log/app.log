@@ -217,3 +217,44 @@
 [2026-03-11 19:07:58] [INFO ] [UserDao: 36] Atenticación realizada con exito
 [2026-03-11 19:07:58] [INFO ] [UserController: 25] Ha ido mal
 [2026-03-11 19:08:07] [INFO ] [UserController: 84] Borrando usuario
+[2026-03-12 08:13:48] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 08:13:50] [INFO ] [MainController: 17] iniciar
+[2026-03-12 08:13:56] [INFO ] [UserController: 23] Logeando con las credenciales User: admin Password admin
+[2026-03-12 08:13:57] [INFO ] [UserDao: 36] Atenticación realizada con exito
+[2026-03-12 08:13:57] [INFO ] [UserController: 25] Ha ido mal
+[2026-03-12 10:15:29] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 10:15:31] [INFO ] [MainController: 17] iniciar
+[2026-03-12 10:15:45] [INFO ] [UserController: 24] Intentando login con User: admin
+[2026-03-12 10:15:46] [INFO ] [UserController: 27] Autenticación correcta
+[2026-03-12 10:15:52] [INFO ] [UserController: 24] Intentando login con User: admin
+[2026-03-12 10:15:52] [INFO ] [UserController: 30] Credenciales incorrectas
+[2026-03-12 10:16:11] [INFO ] [UserController: 24] Intentando login con User: admin1
+[2026-03-12 10:16:11] [INFO ] [UserController: 27] Autenticación correcta
+[2026-03-12 10:24:22] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 10:24:25] [INFO ] [MainController: 17] iniciar
+[2026-03-12 10:24:34] [INFO ] [UserController: 24] Intentando login con User: admin
+[2026-03-12 10:24:35] [INFO ] [UserController: 27] Autenticación correcta
+[2026-03-12 10:24:42] [INFO ] [UserController: 24] Intentando login con User: admin
+[2026-03-12 10:24:42] [INFO ] [UserController: 30] Credenciales incorrectas
+[2026-03-12 10:25:16] [INFO ] [UserController: 24] Intentando login con User: admin
+[2026-03-12 10:25:16] [INFO ] [UserController: 30] Credenciales incorrectas
+[2026-03-12 10:28:27] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 10:28:30] [INFO ] [MainController: 17] iniciar
+[2026-03-12 10:28:36] [INFO ] [MainController: 17] iniciar
+[2026-03-12 10:28:51] [INFO ] [MainController: 17] iniciar
+[2026-03-12 10:28:56] [INFO ] [MainController: 17] iniciar
+[2026-03-12 10:29:25] [INFO ] [MainController: 17] iniciar
+[2026-03-12 10:29:28] [INFO ] [MainController: 17] iniciar
+[2026-03-12 10:33:50] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 10:33:52] [INFO ] [MainController: 17] iniciar
+[2026-03-12 10:33:58] [INFO ] [MainController: 17] iniciar
+[2026-03-12 10:35:13] [INFO ] [MainController: 17] iniciar
+[2026-03-12 10:35:46] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 10:35:48] [INFO ] [MainController: 17] iniciar
+[2026-03-12 10:36:00] [INFO ] [MainController: 17] iniciar
+[2026-03-12 10:36:08] [INFO ] [MainController: 17] iniciar
+[2026-03-12 10:39:14] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 10:39:17] [INFO ] [MainController: 17] iniciar
+[2026-03-12 10:39:29] [INFO ] [MainController: 17] iniciar
+[2026-03-12 10:39:43] [INFO ] [MainController: 17] iniciar
+[2026-03-12 10:40:38] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
