@@ -22,8 +22,8 @@
                 </header>
         <main>
             <div class="mainList">
-            <#list peleadores as peleador>
-                <label class="selectorEliminar">${peleador.nombre} ${peleador.apellido}</label>
+            <#list peleadores as peleador, victorias>
+                <label class="selectorEliminar">${peleador.nombre} ${peleador.apellido} ${victorias}</label>
             </#list>
             </div>
         </main>
