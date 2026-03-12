@@ -1,3 +1,15 @@
+<<<<<<< HEAD
+[2026-03-12 13:50:27] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 13:51:32] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 13:51:37] [INFO ] [MainController: 17] iniciar
+[2026-03-12 13:51:43] [INFO ] [UserController: 25] Intentando login con User: admin
+[2026-03-12 13:55:59] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 13:56:01] [INFO ] [MainController: 17] iniciar
+[2026-03-12 13:56:07] [INFO ] [UserController: 25] Intentando login con User: admin
+[2026-03-12 13:58:09] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 13:58:10] [INFO ] [MainController: 17] iniciar
+[2026-03-12 13:58:16] [INFO ] [UserController: 25] Intentando login con User: admin
+=======
 [2026-03-11 15:02:50] [INFO ] [Main: 28] ARRANCANDO APLICACION MODO WEB
 [2026-03-11 15:02:52] [INFO ] [MainController: 17] iniciar
 [2026-03-11 15:03:00] [INFO ] [UserController: 21] Logeando con las credenciales User: admin Password admin
@@ -376,6 +388,4 @@
 [2026-03-12 13:58:46] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
 [2026-03-12 13:58:48] [INFO ] [MainController: 17] iniciar
 [2026-03-12 13:58:55] [INFO ] [UserController: 25] Intentando login con User: admin
-[2026-03-12 14:00:05] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
-[2026-03-12 14:00:06] [INFO ] [MainController: 17] iniciar
-[2026-03-12 14:00:17] [INFO ] [UserController: 25] Intentando login con User: admin
+>>>>>>> 49a4f0a41ae7ea5152956c7995d7fd9f6762ceec

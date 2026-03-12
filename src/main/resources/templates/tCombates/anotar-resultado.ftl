@@ -20,88 +20,38 @@
         </header>
         <main>
                     <div class="mainMatch">
-                        <div class="combate_box">
-                            <h2>LIGA 70KG</h2>
-                            <div class="detalles_box">
-                                <div class="peleador_box">
-                                    <p>Jhonny Sins</p>
-                                    <p>70Kg</p>
-                                    <p>3-1-4</p>
-                                </div>
-                                <div class="vs">
-                                    <p>VS</p>
-                                </div>
-                                <div class="peleador_box">
-                                    <p>Jhonny Sins</p>
-                                    <p>70Kg</p>
-                                    <p>3-1-4</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box_anotar_resultados">
-                            <div class="anotar_resultado_btn">
-                                <button class="btn_result_anotar">Jhonny Sins</button>
-                            </div>
-                            <div class="anotar_resultado_btn">
-                                <button class="btn_result_anotar">Jhonny Sins</button>
-                            </div>
-                        </div>
-
-                        <div class="combate_box">
-                            <h2>LIGA 70KG</h2>
-                            <div class="detalles_box">
-                                <div class="peleador_box">
-                                    <p>Jhonny Sins</p>
-                                    <p>70Kg</p>
-                                    <p>3-1-4</p>
-                                </div>
-                                <div class="vs">
-                                    <p>VS</p>
-                                </div>
-                                <div class="peleador_box">
-                                    <p>Jhonny Sins</p>
-                                    <p>70Kg</p>
-                                    <p>3-1-4</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box_anotar_resultados">
-                            <div class="anotar_resultado_btn">
-                                <button class="btn_result_anotar">Jhonny Sins</button>
-                            </div>
-                            <div class="anotar_resultado_btn">
-                                <button class="btn_result_anotar">Jhonny Sins</button>
-                            </div>
-                        </div>
-
-                        <div class="combate_box">
-                            <h2>LIGA 70KG</h2>
-                            <div class="detalles_box">
-                                <div class="peleador_box">
-                                    <p>Jhonny Sins</p>
-                                    <p>70Kg</p>
-                                    <p>3-1-4</p>
-                                </div>
-                                <div class="vs">
-                                    <p>VS</p>
-                                </div>
-                                <div class="peleador_box">
-                                    <p>Jhonny Sins</p>
-                                    <p>70Kg</p>
-                                    <p>3-1-4</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box_anotar_resultados">
-                            <div class="anotar_resultado_btn">
-                                <button class="btn_result_anotar">Jhonny Sins</button>
-                            </div>
-                            <div class="anotar_resultado_btn">
-                                <button class="btn_result_anotar">Jhonny Sins</button>
-                            </div>
-                        </div>
+                        <#list listaLigasConPeleas as ligaConPeleas>
+                                                    <div class="combate_box">
+                                                        <h2>${ligaConPeleas.nombreLiga}</h2>
+                                                            <#list ligaConPeleas.peleas as pelea>
+                                                                <div class="detalles_box">
+                                                                    <div class="peleador_box">
+                                                                        <p>${pelea.peleador1.nombre} ${pelea.peleador1.apellido}</p>
+                                                                        <p>${pelea.peleador1.victorias}</p>
+                                                                    </div>
+                                                                    <div class="vs">
+                                                                        <p>VS</p>
+                                                                    </div>
+                                                                     <div class="peleador_box">
+                                                                        <p>${pelea.peleador2.nombre} ${pelea.peleador2.apellido}</p>
+                                                                        <p>${pelea.peleador2.victorias}</p>
+                                                                     </div>
+                                                                </div>
+                                                            </#list>
+                                                            <#list ligaConPeleas.peleas as pelea>
+                                                                <div class="box_anotar_resultados">
+                                                                    <div class="anotar_resultado_btn">
+                                                                        <button class="btn_result_anotar">${pelea.peleador1.nombre} ${pelea.peleador1.apellido}</button>
+                                                                    </div>
+                                                                    <div class="anotar_resultado_btn">
+                                                                        <button class="btn_result_anotar">${pelea.peleador2.nombre} ${pelea.peleador2.apellido}</button>
+                                                                    </div>
+                                                                </div>
+                                                            </#list>
+                                                    </div>
+                        </#list>
                     </div>
-                </main>
+        </main>
         <footer>
             <div class="footer">
                 <a href="/menu"><i class="fa-solid fa-house"></i></a>

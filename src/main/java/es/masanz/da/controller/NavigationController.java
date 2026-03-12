@@ -52,6 +52,10 @@ public class NavigationController {
 
     public static void mostrarAnotarResultados(@NotNull Context context){
         Map<String, Object> model = new HashMap<>();
+
+        List<LigaConPeleas> listaLigasConPeleas = RegistroDao.getListaLigaConPeleadoresFinalizadas();
+        model.put("listaLigasConPeleas", listaLigasConPeleas);
+
         context.render("templates/tCombates/anotar-resultado.ftl", model);
     }
 
