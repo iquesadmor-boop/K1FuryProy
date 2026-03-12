@@ -1,0 +1,10 @@
+[2026-03-12 13:50:27] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 13:51:32] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 13:51:37] [INFO ] [MainController: 17] iniciar
+[2026-03-12 13:51:43] [INFO ] [UserController: 25] Intentando login con User: admin
+[2026-03-12 13:55:59] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 13:56:01] [INFO ] [MainController: 17] iniciar
+[2026-03-12 13:56:07] [INFO ] [UserController: 25] Intentando login con User: admin
+[2026-03-12 13:58:09] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 13:58:10] [INFO ] [MainController: 17] iniciar
+[2026-03-12 13:58:16] [INFO ] [UserController: 25] Intentando login con User: admin
