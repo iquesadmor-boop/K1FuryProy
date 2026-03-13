@@ -47,7 +47,7 @@ public class NavigationController {
         List<LigaConPeleas> listaLigasConPeleas = CombateService.getListaLigaConPeleadoresFinalizadas();
         model.put("listaLigasConPeleas", listaLigasConPeleas);
 
-        context.render("templates/tCombates/proximos-combates.ftl", model);
+        context.render("templates/tCombates/combates-anteriores.ftl", model);
     }
 
     public static void mostrarAnotarResultados(@NotNull Context context){
