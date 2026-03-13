@@ -13,7 +13,6 @@ import java.util.TreeSet;
 
 public class UserService {
 
-
     public static boolean autenticar(String nombre, String pwd) {
         return UserDao.autenticar(nombre, pwd);
     }

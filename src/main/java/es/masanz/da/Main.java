@@ -43,8 +43,6 @@ public class Main {
         app.get("/error", MainController::iniciar);
 
         app.post("/autenticar", UserController::autenticar);
-
-
         app.get("/menu", NavigationController::mostrarMenu);
 
         app.get("/tLiga/gestion-liga", NavigationController::mostrarGestionLiga);
@@ -58,8 +56,6 @@ public class Main {
 
         app.get("/tLiga/eliminar-liga", LigaController::mostrarEliminarLiga);
         app.post("/confirmarEliminarLiga", LigaController::procesarEliminarLiga);
-        //app.get("/procesarEliminarLiga", LigaController::procesarEliminarLiga);
-
 
         app.get("/tCombates/combates", NavigationController::mostrarCombates);
         app.get("/tCombates/combates-anteriores", NavigationController::mostrarAnterioresCombates);
@@ -106,7 +102,6 @@ public class Main {
         FileSessionDataStore fileSessionDataStore = new FileSessionDataStore();
         File baseDir = new File(System.getProperty("java.io.tmpdir"));
         File storeDir = new File(baseDir, "javalin-session-store");
-        //C:\Users\USUARIO\AppData\Local\Temp\javalin-session-store
         storeDir.mkdir();
         fileSessionDataStore.setStoreDir(storeDir);
         return fileSessionDataStore;

@@ -1,13 +1,11 @@
 package es.masanz.da.controller;
 
-import es.masanz.da.service.UserService;
 import io.javalin.http.Context;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.jetbrains.annotations.NotNull;
+
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class MainController {

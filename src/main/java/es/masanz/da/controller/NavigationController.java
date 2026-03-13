@@ -76,7 +76,6 @@ public class NavigationController {
         }
         List<Usuario> listaPeleadores = LigaService.getPeleadoresByNombreLiga(nombreLiga);
         LinkedHashMap<Usuario, Integer> peleadores = new LinkedHashMap<>();
-        //Para que nos respete el orden que viene de la base de datos
 
         for (Usuario u : listaPeleadores) {
             int victorias = LigaService.getVictorias(u.getId());

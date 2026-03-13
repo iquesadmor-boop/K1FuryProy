@@ -100,20 +100,6 @@ public class LigaDao {
         return lista;
     }
 
-//    public static List<Liga> getLigas() {
-//        List<Liga> lista = new ArrayList<>();
-//        String sql = "select id, nombre, liga" +
-//                "from liga";
-//        Object[] params = {};
-//        Object[][] resultado = DbK1Fury.ejecutarSelectSQL(sql, params);
-//
-//        if (resultado != null && resultado.length >= 1){
-//            Liga l1 = new Liga();
-//
-//        }
-//
-//        return lista;
-//    }
 
     public static List<String> getPeleadoresLiga(int id_liga){
         List<String> lista = new ArrayList<>();
@@ -144,8 +130,6 @@ public class LigaDao {
                 l.setPeso(Integer.parseInt(String.valueOf(resultado[i][2])));
                 l.setFechaInicio(String.valueOf(resultado[i][3]));
                 l.setFechaFin(String.valueOf(resultado[i][4]));
-//                l.setCampeon(Integer.valueOf(String.valueOf(resultado[i][5])));
-//                l.setEstaActiva(Integer.valueOf(String.valueOf(resultado[i][6])));
             }
         }
 
@@ -206,28 +190,4 @@ public class LigaDao {
         return u;
     }
 
-//    public static boolean procesarEliminarLiga(String nombre){
-//        int idLiga = getIdByNombre(nombre);
-//
-//        String sql = "update liga" +
-//                "set id = 0, nombre = null, peso = 0, fecha_inicio = null, fecha_fin = null, activa = 0 " +
-//                "where id = ?";
-//        Object[] params = {idLiga};
-//        int resultado = DbK1Fury.ejecutarUpdateSQL(sql, params);
-//
-//        if (resultado > 0){
-//            return true;
-//        } else {return false;}
-//
-//    }
-
-//      public static String getNombreById(int id) {
-//          String sql = "SELECT nombre FROM liga WHERE id = ?";
-//          Object[] params = {id};
-//          Object[][] res = DbK1Fury.ejecutarSelectSQL(sql, params);
-//              if (res != null && res.length > 0)
-//                  return res[0][0].toString();
-//              }
-//          return "";
-//      }
 }

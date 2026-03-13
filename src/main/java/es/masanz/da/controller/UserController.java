@@ -44,7 +44,6 @@ public class UserController {
 
         String dni = context.formParam("dni");
         String nombre = context.formParam("nombre");
-        //int liga = Integer.parseInt(context.formParam("liga"));
         String apellido = context.formParam("apellido");
         String pwd = context.formParam("contraseña");
         int rol = Integer.parseInt(context.formParam("rol"));

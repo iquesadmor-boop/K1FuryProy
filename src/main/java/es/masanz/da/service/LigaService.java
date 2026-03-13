@@ -7,13 +7,6 @@ import java.util.List;
 
 public class LigaService {
 
-    public static boolean crearLiga(String nombre, int peso, String fechaInicio){
-        return LigaDao.crearLiga(nombre, peso,fechaInicio);
-    }
-
-    public static List<Usuario> getPeleadoresByNombreLiga(int peso) {
-        return LigaDao.getPeleadores(peso);
-    }
 
     public static List<String > getNombresLigas() {
         return LigaDao.getNombresLigas();
@@ -31,7 +24,4 @@ public class LigaService {
         return LigaDao.getPeleadoresNombeLiga(nombreLiga);
     }
 
-//    public static boolean editarLiga(String nombre, String fecha_fin){
-//        return LigaDao.editarLiga(nombre, fecha_fin);
-//    }
 }
