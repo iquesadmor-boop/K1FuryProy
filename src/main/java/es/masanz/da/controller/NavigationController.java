@@ -3,6 +3,7 @@ package es.masanz.da.controller;
 import es.masanz.da.dao.RegistroDao;
 import es.masanz.da.model.LigaConPeleas;
 import es.masanz.da.model.Usuario;
+import es.masanz.da.service.CombateService;
 import es.masanz.da.service.LigaService;
 import io.javalin.http.Context;
 import org.jetbrains.annotations.NotNull;
@@ -34,7 +35,7 @@ public class NavigationController {
     public static void mostrarProximosCombates(@NotNull Context context){
         Map<String, Object> model = new HashMap<>();
 
-        List<LigaConPeleas> listaLigasConPeleas = RegistroDao.getListaLigaConPeleadores();
+        List<LigaConPeleas> listaLigasConPeleas = CombateService.getListaLigaConPeleadores();
         model.put("listaLigasConPeleas", listaLigasConPeleas);
 
         context.render("templates/tCombates/proximos-combates.ftl", model);
@@ -43,7 +44,7 @@ public class NavigationController {
     public static void mostrarAnterioresCombates(@NotNull Context context){
         Map<String, Object> model = new HashMap<>();
 
-        List<LigaConPeleas> listaLigasConPeleas = RegistroDao.getListaLigaConPeleadoresFinalizadas();
+        List<LigaConPeleas> listaLigasConPeleas = CombateService.getListaLigaConPeleadoresFinalizadas();
         model.put("listaLigasConPeleas", listaLigasConPeleas);
 
         context.render("templates/tCombates/proximos-combates.ftl", model);
@@ -52,7 +53,7 @@ public class NavigationController {
     public static void mostrarAnotarResultados(@NotNull Context context){
         Map<String, Object> model = new HashMap<>();
 
-        List<LigaConPeleas> listaLigasConPeleas = RegistroDao.getListaLigaConPeleadoresFinalizadas();
+        List<LigaConPeleas> listaLigasConPeleas = CombateService.getListaLigaConPeleadoresFinalizadas();
         model.put("listaLigasConPeleas", listaLigasConPeleas);
 
         context.render("templates/tCombates/anotar-resultado.ftl", model);
