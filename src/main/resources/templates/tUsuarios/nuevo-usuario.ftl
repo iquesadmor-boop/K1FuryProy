@@ -31,10 +31,10 @@
                     <input type="text" id="apellido" name="apellido">
                     <label for="pwd">Contraseña</label>
                     <input type="password" id="pwd" name="pwd">
-                    <select class="selector" id="peso" name="peso">
-                        <option value="72">72Kg</option>
-                        <option value="76">76Kg</option>
-                        <option value="80">80Kg</option>
+                    <select class="selector" id="liga" name="liga">
+                    <#list listaLigas as ligas>
+                         <option value="${ligas}">${ligas}</option>
+                    </#list>
                     </select>
                     <select class="selector" id="rol" name="rol">
                         <option value="1">Usuario</option>

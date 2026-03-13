@@ -2,6 +2,7 @@ package es.masanz.da.controller;
 
 import es.masanz.da.dao.LigaDao;
 import es.masanz.da.dao.RegistroDao;
+import es.masanz.da.service.CombateService;
 import es.masanz.da.service.UserService;
 import io.javalin.http.Context;
 import org.apache.logging.log4j.LogManager;
@@ -36,13 +37,13 @@ public class CombateController {
         String peleador2Apellido = context.formParam("peleador2Apellido");
 
 
-        RegistroDao.crearRegsitro(liga, arbitroNombre, arbitroApellido, peleador1Nombre, peleador1Apellido, peleador2Nombre, peleador2Apellido);
+        CombateService.crearRegsitro(liga, arbitroNombre, arbitroApellido, peleador1Nombre, peleador1Apellido, peleador2Nombre, peleador2Apellido);
         context.redirect("/menu");
     }
 
     public static void sumarVictoria(Context context) {
         int idGanador = Integer.parseInt(context.formParam("idGanador"));
-        UserService.sumarVictoria(idGanador);
-        context.redirect("/tCombates/anotar-resultado");
+        CombateService.sumarVictoria(idGanador);
+        context.redirect("/tCombates/combates");
     }
 }
