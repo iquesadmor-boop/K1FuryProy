@@ -1,10 +1,8 @@
 package es.masanz.da.service;
 
 import es.masanz.da.dao.LigaDao;
-import es.masanz.da.model.Liga;
 import es.masanz.da.model.Usuario;
 
-import java.time.LocalDate;
 import java.util.List;
 
 public class LigaService {
@@ -13,7 +11,7 @@ public class LigaService {
         return LigaDao.crearLiga(nombre, peso,fechaInicio);
     }
 
-    public static List<Usuario> getPeleadores(int peso) {
+    public static List<Usuario> getPeleadoresByNombreLiga(int peso) {
         return LigaDao.getPeleadores(peso);
     }
 
@@ -27,6 +25,10 @@ public class LigaService {
 
     public static int getVictorias(int id) {
         return LigaDao.getVictorias(id);
+    }
+
+    public static List<Usuario> getPeleadoresByNombreLiga(String nombreLiga) {
+        return LigaDao.getPeleadoresNombeLiga(nombreLiga);
     }
 
 //    public static boolean editarLiga(String nombre, String fecha_fin){

@@ -19,11 +19,11 @@
             </div>
         </header>
         <main>
+        <#list ligas as liga>
             <div class="mainList">
-                <a class="boton_clasificac" href="/clasificacion/72">72 KG</a>
-                <a class="boton_clasificac" href="/clasificacion/76">76 KG</a>
-                <a class="boton_clasificac" href="/clasificacion/80">80 KG</a>
+                <a class="boton_clasificac" href="/clasificacion/${liga}">${liga}</a>
             </div>
+        </#list>
         </main>
         <footer>
             <div class="footer">

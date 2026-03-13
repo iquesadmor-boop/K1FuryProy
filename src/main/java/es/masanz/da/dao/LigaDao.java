@@ -159,7 +159,11 @@ public class LigaDao {
         Object[] params = {id};
         Object[][] resultado = DbK1Fury.ejecutarSelectSQL(sql, params);
 
-        return Integer.parseInt(String.valueOf(resultado[0][0]));
+        if (resultado[0][0] == null) {
+            return 0;
+        } else {
+            return Integer.parseInt(String.valueOf(resultado[0][0]));
+        }
     }
 
     public static boolean eliminarLiga(String nombre) {
@@ -178,6 +182,28 @@ public class LigaDao {
             }
         }
         return false;
+    }
+
+    public static List<Usuario> getPeleadoresNombeLiga(String nombreLiga) {
+        List<Usuario> u = new ArrayList<>();
+
+        String sql = "select u.id, u.DNI, u.nombre, u.apellido " +
+                "from liga l join usuario u on l.id = u.liga " +
+                "where l.nombre = ?";
+
+        Object[] params = {nombreLiga};
+        Object[][] resultado = DbK1Fury.ejecutarSelectSQL(sql, params);
+
+        for (int i = 0; i < resultado.length; i++) {
+            Usuario u1 = new Usuario();
+            u1.setId(Integer.parseInt(resultado[i][0].toString()));
+            u1.setDni(resultado[i][1].toString());
+            u1.setNombre(resultado[i][2].toString());
+            u1.setApellido(resultado[i][3].toString());
+
+            u.add(u1);
+        }
+        return u;
     }
 
 //    public static boolean procesarEliminarLiga(String nombre){

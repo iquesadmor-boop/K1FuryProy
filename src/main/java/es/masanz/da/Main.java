@@ -75,7 +75,7 @@ public class Main {
 
 
         app.get("/tClasificacion/clasificacion", NavigationController::mostrarMenuClasificaciones);
-        app.get("/clasificacion/{peso}", NavigationController::mostrarClasificacion);
+        app.get("/clasificacion/{liga}", NavigationController::mostrarClasificacion);
 
         app.get("/tUsuarios/gestion-usuarios", NavigationController::mostrarGestionUsuario);
 

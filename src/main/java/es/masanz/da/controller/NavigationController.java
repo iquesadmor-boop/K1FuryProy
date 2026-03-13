@@ -60,19 +60,21 @@ public class NavigationController {
 
     public static void mostrarMenuClasificaciones(@NotNull Context context) {
         Map<String, Object> model = new HashMap<>();
+        List<String> ligas = LigaService.getNombresLigas();
+        model.put("ligas", ligas);
         context.render("templates/tClasificacion/clasificacion.ftl", model);
     }
 
 
     public static void mostrarClasificacion(@NotNull Context context) {
-        int peso = 0;
+        String nombreLiga = null;
         try {
-            peso = Integer.parseInt(context.pathParam("peso"));
+            nombreLiga = context.pathParam("liga");
         } catch (Exception e) {
             System.out.println(e);
             context.redirect("/menu");
         }
-        List<Usuario> listaPeleadores = LigaService.getPeleadores(peso);
+        List<Usuario> listaPeleadores = LigaService.getPeleadoresByNombreLiga(nombreLiga);
         LinkedHashMap<Usuario, Integer> peleadores = new LinkedHashMap<>();
         //Para que nos respete el orden que viene de la base de datos
 
@@ -82,7 +84,7 @@ public class NavigationController {
         }
 
         Map <String, Object> model = new HashMap<>();
-        model.put("peso", peso);
+        model.put("nombreLiga", nombreLiga);
         model.put("peleadores", peleadores);
         context.render("templates/tClasificacion/clasif-peso.ftl", model);
     }

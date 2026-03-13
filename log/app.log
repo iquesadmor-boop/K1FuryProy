@@ -418,3 +418,31 @@
 [2026-03-13 12:33:25] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
 [2026-03-13 12:33:27] [INFO ] [MainController: 17] iniciar
 [2026-03-13 12:33:31] [INFO ] [UserController: 26] Intentando login con User: admin
+[2026-03-13 12:47:07] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-13 13:02:52] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-13 13:02:53] [INFO ] [MainController: 17] iniciar
+[2026-03-13 13:02:58] [INFO ] [UserController: 23] Intentando login con User: admin
+[2026-03-13 13:08:55] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-13 13:08:57] [INFO ] [MainController: 17] iniciar
+[2026-03-13 13:09:01] [INFO ] [UserController: 23] Intentando login con User: admin
+[2026-03-13 13:10:15] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-13 13:10:18] [INFO ] [MainController: 17] iniciar
+[2026-03-13 13:10:23] [INFO ] [UserController: 23] Intentando login con User: admin
+[2026-03-13 13:11:21] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-13 13:11:23] [INFO ] [MainController: 17] iniciar
+[2026-03-13 13:11:27] [INFO ] [UserController: 23] Intentando login con User: admin
+[2026-03-13 13:11:46] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-13 13:11:47] [INFO ] [MainController: 17] iniciar
+[2026-03-13 13:11:52] [INFO ] [UserController: 23] Intentando login con User: admin
+[2026-03-13 13:12:22] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-13 13:13:09] [INFO ] [UserController: 43] Creando Nueva Usuario
+[2026-03-13 13:16:53] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-13 13:16:54] [INFO ] [MainController: 17] iniciar
+[2026-03-13 13:16:59] [INFO ] [UserController: 23] Intentando login con User: admin
+[2026-03-13 13:18:19] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-13 13:18:20] [INFO ] [MainController: 17] iniciar
+[2026-03-13 13:18:26] [INFO ] [UserController: 23] Intentando login con User: admin
+[2026-03-13 13:19:17] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-13 13:19:19] [INFO ] [MainController: 17] iniciar
+[2026-03-13 13:19:23] [INFO ] [UserController: 23] Intentando login con User: admin
+[2026-03-13 13:20:18] [INFO ] [UserController: 43] Creando Nueva Usuario
