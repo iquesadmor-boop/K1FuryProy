@@ -407,3 +407,14 @@
 [2026-03-12 17:34:30] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
 [2026-03-12 17:34:33] [INFO ] [MainController: 17] iniciar
 [2026-03-12 17:34:38] [INFO ] [UserController: 25] Intentando login con User: admin
+[2026-03-12 17:43:07] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 17:43:10] [INFO ] [MainController: 17] iniciar
+[2026-03-12 17:43:32] [INFO ] [UserController: 26] Intentando login con User: admin
+[2026-03-12 19:38:57] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-12 19:38:59] [INFO ] [MainController: 17] iniciar
+[2026-03-12 19:39:24] [INFO ] [UserController: 26] Intentando login con User: admin
+[2026-03-12 19:40:07] [INFO ] [LigaController: 25] Creando Nueva Liga
+[2026-03-12 19:40:24] [INFO ] [LigaController: 43] Editando la liga
+[2026-03-13 12:33:25] [INFO ] [Main: 25] ARRANCANDO APLICACION MODO WEB
+[2026-03-13 12:33:27] [INFO ] [MainController: 17] iniciar
+[2026-03-13 12:33:31] [INFO ] [UserController: 26] Intentando login con User: admin

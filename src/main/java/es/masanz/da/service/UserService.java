@@ -10,7 +10,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.TreeSet;
 
-import static es.masanz.da.config.Config.*;
 
 public class UserService {
 
