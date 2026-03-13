@@ -36,7 +36,4 @@ public class UserService {
         return UserDao.getNombresUsuarios();
     }
 
-    public static boolean sumarVictoria(int id) {
-        return UserDao.sumarVictoria(id);
-    }
 }
