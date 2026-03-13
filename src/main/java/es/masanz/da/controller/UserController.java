@@ -9,10 +9,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.TreeSet;
+import java.util.*;
 
 public class UserController {
 
@@ -37,6 +34,8 @@ public class UserController {
 
     public static void mostrarNuevoUsuario(@NotNull Context context) {
         Map<String, Object> model = new HashMap<>();
+        List<String> listaLigas = LigaDao.getNombresLigas();
+        model.put("listaLigas", listaLigas);
         context.render("templates/tUsuarios/nuevo-usuario.ftl", model);
     }
 
@@ -45,13 +44,14 @@ public class UserController {
 
         String dni = context.formParam("dni");
         String nombre = context.formParam("nombre");
-        int peso = Integer.parseInt(context.formParam("peso"));
+        //int liga = Integer.parseInt(context.formParam("liga"));
         String apellido = context.formParam("apellido");
         String pwd = context.formParam("contraseña");
         int rol = Integer.parseInt(context.formParam("rol"));
+        int liga = LigaDao.getIdByNombre(context.formParam("liga"));
 
 
-        UserService.crearUsuario(dni,nombre,pwd,apellido,rol,peso);
+        UserService.crearUsuario(dni,nombre,pwd,apellido,rol,liga);
         context.redirect("/menu");
     }
 

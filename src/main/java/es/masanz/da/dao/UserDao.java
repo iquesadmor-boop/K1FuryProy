@@ -46,11 +46,11 @@ public class UserDao {
     }
 
 
-    public static boolean insertarUsuario(String dni ,String nombre, String pwd, String apellido, int rol, int peso) {
-        String sql = "INSERT INTO k1furydb.usuario (dni, nombre,contraseña, apellido, rol, peso) " +
+    public static boolean insertarUsuario(String dni ,String nombre, String pwd, String apellido, int rol, int liga) {
+        String sql = "INSERT INTO k1furydb.usuario (dni, nombre,contraseña, apellido, rol, liga) " +
                 "VALUES (?,?, ?, ?, ?, ?);";
 
-        Object[] params = {dni, nombre, pwd, apellido, rol, peso};
+        Object[] params = {dni, nombre, pwd, apellido, rol, liga};
 
         long res = DbK1Fury.ejecutarInsertSQL(sql, params);
 
