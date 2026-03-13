@@ -31,11 +31,6 @@ public class LigaController {
 
         LigaDao.crearLiga(nombre,peso,fecha_inicio);
         context.redirect("/menu");
-//        Map<String,Object> model= new HashMap<>();
-//        model.put("nombre", nombre);
-//        model.put("peso", peso);
-//        model.put("fechaInicio", fecha_inicio);
-//        model.put("peleadores", peleadores);
 
     }
 
